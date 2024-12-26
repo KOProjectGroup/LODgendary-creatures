@@ -1,10 +1,10 @@
 Property;Dublin Core;Wikibase;Schema.org;CIDOC-CRM;ISBD;EDM;UNIMARC
-Creator;dcterms:creator;P170 (creator);;E39 Actor;Statement of responsibility;<edm:ProvidedCHO><dcterms:creator rdf:resource=""/></edm:ProvidedCHO>;200 $f (Statement of responsibility);
-Publisher;dce:publisher; P123 (publisher);;;Publisher;<edm:ProvidedCHO><dcterms:publisher>#</dcterms:publisher></edm:ProvidedCHO>;210 $b (Name of publisher);
-hasTitle;title;;name;P 102 has title (is title of);;;;
-hasType;Type;;type;;;;;;
-hasLanguage;Language;;inLanguage;;;;;
-hasMedium;Medium;;artMedium;;;;;
-hasStyle;Subject;;\;;;;;
-hasSize;Extent;;size;;;;;
-hasMaterial;Medium;;material;;;;;
+Creator;dcterms:creator;P170 (creator);;E39 Actor;Statement of responsibility;"<edm:ProvidedCHO><dcterms:creator rdf:resource=""""/></edm:ProvidedCHO>";200 $f (Statement of responsibility)
+Publisher;dce:publisher; P123 (publisher);;;Publisher;<edm:ProvidedCHO><dcterms:publisher>#</dcterms:publisher></edm:ProvidedCHO>;210 $b (Name of publisher)
+hasTitle;title;P1476 (title);name;P 102 has title (is title of);;;
+hasType;Type;P31 (instance of);type;;;;
+hasLanguage;Language;P407 (language of work or name);inLanguage;;;;
+hasMedium;Medium;P186 (made from material);artMedium;;;;
+hasStyle;Subject;P149 (architectural style);\;;;;
+hasSize;Extent;P2046 (area), P2048 (height), P2049 (width);size;;;;
+hasMaterial;Medium;P186 (made from material);material;;;;
