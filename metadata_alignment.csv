@@ -1,10 +1,10 @@
-Property;Dublin Core;Schema.org;CIDOC-CRM;ISBD;EDM;UNIMARC;WIKIBASE
-Creator;dcterms:creator;creator;P94 has created (was created by);Statement of responsibility;ProvidedCHO.Creator;;
-Publisher;;;;;;;
-hasTitle;title;name;P 102 has title (is title of);;;;
-hasType;Type;type;;;;;
-hasLanguage;Language;inLanguage;;;;;
-hasMedium;Medium;artMedium;;;;;
-hasStyle;Subject;\;;;;;
-hasSize;Extent;size;;;;;
-hasMaterial;Medium;material;;;;;
+Property;Dublin Core;Wikibase;Schema.org;CIDOC-CRM;ISBD;EDM;UNIMARC
+Creator;dcterms:creator;P170 (creator);;E39 Actor;Statement of responsibility;<edm:ProvidedCHO><dcterms:creator rdf:resource=""/></edm:ProvidedCHO>;200 $f (Statement of responsibility);
+Publisher;dce:publisher; P123 (publisher);;;Publisher;<edm:ProvidedCHO><dcterms:publisher>#</dcterms:publisher></edm:ProvidedCHO>;210 $b (Name of publisher);
+hasTitle;title;;name;P 102 has title (is title of);;;;
+hasType;Type;;type;;;;;;
+hasLanguage;Language;;inLanguage;;;;;
+hasMedium;Medium;;artMedium;;;;;
+hasStyle;Subject;;\;;;;;
+hasSize;Extent;;size;;;;;
+hasMaterial;Medium;;material;;;;;
