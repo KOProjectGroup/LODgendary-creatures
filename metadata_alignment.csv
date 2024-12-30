@@ -25,4 +25,3 @@ Format;;;;;;;;
 Place of Publication;dc:coverage.spatial;P291 (place of publication);;Creation Place/Original Location;place of publication, production, and/or distribution;edm:Place;102 $a (Country of Publication);
 Location;dc:LocationPeriodOrJurisdiction.location;P17 (Country), P276 (Location);;P53 has former or current location;;edm:Place;356 $a Geographical Name, Associated Place;
 Place of Production;dc:coverage.spatial;P17 (Country);;Creation Place/Original Location;;edm:Place;102 $a (Country of Publication);
-;;;;;;;;
