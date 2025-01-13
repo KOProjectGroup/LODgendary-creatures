@@ -1,6 +1,6 @@
 Subject,Property,Object
 S. George and the Dragon,rdf:type,Painting
-S. George and the Dragon,cidoc:P102 has title,"""Saint George and the Dragon"""
+S. George and the Dragon,cidoc:P102 has title,"Saint George and the Dragon"
 S. George and the Dragon,cidoc:p94 has created,Paolo Uccello
 S. George and the Dragon,creationDate,1470
 S. George and the Dragon,heldBy,The National Gallery (Organization)
@@ -19,17 +19,17 @@ Paolo Uccello,sameAs,Paolo Doni
 Paolo Uccello,basedIn,Florence
 The National Gallery (Organization),VIAF,VIAF:144868906
 The National Gallery (Organization),foundationDate,1824
-"Hereford mappa mundi,rdf: type,Manuscript
-"Hereford mappa mundi,cidoc:P102 has title,Descriptio Orosii de ornesta mundi sicut interius Ostenditur
-"Hereford mappa mundi,Provenance,"Hereford (Wales, United Kingdom)"
-"Hereford mappa mundi,creationDate,1300 c.a.
-"Hereford mappa mundi,heldBy,Hereford Cathedral (organization)
-"Hereford mappa mundi,cidoc:p94 has created,Richard of Haldingham and Lafford
-"Hereford mappa mundi,hasProjection,"east orientation, centered on Jerusalem"
-"Hereford mappa mundi,hasMedium,pen and ink on parchment
-"Hereford mappa mundi,knownAs,"""Hereford 'mappa mundi'"""
+Hereford mappa mundi,rdf: type,Manuscript
+Hereford mappa mundi,cidoc:P102 has title,Descriptio Orosii de ornesta mundi sicut interius Ostenditur
+Hereford mappa mundi,Provenance,"Hereford (Wales, United Kingdom)"
+Hereford mappa mundi,creationDate,1300 c.a.
+Hereford mappa mundi,heldBy,Hereford Cathedral (organization)
+Hereford mappa mundi,cidoc:p94 has created,Richard of Haldingham and Lafford
+Hereford mappa mundi,hasProjection,"east orientation, centered on Jerusalem"
+Hereford mappa mundi,hasMedium,pen and ink on parchment
+Hereford mappa mundi,knownAs, "Hereford mappa mundi"
 Legendary Creatures,subclassOf,Concept
-"Hereford mappa mundi,hasSubject,Legendary Creatures
+Hereford mappa mundi,hasSubject,Legendary Creatures
 Paolo Uccello,rdf: type,Person
 Paolo Uccello,occupation,Painter
 The National Gallery (Organization),rdf: type,Art museum
@@ -42,8 +42,8 @@ Richard of Haldingham and Lafford,birthDate,1276
 Richard of Haldingham and Lafford,dateOfDeath,1312
 Hereford Cathedral (organization),basedIn,Hereford Cathedral
 Nosferatu (1922),type,Movie
-Home-video edition of the italian version of Nosferatu (1922),cidoc:P102 has title,"""Nosferatu: il vampiro"""
-Nosferatu (1922),cidoc:p94 has createdtor,Friedrich W. Murnau
+Home-video edition of the italian version of Nosferatu (1922),cidoc:P102 has title,"Nosferatu: il vampiro"
+Nosferatu (1922),cidoc:p94 has creator,Friedrich W. Murnau
 Physical copy of Nosferatu (1922),printDate,2010
 Home-video edition of the italian version of Nosferatu (1922),publishedIn,Italy
 Home-video edition of the italian version of Nosferatu (1922),publishedBy,Ermitage
@@ -59,17 +59,17 @@ Home-video edition of the italian version of Nosferatu (1922),exemplifiedBy,Phys
 Nosferatu (1922),realizedThrough,Original version of Nosferatu (1922)
 Nosferatu (1922),hasCast,Cast
 Original version of Nosferatu (1922),hasLanguage,German Language
-Physical copy of Nosferatu (1922),heldBy,Biblioteca comunale di Castenaso 'Casa Bondi'
+Physical copy of Nosferatu (1922),heldBy,Biblioteca comunale di Castenaso "Casa Bondi"
 Home-video edition of the italian version of Nosferatu (1922),EAN,8019824918844
 Nosferatu (1922),hasGenre,Horror
 Friedrich W. Murnau,birthPlace,Bielefeld
 Friedrich W. Murnau,dateOfBirth,28/12/1888
 Friedrich W. Murnau,dateOfDeath,11/3/1931
-Nosferatu (1922),countryOfProduciton,Germany
+Nosferatu (1922),countryOfProduction,Germany
 Greta Schroeder,partOf,Cast
 Gustav von Wangenheim,partOf,Cast
 Max Schreck,partOf,Cast
-Nosferatu (1922),cidoc:P102 has title,"'Nosferatu, eine Symphonie des Grauens'"
+Nosferatu (1922),cidoc:P102 has title,"Nosferatu, eine Symphonie des Grauens"
 The National Gallery (Organization),basedIn,The National gallery building
 Ermitage,foundationYear,1988
 Ermitage,foundedBy,Founder
