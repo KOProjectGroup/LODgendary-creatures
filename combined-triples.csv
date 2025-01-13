@@ -1,0 +1,81 @@
+Original_Subject,Original_Predicate,Original_Object,Standardized_Subject,Standardized_Predicate,Standardized_Object
+S. George and the Dragon,rdf:type,Painting,edm:ProvidedCHO,rdf:type,dcterms:StillImage
+S. George and the Dragon,cidoc:P102 has title,"""Saint George and the Dragon""",edm:ProvidedCHO,dcterms:title,schema:name
+S. George and the Dragon,cidoc:p94 has created,Paolo Uccello,edm:ProvidedCHO,dcterms:creator,foaf:Person
+S. George and the Dragon,creationDate,1470,edm:ProvidedCHO,dcterms:created,1470
+S. George and the Dragon,heldBy,The National Gallery (Organization),edm:ProvidedCHO,edm:isHeldBy,org:Organization
+S. George and the Dragon,hasMedium,Oil on Canvas,edm:ProvidedCHO,dcterms:medium,schema:material
+S. George and the Dragon,hasDimensions,"55.6 × 74.2 cm",edm:ProvidedCHO,dcterms:extent,"55.6 × 74.2 cm"
+S. George and the Dragon,acquisitionDate,1959,edm:ProvidedCHO,dcterms:dateAccepted,1959
+S. George and the Dragon,hasInventoryNumber,NG6294,edm:ProvidedCHO,dcterms:identifier,NG6294
+Dragon,instanceOf,Concept,skos:Concept,rdf:type,skos:Concept
+S. George and the Dragon,depicts,Dragon,edm:ProvidedCHO,dcterms:subject,skos:Concept
+The National gallery building,locatedIn,"Trafalgar Square, London, WC2N 5DN, United Kingdom",org:Organization,schema:location,"Trafalgar Square, London, WC2N 5DN, United Kingdom"
+S. George and the Dragon,hasSubject,Legend of St. George and the Dragon,edm:ProvidedCHO,dcterms:subject,skos:Concept
+Paolo Uccello,VIAF,VIAF: 39395712,foaf:Person,dcterms:identifier,VIAF:39395712
+Paolo Uccello,birthDate,06/15/1397,foaf:Person,schema:birthDate,1397-06-15
+Paolo Uccello,dateOfDeath,12/10/1475,foaf:Person,schema:deathDate,1475-12-10
+Paolo Uccello,sameAs,Paolo Doni,foaf:Person,schema:alternateName,schema:name
+Paolo Uccello,basedIn,Florence,foaf:Person,schema:homeLocation,schema:Place
+The National Gallery (Organization),VIAF,VIAF:144868906,org:Organization,dcterms:identifier,VIAF:144868906
+The National Gallery (Organization),foundationDate,1824,org:Organization,schema:foundingDate,1824
+Hereford mappa mundi,rdf: type,Manuscript,edm:ProvidedCHO,rdf:type,dcterms:Text
+Hereford mappa mundi,cidoc:P102 has title,Descriptio Orosii de ornesta mundi sicut interius Ostenditur,edm:ProvidedCHO,dcterms:title,schema:name
+Hereford mappa mundi,Provenance,"Hereford (Wales, United Kingdom)",edm:ProvidedCHO,dcterms:provenance,schema:Place
+Hereford mappa mundi,creationDate,1300 c.a.,edm:ProvidedCHO,dcterms:created,1300
+Hereford mappa mundi,heldBy,Hereford Cathedral (organization),edm:ProvidedCHO,edm:isHeldBy,org:Organization
+Hereford mappa mundi,cidoc:p94 has created,Richard of Haldingham and Lafford,edm:ProvidedCHO,dcterms:creator,foaf:Person
+Hereford mappa mundi,hasProjection,"east orientation, centered on Jerusalem",edm:ProvidedCHO,dcterms:spatial,schema:GeoCoordinates
+Hereford mappa mundi,hasMedium,pen and ink on parchment,edm:ProvidedCHO,dcterms:medium,schema:material
+Hereford mappa mundi,knownAs,"""Hereford 'mappa mundi'""",edm:ProvidedCHO,schema:alternateName,schema:name
+Legendary Creatures,subclassOf,Concept,skos:Concept,rdfs:subClassOf,skos:Concept
+Hereford mappa mundi,hasSubject,Legendary Creatures,edm:ProvidedCHO,dcterms:subject,skos:Concept
+Paolo Uccello,rdf: type,Person,foaf:Person,rdf:type,schema:Person
+Paolo Uccello,occupation,Painter,foaf:Person,schema:jobTitle,schema:occupation
+The National Gallery (Organization),rdf: type,Art museum,org:Organization,rdf:type,schema:Museum
+The National Gallery (Organization),foundedBy,"Sir George Beaumont, 7th Baronet",org:Organization,schema:founder,foaf:Person
+The National gallery building,designedBy,William Wilkins,schema:Place,schema:architect,foaf:Person
+Hereford Cathedral (organization),foundationDate,696,org:Organization,schema:foundingDate,696
+Richard of Haldingham and Lafford,sameAs,Ricardus de Bello,foaf:Person,schema:alternateName,schema:name
+Richard of Haldingham and Lafford,VIAF,298515650,foaf:Person,dcterms:identifier,VIAF:298515650
+Richard of Haldingham and Lafford,birthDate,1276,foaf:Person,schema:birthDate,1276
+Richard of Haldingham and Lafford,dateOfDeath,1312,foaf:Person,schema:deathDate,1312
+Hereford Cathedral (organization),basedIn,Hereford Cathedral,org:Organization,schema:location,schema:Place
+Nosferatu (1922),type,Movie,schema:Movie,rdf:type,schema:CreativeWork
+Home-video edition of the italian version of Nosferatu (1922),cidoc:P102 has title,"""Nosferatu: il vampiro""",schema:VideoObject,dcterms:title,schema:name
+Nosferatu (1922),cidoc:p94 has createdtor,Friedrich W. Murnau,schema:Movie,dcterms:creator,foaf:Person
+Physical copy of Nosferatu (1922),printDate,2010,schema:VideoObject,dcterms:created,2010
+Home-video edition of the italian version of Nosferatu (1922),publishedIn,Italy,schema:VideoObject,schema:countryOfOrigin,schema:Country
+Home-video edition of the italian version of Nosferatu (1922),publishedBy,Ermitage,schema:VideoObject,schema:publisher,org:Organization
+Vampire,instanceOf,Concept,skos:Concept,rdf:type,skos:Concept
+Nosferatu (1922),hasSubject,Vampire,schema:Movie,dcterms:subject,skos:Concept
+Home-video edition of the italian version of Nosferatu (1922),hasFormat,DVD,schema:VideoObject,schema:encodingFormat,schema:MediaObject
+Home-video edition of the italian version of Nosferatu (1922),hasDuration,61 min.,schema:VideoObject,schema:duration,PT61M
+Physical copy of Nosferatu (1922),hasDimensions,19 cm,schema:VideoObject,schema:contentSize,"19 cm"
+Home-video edition of the italian version of Nosferatu (1922),publicationDate,2003,schema:VideoObject,dcterms:issued,2003
+Nosferatu (1922),realizedThrough,Italian version of Nosferatu (1922),schema:Movie,schema:workExample,schema:VideoObject
+Italian version of Nosferatu (1922),embodiedIn,Home-video edition of the italian version of Nosferatu (1922),schema:VideoObject,schema:exampleOfWork,schema:Movie
+Home-video edition of the italian version of Nosferatu (1922),exemplifiedBy,Physical copy of Nosferatu (1922),schema:VideoObject,schema:identifier,schema:PropertyValue
+Nosferatu (1922),realizedThrough,Original version of Nosferatu (1922),schema:Movie,schema:workExample,schema:VideoObject
+Nosferatu (1922),hasCast,Cast,schema:Movie,schema:actor,schema:Person
+Original version of Nosferatu (1922),hasLanguage,German Language,schema:VideoObject,schema:inLanguage,schema:Language
+Physical copy of Nosferatu (1922),heldBy,Biblioteca comunale di Castenaso 'Casa Bondi',schema:VideoObject,edm:isHeldBy,org:Organization
+Home-video edition of the italian version of Nosferatu (1922),EAN,8019824918844,schema:VideoObject,schema:productID,8019824918844
+Nosferatu (1922),hasGenre,Horror,schema:Movie,schema:genre,schema:Thing
+Friedrich W. Murnau,
+ce,Bielefeld,foaf:Person,schema:birthPlace,schema:Place
+Friedrich W. Murnau,dateOfBirth,28/12/1888,foaf:Person,schema:birthDate,1888-12-28
+Friedrich W. Murnau,dateOfDeath,11/3/1931,foaf:Person,schema:deathDate,1931-03-11
+Nosferatu (1922),countryOfProduciton,Germany,schema:Movie,schema:countryOfOrigin,schema:Country
+Greta Schroeder,partOf,Cast,schema:Person,schema:memberOf,schema:Organization
+Gustav von Wangenheim,partOf,Cast,schema:Person,schema:memberOf,schema:Organization
+Max Schreck,partOf,Cast,schema:Person,schema:memberOf,schema:Organization
+Nosferatu (1922),cidoc:P102 has title,"'Nosferatu, eine Symphonie des Grauens'",schema:Movie,dcterms:title,schema:name
+The National Gallery (Organization),basedIn,The National gallery building,org:Organization,schema:location,schema:Place
+Ermitage,foundationYear,1988,org:Organization,schema:foundingDate,1988
+Ermitage,foundedBy,Founder,org:Organization,schema:founder,schema:Organization
+Nicola Raffaele Di Matteo,constituentOf,Founder,foaf:Person,schema:memberOf,schema:Organization
+Gianni Salvioni,constituentOf,Founder,foaf:Person,schema:memberOf,schema:Organization
+Ermitage,basedIn,Paris,org:Organization,schema:location,schema:Place
+Nosferatu (1922),,1922,schema:Movie,schema:dateCreated,1922
+Nosferatu (1922),inception,1922,schema:Movie,schema:dateCreated,1922

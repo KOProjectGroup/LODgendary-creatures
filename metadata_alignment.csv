@@ -3,8 +3,7 @@ Creator;dcterms:creator;P170 (creator); E39 Actor;Statement of responsibility;<e
 Publisher;dce:publisher; P123 (publisher); ;Publisher;<edm:ProvidedCHO><dcterms:publisher>#</dcterms:publisher></edm:ProvidedCHO>;210 $b (Name of publisher);
 Editor; dc:contributor; P98 (editor); E29 Actor; Statement of responsibility;<edm:Agent rdf:about=""#""></edm:Agent>; 205 $f (statement of responsability relative to the edition);
 Commissioner;dc:contributor; P6241 (patron); E39 Actor;;<edm:Agent rdf:about="#"></edm:Agent>; 702 $a (role);
-Attribution;;;;;;;
-Institution;;;;;;;
+Organization;;;;;;;
 ;;;;;;;
 Creation date;dcterms:created; P571 (inception); E65 Creation; ;<edm:ProvidedCHO><dcterms:created>#</dcterms:created></edm:ProvidedCHO>; 100 $a;
 Publication date; dc:issued; P577 (publication date); E12 Production; Publication; ; 210 $d; 
