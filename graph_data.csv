@@ -1,0 +1,187 @@
+subject,Predicate,Object
+:PU_PAINTING,rdf:type,dbo:Painting
+:PU_PAINTING,hasAuthor,:TITLE2
+:PU_PAINTING,edm:isHeldBy,:ORGANIZATION
+:PU_PAINTING,dc:medium,:MEDIUM
+:PU_PAINTING,cidoc:P43 has dimension,:DIMENSION2
+:PU_PAINTING,cidoc:P16 was used for,:ACTIVITY
+:PU_PAINTING,dcterms:identifier,"""NG6294""^^xsd:string"
+:LEGENDARY_CREATURE,rdf:type,Legendary Creatures
+:PU_PAINTING,cidoc:P62 depicts,:LEGENDARY_CREATURE
+:BUILDING,schem:location,"""Trafalgar Square, London, WC2N 5DN, United Kingdom""^^xsd:string"
+:PU_PAINTING,dbo:basedOn,:TITLE2
+:TITLE2,dcterms:identifier,"""VIAF: 39395712""^^xsd:string"
+:TITLE2,schema:birthDate,"""1397/06/15""^^xsd:string"
+:TITLE2,schema:deathDate,"""1475/12/10""^^xsd:date"
+:TITLE2,owl:sameAs,:PERSON
+:TITLE2,edm:hasMet,:CITY2
+:ORGANIZATION,dcterms:identifier,"""VIAF:144868906""^^xsd:string"
+:ORGANIZATION,schema:foundingDate,"""1824""^^xsd:string"
+:H_MAP,hasType,Manuscript
+:H_MAP,hasTitle,:TITLE2
+:H_MAP,dcterms:provenance,:CITY
+:H_MAP,heldBy,:ORGANIZATION3
+:H_MAP,attributedTo,:PERSON
+:H_MAP,hasProjection,"east orientation, centered on Jerusalem"
+:H_MAP,schema:alternateName,"""Hereford mappa mundi""^^xsd:string"
+<blank>,owl:subclassOf,Legendary Creatures
+:H_MAP,P129 is about,<blank>
+:TITLE2,rdf:type,cidoc:E21 Person
+:TITLE2,cidoc:P106 is a type of,:OCCUPATION
+:ORGANIZATION,schema:founder,:FOUNDER3
+:BUILDING,schema:architect,:DESIGNER
+:PERSON,owl:sameAs,:PERSON
+:PERSON,dcterms:identifier,"""VIAF:298515650""^^xsd:string"
+:PERSON,schema:birthDate,""" 1276""^^xsd:date"
+:PERSON,schema:deathDate,"""1312""^^xsd:date"
+:ORGANIZATION3,basedIn,:BUILDING2
+:NOS,rdf:type,schema:Movie
+:expression4,cidoc:P102 has title,:TITLE
+:NOS,fo:hasDirector,:PERSON3
+:ITEM,dc:issued,"""2010""^^xsd:date"
+:MANIFESTATION2,publishedIn,:COUNTRY
+:MANIFESTATION2,schema:publisher,:PUBLISHER
+:LEGENDARY_CREATURE,rdf:type,Legendary Creatures
+:NOS,cidoc:P129 is about,:LEGENDARY_CREATURE
+:MANIFESTATION2,dc:format,"""video/dvd""^^xsd:string"
+:MANIFESTATION2,schema:duration,:DURATION1
+:ITEM,cidoc:P43 has dimension,:DIMENSION1
+:MANIFESTATION2,dc:issued,"""2003""^^xsd:date"
+:expression4,lrmoo:R4,:MANIFESTATION2
+:MANIFESTATION2,lrmoo:R7,:ITEM
+:NOS,lrmoo:R3,:EXPRESSION3
+:NOS,fo:hasCast,:GROUP1
+:EXPRESSION3,schema:inLanguage,":LANGUAGE
+"
+:ITEM,edm:isHeldBy,:ORGANIZATION3
+:MANIFESTATION2,schema:productID,"""8019824918844""^^xsd:string"
+:NOS,fo:hasGenre,:GENRE
+:PERSON3,schema:birthPlace,:CITY
+:PERSON3,schema:birthDate,""" 1888/12/28""^^xsd:date"
+:PERSON3,schema:deathDate,"""1931/11/3""^^xsd:date"
+:NOS,countryOfProduction,:COUNTRY
+:PERSON3,foaf:member,:GROUP1
+:PERSON3,foaf:member,:GROUP1
+:PERSON3,foaf:member,:GROUP1
+:ORGANIZATION,basedIn,:BUILDING
+:PUBLISHER,schema:founder,:COLLECTIVE_AGENT
+:FOUNDER1,foaf:member,:COLLECTIVE_AGENT
+:FOUNDER2,foaf:member,:COLLECTIVE_AGENT
+:PUBLISHER,basedIn,:CITY
+:NOS,rdf:type,lrmoo:F1 Work
+:NOS,lrmoo:R3,:expression4
+:EXPRESSION3,cidoc:P102 has title,:TITLE2
+:TITLE2,rdf:type,cidoc:E35 Title
+:TITLE2,rdfs:label,"""Nosferatu: eine Symphonie des Grauens""^^xsd:string"
+:PU_PAINTING,cidoc:P102 has title,:TITLE2
+:TITLE2,rdf:type,cidoc:E35 Title
+:TITLE2,rdfs:label,"""Saint George and the Dragon""^^xsd:string"
+":LANGUAGE
+",rdf:type,schema:Language
+:PERSON3,dcterms:identifier,"""VIAF:12312928""^^xsd:string"
+":LANGUAGE
+",foaf:name,"""German""^^xsd:string"
+:LEGENDARY_CREATURE,rdf:label,"""Dragon""^^xsd:string"
+:TITLE2,rdf:type,cidoc:E35 Title
+:TITLE2,rdfs:label,"""Descriptio Orosii de ornesta mundi sicut interius Ostenditur""^^xsd:string"
+:COUNTRY,foaf:name,"""Germany""^^xsd:string"
+:DIMENSION1,rdf:type,cidoc:E54 Dimension
+:DIMENSION1,cidco:P90 has value,"""19""^^xsd:integer"
+:DIMENSION1,cidcoc:P91 has unit,"""cm""^^xsd:string"
+:TITLE,rdf:label,"""""Nosferatu: il vampiro""""^^xsd:string"
+:CITY,foaf:name,"""Paris""^^xsd:string"
+:FOUNDER2,foaf:name,"""Gianni Salvioni""^^xsd:string"
+:FOUNDER1,foaf:name,"""Nicola Raffaele Di Matteo ""^^xsd:string"
+:DESIGNER,foaf:name,"""William Wilkins""^^xsd:string"
+:FOUNDER3,foaf:name,"""Sir George Beaumont, 7th Baronet""^^xsd:string"
+:BUILDING,rdf:label,"""The National Gallery""^^xsd:string"
+:CITY2,foaf:name,"""Florence""^^xsd:string"
+:PERSON,foaf:name,"""Paolo Doni""^^xsd:string"
+:PERSON,rdf:type,cidoc:E21 Person
+:TITLE2,rdf:type,lrmoo:F1 Work
+:TITLE2,cidoc:P1 is identified by,:APPELLATION
+:APPELLATION,rdfs:label,"""Legend of St. George and the Dragon""^^xsd:string"
+:PUBLISHER,schema:foundingDate,"""1988""^^xsd:date"
+:COUNTRY,foaf:name,"""Italia""^^xsd:string"
+:DURATION1,rdf:label,"""61min""^^xsd:string"
+:DURATION1,rdf:type,schema:Duration
+:COUNTRY,rdf:type,schema:Country
+:ORGANIZATION,foaf:name,"""The National Gallery""^^xsd:string"
+:DESIGNER,rdf:type,edm:Agent
+:CITY,foaf:name,"""Bielefeld""^^xsd:string"
+:BUILDING2,cidoc:P1 is identified by,:APPELLATION
+:APPELLATION,rdfs:label,"""Hereford Cathedral""^^xsd:string"
+:PERSON3,foaf:name,"""Max Schreck ""^^xsd:string"
+:PERSON3,foaf:name,"""Gustav von Wangenheim""^^xsd:string"
+:PERSON3,foaf:name,"""Greta Schroeder""^^xsd:string"
+:PUBLISHER,foaf:name,"""Ermitage""^^xsd:string"
+:COLLECTIVE_AGENT,rdf:type,lrmoo:F55 Collective Agent
+:FOUNDER2,rdf:type,cidoc:E21 Person
+:FOUNDER1,rdf:type,cidoc:E21 Person
+:PERSON3,rdf:type,cidoc:E21 Person
+:ORGANIZATION3,cidoc:P1 is identified by,:APPELLATION
+:APPELLATION,rdfs:label,"""Biblioteca comunale di Castenaso 'Casa Bondi'""^^xsd:string"
+:CITY,rdf:type,schema:Place
+:CITY,rdf:type,schema:Place
+:expression4,rdf:type,lrmoo:F2 Expression
+:MANIFESTATION2,rdf:type,lrmoo:F3 Manifestation
+:ITEM,rdf:type,lrmoo:F5 Item
+:EXPRESSION3,rdf:type,lrmoo:F2 Expression
+:COUNTRY,rdf:type,schema:Country
+:FOUNDER3,rdf:type,cidoc:E21 Person
+:ORGANIZATION,rdf:type,cidoc:E39 Actor
+:LEGENDARY_CREATURE,rdf:type,cidoc:E28 Conceptual Object
+:ORGANIZATION3,rdf:type,cidoc:E39 Actor
+:APPELLATION,rdf:type,cidoc:E41 Appllation
+:TITLE,rdf:type,cidoc:E35 Title
+:GENRE,rdf:label,"""Horror""^^xsd:string"
+:GENRE,rdf:type,fo:Genre
+:MEDIUM,rdf:label,"""Oil on Canvas""^^xsd:string"
+:BUILDING,rdf:type,dbo:Building
+:BUILDING2,rdf:type,dbo:Building
+:DIMENSION2,rdf:type,cidoc:E54 Dimension
+:DIMENSION2,cidco:P90 has value,"""55.6 × 74.2""^^xsd:float"
+:DIMENSION2,cidcoc:P91 has unit,"""cm""^^xsd:string"
+:GROUP1,rdf:type,cidoc:E74 Group
+:PU_PAINTING,cidoc:P94 was created by ,:CREATION1
+:CREATION1,rdf:type,cidoc:E65 Creation
+:CREATION1,cidoc: P4 has time-span,:TIMESPAN1
+:TIMESPAN1,rdf:type,cidoc:E52 Time-Span
+:TIMESPAN1,P81 ongoing throughout,:TIMEPRIMITIVE1
+:TIMEPRIMITIVE1,rdf:type,cidoc:E61 Time Primitive
+:TIMEPRIMITIVE1,rdfs:label,"""1470""^^xsd:date"
+:NOS,cidoc:P94 was created by ,:CREATION1
+:CREATION1,rdf:type,cidoc:E65 Creation
+:CREATION1,cidoc: P4 has time-span,:TIMESPAN1
+:TIMESPAN1,rdf:type,cidoc:E52 Time-Span
+:TIMESPAN1,P81 ongoing throughout,:TIMEPRIMITIVE1
+:TIMEPRIMITIVE1,rdf:type,cidoc:E61 Time Primitive
+:TIMEPRIMITIVE1,rdfs:label,"""1922""^^xsd:date"
+:CITY2,rdf:type,schema:Place
+:OCCUPATION,rdf:label,"""Painter""^^xsd:string"
+:OCCUPATION,rdf:type,cidoc:E55 Type
+:ACTIVITY,cidcoc: P20 had specific purpose,:ACQUISITION
+:ACTIVITY,rdf:type,cidoc:E7 Activity
+:ACQUISITION,rdf:type,cidoc:E8 Acquisition
+:ACQUISITION,cidoc: P4 has time-span,:TIMESPAN1
+:TIMESPAN1,rdf:type,cidoc:E52 Time-Span
+:TIMESPAN1,P81 ongoing throughout,:TIMEPRIMITIVE1
+:TIMEPRIMITIVE1,rdf:type,cidoc:E61 Time Primitive
+:TIMEPRIMITIVE1,rdfs:label,"""1959""^^xsd:date"
+:ORGANIZATION3,schema:foundingDate,"""696""^^xsd:date"
+:H_MAP,cidoc:P94 was created by ,:CREATION1
+:CREATION1,rdf:type,cidoc:E65 Creation
+:CREATION1,cidoc: P4 has time-span,:TIMESPAN1
+:TIMESPAN1,rdf:type,cidoc:E52 Time-Span
+:TIMESPAN1,P81 ongoing throughout,:TIMEPRIMITIVE1
+:TIMEPRIMITIVE1,rdf:type,cidoc:E61 Time Primitive
+:TIMEPRIMITIVE1,rdfs:label,"""1300""^^xsd:date"
+:CITY,rdf:label,"""Hereford (Wales, United Kingdom)""^^xsd:string"
+:CITY,rdf:type,schema:Place
+:H_MAP,dc:medium,:MEDIUM
+:MEDIUM,rdf:label,"""pen and ink on parchment""^^xsd:string"
+:PERSON3,foaf:name,"""Friedrich W. Murnau""^^xsd:string"
+:PERSON,foaf:name,"""Richard of Haldingham and Lafford""^^xsd:string"
+:PERSON,foaf:name,"""Ricardus de Bello""^^xsd:string"
+:PERSON,dcterms:identifier,"""VIAF:298515650""^^xsd:string"
+:PERSON,dcterms:identifier,"""VIAF: 39395712""^^xsd:string"
