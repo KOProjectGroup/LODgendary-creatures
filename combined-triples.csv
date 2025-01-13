@@ -62,8 +62,7 @@ Original version of Nosferatu (1922),hasLanguage,German Language,schema:VideoObj
 Physical copy of Nosferatu (1922),heldBy,Biblioteca comunale di Castenaso 'Casa Bondi',schema:VideoObject,edm:isHeldBy,org:Organization
 Home-video edition of the italian version of Nosferatu (1922),EAN,8019824918844,schema:VideoObject,schema:productID,8019824918844
 Nosferatu (1922),hasGenre,Horror,schema:Movie,schema:genre,schema:Thing
-Friedrich W. Murnau,
-ce,Bielefeld,foaf:Person,schema:birthPlace,schema:Place
+Friedrich W. Murnau,birthPlace,Bielefeld,foaf:Person,schema:birthPlace,schema:Place
 Friedrich W. Murnau,dateOfBirth,28/12/1888,foaf:Person,schema:birthDate,1888-12-28
 Friedrich W. Murnau,dateOfDeath,11/3/1931,foaf:Person,schema:deathDate,1931-03-11
 Nosferatu (1922),countryOfProduciton,Germany,schema:Movie,schema:countryOfOrigin,schema:Country
