@@ -7,19 +7,81 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title></title>
+                <title>Monstrorum Historia. Excerpt from the Chapter 3, section 1: SYNONIMA ET ETYMUM - DENOMINATA</title>
+                <author>Aldrovandi, Ulisse</author>
             </titleStmt>
             <publicationStmt>
-                <p></p>
+                <publisher>University of Bologna</publisher>
+                <pubPlace>Bologna</pubPlace>
+                <date>2024</date>
+                <idno type="DOI">10.xxxx</idno>
+                <availability>
+                    <p>Open access</p>
+                </availability>
             </publicationStmt>
             <sourceDesc>
-                <p></p>
+                <bibl>
+                    <title>Monstrorum Historia</title>
+                    <author>Aldrovandi, Ulisse</author>
+                    <date>2021</date>
+                    <publisher>Moscabianca Edizioni</publisher>
+                    <pubPlace>Pescia, Italy</pubPlace>
+                    <editor>Lorenzo Peka</editor>
+                    <idno type="ISBN">978-88-319-8229-0</idno>
+                </bibl>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="IS" sameAs="https://viaf.org/viaf/803890">
+                    <persName xml:lang="en">Isidore of Seville</persName>
+                    <birth when="0560" />
+                    <death when="0636" /> 
+                    </person>
+                    <person xml:id="MC" sameAs="https://www.wikidata.org/wiki/Q1541">
+                        <persName xml:lang="en">Marcus Tullius Cicero</persName>
+                        <persName xml:lang="it">Marco Tullio Cicerone</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+        </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p></p>
+            <head rend="align(center) italic">Definizioni ed etimologia</head>
+            <head rend="align(center) case(allcaps)">SYNONIMA ET ETYMUM - DENOMINATA</head>
+            <p>Il mostro, secondo il parere di <persName ref="#IS">Isidoro</persName>, è così chiamato perché, 'mostrando'
+                un evento futuro, avverte gli uomini<note place="foot" n="231"><persName ref="#IS">Isidoro</persName>, 
+                Etymologiae, Xl.3 .3 .</note>: molti dunque, seguendo questa logica,
+                lo chiamarono <foreign xml:lang="la">monstrum</foreign> quasi a dire <foreign xml:lang="la">monestrum</foreign><note place="foot" n="232">Ricondotto al verbo latino <foreign xml:lang="la">moneo</foreign>, 'ammonire', 'avvertire'.</note>, 
+                perché come un monito preannuncia qualche arcana vendetta divina; oppure perché viene osservato dalle persone 
+                come qualcosa di singolare, e per lo stupore viene mostrato, cioè indicato con il dito.
+                Quest'ultima etimologia è più condivisibile; la prima, riportata da <persName ref="#IS">Isidoro</persName>, non è affatto
+                adeguata: in primo luogo poiché nascono molti mostri in molte regioni senza che da essi
+                si possa trarre alcun presagio. Possiamo sì riconoscere che, talvolta, Dio altissimo possa,
+                per mezzo di essi, anticipare agli uomini una calamità futura; nondimeno, nella maggior
+                parte dei casi, Egli non si serve di mostri propriamente detti: infatti nelle Sacre Scritture
+                non abbiamo letto di alcun mostro di questo genere creato da Dio, malgrado Egli abbia
+                operato molti altri prodigi. A ciò si aggiunga che, come affermano gli autori, tali mostri
+                nascono nella desolazione dell'<placeName ref="https://www.wikidata.org/wiki/Q15">Africa</placeName>, dove non vi sono uomini che possano cogliere un
+                qualche monito. Da un diverso punto di vista, da altri vengono definiti mostri i prodigi
+                del mondo fisico, che avvengono ogniqualvolta la natura operi, nella formazione delle
+                creature, in maniera non conforme alla consueta norma.</p>
+            <p>Altri chiamarono il mostro <foreign xml:lang="la">ostentum</foreign>, perché questo termine abbraccia molte altre
+                cose, oltre al mostro: <foreign xml:lang="la">ostentum</foreign>, infatti, è ciò che nasce al di fuori dell'ordine di natura,
+                come un bambino con tre piedi, o con una sola mano; insomma comprende tutti quegli
+                esseri prodigiosi che in greco sono chiamati <foreign xml:lang="grc">phàsmata</foreign>
+                <note place="foot" n="233">Dal verbo <foreign xml:lang="grc">phàino</foreign>, 'mostrare', 
+                assimilabile al latino <foreign xml:lang="la">ostendo</foreign></note>. 
+                Diversamente, da altri il mostro è detto anche <foreign xml:lang="la">portentum</foreign>, perché, riprendendo la 
+                prima etimologia, <foreign xml:lang="la">portendit</foreign>, cioè 'presagisce' un evento futuro. Da taluni il 
+                mostro è indicato con il termine <foreign xml:lang="la">prodigium</foreign>, quasi
+                a dire <foreign xml:lang="la">porrodigium</foreign>, perché <foreign xml:lang="la">porro dicit</foreign>, 'dice innanzi' , cioè preannuncia un accadimento
+                venturo, dedotto attraverso l'interpretazione degli uomini. Tuttavia, i predetti termini
+                vengono assai spesso confusi, e l'uno viene usato liberamente al posto dell'altro dagli
+                autori: così <persName ref="@MC">Cicerone</persName>, nel primo libro del De divinatione, scriveva che monstra, ostenta, portenta e 
+                prodigia sono così chiamati in ragione del fatto che mostrano, ostentano, presagiscono e predicono.</p>
         </body>
     </text>
 </TEI>
