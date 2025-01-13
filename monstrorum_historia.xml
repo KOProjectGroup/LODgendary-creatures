@@ -43,6 +43,22 @@
                         <persName xml:lang="en">Marcus Tullius Cicero</persName>
                         <persName xml:lang="it">Marco Tullio Cicerone</persName>
                     </person>
+                    <person xml:id="AR" sameAs="https://viaf.org/en/viaf/7524651">
+                        <persName xml:lang="en">Aristotle</persName>
+                        <persName xml:lang="it">Aristotele</persName>
+                    </person>
+                    <person xml:id="TG" sameAs="https://viaf.org/en/viaf/100189101">
+                        <persName xml:lang="en">Theodorus Gaza</persName>
+                        <persName xml:lang="it">Teodoro Gaza</persName>
+                    </person>
+                    <person xml:id="AN" sameAs="https://viaf.org/en/viaf/73879631">
+                        <persName xml:lang="en">Agostino Nifo</persName>
+                        <persName xml:lang="it">Agostino Nifo</persName>
+                    </person>
+                    <person xml:id="AP" sameAs="https://viaf.org/en/viaf/262974255">
+                        <persName xml:lang="en">Apollonius Rhodius</persName>
+                        <persName xml:lang="it">Apollonio Rodio</persName>
+                    </person>
                 </listPerson>
             </particDesc>
         </profileDesc>
@@ -77,11 +93,35 @@
                 Diversamente, da altri il mostro è detto anche <foreign xml:lang="la">portentum</foreign>, perché, riprendendo la 
                 prima etimologia, <foreign xml:lang="la">portendit</foreign>, cioè 'presagisce' un evento futuro. Da taluni il 
                 mostro è indicato con il termine <foreign xml:lang="la">prodigium</foreign>, quasi
-                a dire <foreign xml:lang="la">porrodigium</foreign>, perché <foreign xml:lang="la">porro dicit</foreign>, 'dice innanzi' , cioè preannuncia un accadimento
+                a dire <foreign xml:lang="la">porrodigium</foreign>, perché <foreign xml:lang="la">porro dicit</foreign>, 'dice innanzi', cioè preannuncia un accadimento
                 venturo, dedotto attraverso l'interpretazione degli uomini. Tuttavia, i predetti termini
                 vengono assai spesso confusi, e l'uno viene usato liberamente al posto dell'altro dagli
-                autori: così <persName ref="@MC">Cicerone</persName>, nel primo libro del De divinatione, scriveva che monstra, ostenta, portenta e 
-                prodigia sono così chiamati in ragione del fatto che mostrano, ostentano, presagiscono e predicono.</p>
+                autori: così <persName ref="#MC">Cicerone</persName>, nel primo libro del De divinatione, scriveva che <foreign xml:lang="la">monstra</foreign>, <foreign xml:lang="la">ostenta</foreign>, <foreign xml:lang="la">portenta</foreign> e 
+                <foreign xml:lang="la">prodigia</foreign> sono così chiamati in ragione del fatto che mostrano, ostentano, presagiscono e predicono<note place="foot" n="234"><persName ref="#MC">CICERONE</persName>, De divinatione, I.42.93.</note>.</p>
+                <p>Se spostiamo l'attenzione sulla lingua greca, ci imbattiamo nella medesima promiscuità di termini. Infatti <persName ref="#AR">Aristotele</persName>
+                    parlò di <foreign xml:lang="grc">ta tèrata amartèmata tes physeos</foreign>, cioè 'i
+                    mostri errori della natura'<note place="foot" n="235"><persName ref="#AR">ARISTOTELE</persName>, De generatione animalium, IV.4 (769b-770b).</note>; 
+                    dove <persName ref="#TG">Teodoro Gaza</persName><note place="foot" n="236">Umanista bizantino ( 14 15 ca.-1475 ), 
+                    traduttore latino di <persName ref="#AR">Aristotele</persName>.</note> ha tradotto con <foreign xml:lang="la">portenta</foreign>, 
+                    probabilmente non senza ragione, dal momento che <foreign xml:lang="grc">tèras</foreign>, cioè 'mostro', 
+                    viene da <foreign xml:lang="grc">to èiro</foreign>,
+                    'messaggero' , quasi che il mostro sia un segno del quale Dio altissimo si serva per
+                    annunciare qualcosa: tuttavia il <persName ref="#AN">Nifo</persName> nei suoi commentari sostiene che i 
+                    <foreign xml:lang="la">portenta</foreign> non
+                    rientrano in questo genere. Invece <foreign xml:lang="grc">phàsma</foreign>, a parere dello stesso <persName ref="#AR">Aristotele</persName>, nei 
+                    Meteorologica , è il nome che spetta ai mostri celesti, cioè i portenti e i prodigi; ciò malgrado,
+                    alcuni autori si sono serviti pure di questo vocabolo al posto di <foreign xml:lang="la">monstrum</foreign>. In greco
+                    anche <foreign xml:lang="grc">pèlor</foreign> può certo indicare il mostro, ma per lo più quando questo si presenta con
+                    dimensioni enormi, eccezionali, perché il nome viene da <foreign xml:lang="grc">pèlas òrous on to megèthei</foreign>,
+                    cioè 'così grande da eguagliare quasi una montagna'. Per tale motivo <persName ref="#AP">Apollonio</persName>, in
+                    un passo degli Argonautica , ha usato questo vocabolo per riferirsi ai GigantF37; il
+                    medesimo autore, però, in un passo successivo ha impiegato la stessa parola anche
+                    per descrivere un parto mostruoso238• Altri, fra i Greci, definirono i mostri apophòlia ,
+                    usando l'aggettivo apophòlios per intendere una cosa mostruosa o prodigiosa, benché,
+                    in generale, esso denoti qualcosa di vano o inutile: per esempio, in senso proprio, si
+                    dicono apophòlia le uova di uccello che non siano fecondate; tuttavia questo vocabolo
+                    comprende anche i parti degeneri.
+                    </p>
         </body>
     </text>
 </TEI>
