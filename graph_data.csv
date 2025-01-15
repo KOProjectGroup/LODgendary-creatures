@@ -260,7 +260,7 @@ subject,Predicate,Object
 :ID18,rdfs:label,"""EAN 6379137151508""^^xsd:string"
 :MANIFESTATION18,dcterms:issued,"""2018""^^xsd:date"
 :EXPRESSION18,cidoc:P72 has language,:LANGUAGE18
-:LANGUAGE18,predicate,cidoc:E56 Language
+:LANGUAGE18,rdf:type,cidoc:E56 Language
 :LANGUAGE18,rdfs:label,"""Ita""^^xsd:string"
 :MANIFESTATION18,dcterms:coverage,:COUNTRY18
 :COUNTRY18,schema:name,"""Italy""^^xsd:string"
