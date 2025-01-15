@@ -1,0 +1,6 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dcterms1: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+
+<www.example.com:PU_PAINTING> a dbo:Painting ;
+    
