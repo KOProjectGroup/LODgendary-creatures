@@ -3,7 +3,7 @@ import pandas as pd
 
 
 # Path to our project's repo
-path = "www.example.com"
+path = "https://w3id.org/LODgendaryCreatures/"
 
 # Creating namespace objects for the standards employed in the KO phase
 aat = Namespace("http://vocab.getty.edu/aat/")
@@ -22,8 +22,9 @@ geo = Namespace("http://www.opengis.net/ont/geosparql#")
 skos = Namespace("http://www.w3.org/2004/02/skos/core#")
 wikidata = Namespace("http://www.wikidata.org/entity/")
 foaf = Namespace("http://xmlns.com/foaf/0.1/")
+viaf = Namespace("http://viaf.org/viaf/")
 
-legcre = Namespace(path) # defining our own Namespace
+lodc = Namespace(path) # defining our own Namespace
 
 # Conversion dict mapping abbreviations in the CSV to the respective namespace
 abbreviations = {
@@ -42,8 +43,9 @@ abbreviations = {
     "geo":geo,
     "skos":skos,
     "wikidata":wikidata,
-    "legcre":legcre,
-    "foaf":foaf
+    "lodc":lodc,
+    "foaf":foaf,
+    "viaf": viaf
     }
 
 xsd_table = {
@@ -59,12 +61,12 @@ for key, value in abbreviations.items():
     graph.bind(key, value) # binding abbreviations to respective namespace within the graph
 
 # Function populating the graph with the CSV data
-def RDFtriple_to_graph(s:pd.Series, ) -> None:
+def triple_to_RDFgraph(s:pd.Series, ) -> None:
     triple = []
     # Subject
     for item in s.items():
         if item.startswith(":"):
-            triple.append(URIRef(legcre + item))
+            triple.append(URIRef(lodc + item))
         if "^^" in item:
             lit_components = item.split("^^")
             value = lit_components[0]
@@ -87,7 +89,7 @@ for _, row in data.iterrows():
         if item == "Legendary_Creatures" or item == "predicate":
             triple.append(Literal(" "))
         elif item.startswith(":"):
-            triple.append(URIRef(legcre + item))
+            triple.append(URIRef(lodc + item))
         elif "^^" in item:
             lit_components = item.split("^^")
             value = lit_components[0]
