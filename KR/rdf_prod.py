@@ -26,7 +26,7 @@ viaf = Namespace("http://viaf.org/viaf/")
 
 lodc = Namespace(path) # defining our own Namespace
 
-# Conversion dict mapping abbreviations in the CSV to the respective namespace
+# Conversion dict, mapping abbreviations in the CSV to respective namespaces
 abbreviations = {
     "aat":aat,
     "fo":fo,
@@ -45,7 +45,7 @@ abbreviations = {
     "wikidata":wikidata,
     "lodc":lodc,
     "foaf":foaf,
-    "viaf": viaf
+    "VIAF": viaf
     }
 
 xsd_table = {
@@ -86,9 +86,7 @@ for _, row in data.iterrows():
     triple = []
     for _, item in row.items():
         item = item.replace(" ", "_")
-        if item == "Legendary_Creatures" or item == "predicate":
-            triple.append(Literal(" "))
-        elif item.startswith(":"):
+        if item.startswith(":"):
             triple.append(URIRef(lodc + item))
         elif "^^" in item:
             lit_components = item.split("^^")
