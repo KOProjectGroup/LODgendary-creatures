@@ -4,8 +4,9 @@ import pandas as pd
 GRAPHML_NS = {'graphml': 'http://graphml.graphdrawing.org/xmlns',
               'y': 'http://www.yworks.com/xml/graphml'}
 
+path = "KO/05-conceptual_model.graphml"
 # Parse the document
-doc = etree.parse("conceptual_model.graphml")
+doc = etree.parse(path)
 
 # Use the namespace in xpath
 edges = doc.xpath(".//graphml:edge", namespaces=GRAPHML_NS) # getting list of all edges in the XML with xpath query 
@@ -30,16 +31,16 @@ for edge in edges:
     s_list = source.findall(".//y:NodeLabel", namespaces=GRAPHML_NS) 
     o_list = target.findall(".//y:NodeLabel", namespaces=GRAPHML_NS)
     for s_el, o_el in zip(s_list, o_list): # looping on the two lists
-        sub_content = s_el.text
-        obj_content = o_el.text
+        sub_content = s_el.text.strip()
+        obj_content = o_el.text.strip()
         # checking if the elements are empty or whitespace strings
-        s = sub_content if sub_content.strip() else None
-        o = obj_content if obj_content.strip() else None
+        s = sub_content if sub_content else None
+        o = obj_content if obj_content else None
     triples.append({
-        "subject":s,
+        "Subject":s,
         "Predicate":p,
         "Object":o
-    })
+    }) # appending the a triple dict to the list
 
 df = pd.DataFrame(triples)
-df.to_csv(path_or_buf="graph_data.csv", index=False)
+df.to_csv(path_or_buf="KO/graph_data.csv", index=False)

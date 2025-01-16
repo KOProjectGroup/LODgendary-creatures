@@ -1,9 +1,10 @@
 from rdflib import Graph, Namespace, URIRef, Literal, XSD
 import pandas as pd
+import re
 
 
-# Path to our project's repo
-path = "https://w3id.org/LODgendaryCreatures/"
+# Custom uri for our project
+project_uri = "https://w3id.org/LODgendaryCreatures/"
 
 # Creating namespace objects for the standards employed in the KO phase
 aat = Namespace("http://vocab.getty.edu/aat/")
@@ -23,10 +24,11 @@ skos = Namespace("http://www.w3.org/2004/02/skos/core#")
 wikidata = Namespace("http://www.wikidata.org/entity/")
 foaf = Namespace("http://xmlns.com/foaf/0.1/")
 viaf = Namespace("http://viaf.org/viaf/")
+wkm = Namespace("https://commons.wikimedia.org/wiki/")
 
-lodc = Namespace(path) # defining our own Namespace
+lodc = Namespace(project_uri) # defining our own Namespace
 
-# Conversion dict mapping abbreviations in the CSV to the respective namespace
+# Conversion dict, mapping abbreviations in the CSV to respective namespaces
 abbreviations = {
     "aat":aat,
     "fo":fo,
@@ -45,14 +47,14 @@ abbreviations = {
     "wikidata":wikidata,
     "lodc":lodc,
     "foaf":foaf,
-    "viaf": viaf
+    "VIAF":viaf,
+    "wkm":wkm
     }
 
-xsd_table = {
+datatypes_table = {
     "xsd:string":XSD.string,
     "xsd:date":XSD.date,
-    "xsd:integer":XSD.integer,
-    "xsd:float":XSD.float
+    "xsd:integer":XSD.integer
     }
 
 # Graph we will populate with the data in the CSV
@@ -60,46 +62,45 @@ graph = Graph()
 for key, value in abbreviations.items():
     graph.bind(key, value) # binding abbreviations to respective namespace within the graph
 
-# Function populating the graph with the CSV data
-def triple_to_RDFgraph(s:pd.Series, ) -> None:
-    triple = []
-    # Subject
-    for item in s.items():
-        if item.startswith(":"):
-            triple.append(URIRef(lodc + item))
-        if "^^" in item:
-            lit_components = item.split("^^")
-            value = lit_components[0]
-            datatype = xsd_table[lit_components[1]]
-            triple.append(Literal(value, datatype=datatype))
-        else:
-            components = item.split(":")
-            uri = URIRef(abbreviations[components[0]] + components[1])
-            triple.append(uri)
-    graph.add(tuple(triple))
-
-
-
 # Processing data using Pandas
-data = pd.read_csv("graph_data.csv")
-for _, row in data.iterrows():
-    triple = []
-    for _, item in row.items():
-        item = item.replace(" ", "_")
-        if item == "Legendary_Creatures" or item == "predicate":
-            triple.append(Literal(" "))
-        elif item.startswith(":"):
-            triple.append(URIRef(lodc + item))
-        elif "^^" in item:
-            lit_components = item.split("^^")
-            value = lit_components[0]
-            datatype = xsd_table[lit_components[1]]
-            triple.append(Literal(value, datatype=datatype))
-        else:
-            components = item.split(":")
-            uri = URIRef(abbreviations[components[0]] + components[1])
-            triple.append(uri)
-    graph.add(tuple(triple))
+data = pd.read_csv("KO/graph_data.csv")
+data = data.map(lambda x: x.replace(" ", "_").replace("-", "_"))
 
-graph.serialize(destination="items.ttl", format="turtle")
+for _, row in data.iterrows():
+
+    s_data = row["Subject"]
+    p_data = row["Predicate"]
+    o_data = row["Object"]
+
+    print(s_data, p_data, o_data)
+
+    # Subject
+    if s_data.startswith(":"):
+        s_data = s_data.strip(":")
+        prefix = re.sub(r"\d+", "", s_data)
+        s = URIRef(lodc + prefix.lower() + "/" + s_data)
+    else:
+        s_components = s_data.split(":")
+        s = URIRef(abbreviations[s_components[0]] + s_components[1])
+
+    # Predicate
+    p_components = p_data.split(":")
+    p = URIRef(abbreviations[p_components[0]] + p_components[1])
+
+    # Object/Literal
+    if "^^" in o_data:
+        lit_components = o_data.split("^^")
+        value = lit_components[0].strip('"')
+        datatype = datatypes_table[lit_components[1]]
+        o = Literal(value, datatype=datatype)
+    elif o_data.startswith(":"):
+        o_data = s_data.strip(":")
+        prefix = re.sub(r"\d+", "", o_data)
+        o = URIRef(lodc + prefix.lower() + "/" + o_data)
+    else:
+        o_components = o_data.replace(" ", "_").split(":")
+        o = URIRef(abbreviations[o_components[0]] + o_components[1])
     
+    graph.add((s, p, o))
+
+graph.serialize(destination="KR/items.ttl", format="turtle")
