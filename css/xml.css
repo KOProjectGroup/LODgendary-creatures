@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9eedd; /* Even less warm color */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto; /* Added margin top and bottom */
+    overflow: hidden;
+    background: #fefcf9; /* Even less warm color for the container */
+    padding: 30px; /* Increased padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1, .header h2, .header h3 {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.header h1 {
+    font-size: 2rem; /* Changed from em to rem */
+    color: #333;
+}
+
+.header h2 {
+    font-size: 1.5rem; /* Changed from em to rem */
+    color: #666;
+}
+
+.header h3 {
+    font-size: 1.2rem; /* Changed from em to rem */
+    color: #999;
+}
+
+.source ul {
+    list-style: none;
+    padding: 0;
+}
+
+.source ul li {
+    padding: 2px 0; /* Reduced padding to make it more compact */
+}
+
+.people ul {
+    list-style: none;
+    padding: 0;
+}
+
+.people ul li {
+    padding: 2px 0; /* Reduced padding to make it more compact */
+}
+
+.content {
+    text-align: center; /* Center the content section */
+    font-family: 'Times New Roman', Times, serif; /* Serif font for content */
+    font-size: 1.1rem; /* Changed from em to rem */
+}
+
+.content h2 {
+    margin: 20px 0;
+    color: #333;
+}
+
+.content h5 {
+    margin: 20px 0;
+    color: #333;
+    font-size: 1.3rem; /* Changed from em to rem */
+    font-weight: bold;
+    text-align: left; /* Align to the left */
+}
+
+.content h4 {
+    font-family: Arial, sans-serif; /* Keep h4 with sans-serif font */
+}
+
+.content h4, .source h4, .people h4 {
+    font-size: 1.5rem; /* Changed from em to rem */
+    color: #444;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: left; /* Align to the left */
+}
+
+.content p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.content figure {
+    float: left;
+    width: 40%; /* Reduced from 60% to 40% */
+    margin: 20px 20px 20px 0;
+    box-sizing: border-box; /* Ensure the figure respects the section borders */
+}
+
+.content figure img {
+    width: 100%;
+    height: auto;
+}
+
+.content figure figcaption {
+    margin-top: 5px; /* Reduced margin to bring figcaption closer to img */
+    font-style: italic;
+    color: #666;
+    font-size: 1rem; /* Changed from em to rem */
+}
+
+.person {
+    font-weight: bold;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
