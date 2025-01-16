@@ -128,6 +128,7 @@ footer {
         width: 100%;
         z-index: 1000;
         box-shadow: none;
+        overflow: auto;
     }
 
     .navbar-nav {
@@ -135,12 +136,8 @@ footer {
         padding-right: 1rem;
     }
 
-    .container-fluid.media-flex-column {
-        height: 50px;
-    }
-
     main {
-        padding-top: 40px; /* Adjust this value based on the height of your navbar */
+        padding-top: 20px; /* Adjust this value based on the height of your navbar */
     }
 
     footer {
