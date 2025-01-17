@@ -3,15 +3,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9eedd; /* Even less warm color */
+    background-color: #f9eedd;
 }
 
 .container {
     max-width: 1000px;
-    margin: 20px auto; /* Added margin top and bottom */
+    margin: 20px auto;
     overflow: hidden;
-    background: #fefcf9; /* Even less warm color for the container */
-    padding: 30px; /* Increased padding */
+    background: #fefcf9;
+    padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -22,17 +22,17 @@ body {
 }
 
 .header h1 {
-    font-size: 2rem; /* Changed from em to rem */
+    font-size: 2rem;
     color: #333;
 }
 
 .header h2 {
-    font-size: 1.5rem; /* Changed from em to rem */
+    font-size: 1.5rem;
     color: #666;
 }
 
 .header h3 {
-    font-size: 1.2rem; /* Changed from em to rem */
+    font-size: 1.2rem;
     color: #999;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .source ul li {
-    padding: 2px 0; /* Reduced padding to make it more compact */
+    padding: 2px 0;
 }
 
 .people ul {
@@ -51,13 +51,13 @@ body {
 }
 
 .people ul li {
-    padding: 2px 0; /* Reduced padding to make it more compact */
+    padding: 2px 0;
 }
 
 .content {
-    text-align: center; /* Center the content section */
-    font-family: 'Times New Roman', Times, serif; /* Serif font for content */
-    font-size: 1.1rem; /* Changed from em to rem */
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
 }
 
 .content h2 {
@@ -68,21 +68,21 @@ body {
 .content h5 {
     margin: 20px 0;
     color: #333;
-    font-size: 1.3rem; /* Changed from em to rem */
+    font-size: 1.3rem;
     font-weight: bold;
-    text-align: left; /* Align to the left */
+    text-align: left;
 }
 
 .content h4 {
-    font-family: Arial, sans-serif; /* Keep h4 with sans-serif font */
+    font-family: Arial, sans-serif;
 }
 
 .content h4, .source h4, .people h4 {
-    font-size: 1.5rem; /* Changed from em to rem */
+    font-size: 1.5rem;
     color: #444;
     font-weight: bold;
     margin: 20px 0;
-    text-align: left; /* Align to the left */
+    text-align: left;
 }
 
 .content p {
@@ -92,9 +92,9 @@ body {
 
 .content figure {
     float: left;
-    width: 40%; /* Reduced from 60% to 40% */
+    width: 40%;
     margin: 20px 20px 20px 0;
-    box-sizing: border-box; /* Ensure the figure respects the section borders */
+    box-sizing: border-box;
 }
 
 .content figure img {
@@ -103,10 +103,10 @@ body {
 }
 
 .content figure figcaption {
-    margin-top: 5px; /* Reduced margin to bring figcaption closer to img */
+    margin-top: 5px;
     font-style: italic;
     color: #666;
-    font-size: 1rem; /* Changed from em to rem */
+    font-size: 1rem;
 }
 
 .person {

@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
-    background-color: #ffe7b7;
+    background-color: #fefcf9;
     overflow-x: hidden;
 }
 
@@ -16,8 +16,7 @@ header {
 }
 
 main {
-    padding: 0;
-    max-width: 1200px;
+    padding: 2rem !important;
     text-align: center;
     grid-area: main;
     width: 100%;
@@ -35,6 +34,7 @@ nav {
 }
 
 section {
+    max-width: 1000px;
     text-align: left;
     padding: 20px 0;
     width: auto;
@@ -63,7 +63,6 @@ footer {
     width: auto;
     grid-area: footer;
 }
-
 
 .navbar {
     height: auto;
@@ -96,7 +95,7 @@ footer {
         height: 100vh;
         z-index: 1000;
         box-shadow: none;
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 
     .media-flex-column {
@@ -106,9 +105,13 @@ footer {
     main {
         width: calc(100vw - 300px) !important;
         margin-left: 300px !important;
-        margin-right: auto;
-        padding: 0 2rem !important;
+        margin-right: 0 !important;
+        padding: 0 6rem !important;
         overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     footer {
@@ -137,7 +140,7 @@ footer {
     }
 
     main {
-        padding-top: 20px; /* Adjust this value based on the height of your navbar */
+        padding-top: 20px;
     }
 
     footer {
