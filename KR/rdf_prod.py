@@ -4,7 +4,7 @@ import re
 
 
 # Custom uri for our project
-project_uri = "https://w3id.org/LODgendaryCreatures/"
+project_root = "https://w3id.org/LODgendaryCreatures/"
 
 # Creating namespace objects for the standards employed in the KO phase
 aat = Namespace("http://vocab.getty.edu/aat/")
@@ -26,7 +26,7 @@ foaf = Namespace("http://xmlns.com/foaf/0.1/")
 viaf = Namespace("http://viaf.org/viaf/")
 wkm = Namespace("https://commons.wikimedia.org/wiki/")
 
-lodc = Namespace(project_uri) # defining our own Namespace
+lodc = Namespace(project_root) # defining our own Namespace
 
 # Conversion dict, mapping abbreviations in the CSV to respective namespaces
 abbreviations = {
@@ -64,7 +64,7 @@ for key, value in abbreviations.items():
 
 # Processing data using Pandas
 data = pd.read_csv("KO/graph_data.csv")
-data = data.map(lambda x: x.replace(" ", "_").replace("-", "_"))
+data = data.map(lambda x: x.replace(" ", "_"))
 
 for _, row in data.iterrows():
 

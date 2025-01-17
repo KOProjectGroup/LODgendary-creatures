@@ -34,30 +34,30 @@ Subject,Predicate,Object
 :PERSON11,schema:birthDate,"""1276""^^xsd:date"
 :PERSON11,schema:deathDate,"""1312""^^xsd:date"
 :ORGANIZATION3,cidoc: P74 has current or former residence,:BUILDING2
-:MOVIE1,rdf:type,schema:Movie
+:WORK4,rdf:type,schema:Movie
 :EXPRESSION44,cidoc:P102 has title,:TITLE11
-:MOVIE1,fo:hasDirector,:PERSON8
+:WORK4,fo:hasDirector,:PERSON8
 :ITEM1,dcterms:issued,"""2010""^^xsd:date"
 :MANIFESTATION2,dcterms:coverage,:COUNTRY11
 :MANIFESTATION2,schema:publisher,:PUBLISHER1
 :LEGENDARY_CREATURE2,rdf:type,:LEGENDARY_CREATURES
-:MOVIE1,cidoc:P129 is about,:LEGENDARY_CREATURE2
+:WORK4,cidoc:P129 is about,:LEGENDARY_CREATURE2
 :MANIFESTATION2,dcterms:format,"""video/dvd""^^xsd:string"
 :MANIFESTATION2,fo:duration,:DURATION1
 :ITEM1,cidoc:P43 has dimension,:DIMENSION3
 :MANIFESTATION2,dcterms:issued,"""2003""^^xsd:date"
 :EXPRESSION44,lrmoo:R4,:MANIFESTATION2
 :MANIFESTATION2,lrmoo:R7,:ITEM1
-:MOVIE1,lrmoo:R3,:EXPRESSION3
-:MOVIE1,fo:hasCast,:GROUP1
-:EXPRESSION3,schema:inLanguage,:LANGUAGE1
+:WORK4,lrmoo:R3,:EXPRESSION3
+:WORK4,fo:hasCast,:GROUP1
+:EXPRESSION3,schema:inLanguage,:LANGUAGE3
 :ITEM1,edm:isHeldBy,:ORGANIZATION32
 :MANIFESTATION2,schema:productID,"""8019824918844""^^xsd:string"
-:MOVIE1,fo:hasGenre,:GENRE1
+:WORK4,fo:hasGenre,:GENRE1
 :PERSON8,schema:birthPlace,:CITY4
 :PERSON8,schema:birthDate,"""1888-12-28""^^xsd:date"
 :PERSON8,schema:deathDate,"""1931-11-3""^^xsd:date"
-:MOVIE1,wikidata:P495 (Country of Origin),:COUNTRY2
+:WORK4,wikidata:P495 (Country of Origin),:COUNTRY2
 :PERSON3,foaf:member,:GROUP1
 :PERSON7,foaf:member,:GROUP1
 :PERSON6,foaf:member,:GROUP1
@@ -66,17 +66,17 @@ Subject,Predicate,Object
 :FOUNDER1,foaf:member,:COLLECTIVE_AGENT1
 :FOUNDER2,foaf:member,:COLLECTIVE_AGENT1
 :PUBLISHER1,cidoc:P74 has current or former residence,:CITY3
-:MOVIE1,rdf:type,lrmoo:F1 Work
-:MOVIE1,lrmoo:R3,:EXPRESSION44
+:WORK4,rdf:type,lrmoo:F1 Work
+:WORK4,lrmoo:R3,:EXPRESSION44
 :EXPRESSION3,cidoc:P102 has title,:TITLE2
 :TITLE2,rdf:type,cidoc:E35 Title
 :TITLE2,rdfs:label,"""Nosferatu: eine Symphonie des Grauens""^^xsd:string"
 :PAINTING11,cidoc:P102 has title,:TITLE7
 :TITLE7,rdf:type,cidoc:E35 Title
 :TITLE7,rdfs:label,"""Saint George and the Dragon""^^xsd:string"
-:LANGUAGE1,rdf:type,schema:Language
+:LANGUAGE3,rdf:type,schema:Language
 :PERSON8,dcterms:identifier,VIAF:12312928
-:LANGUAGE1,foaf:name,"""German""^^xsd:string"
+:LANGUAGE3,foaf:name,"""German""^^xsd:string"
 :LEGENDARY_CREATURE1,rdfs:label,"""Dragon""^^xsd:string"
 :TITLE10,rdf:type,cidoc:E35 Title
 :TITLE10,rdfs:label,"""Descriptio Orosii de ornesta mundi sicut interius Ostenditur""^^xsd:string"
@@ -146,7 +146,7 @@ Subject,Predicate,Object
 :TIMESPAN5,cidoc:P81 ongoing throughout,:TIMEPRIMITIVE5
 :TIMEPRIMITIVE5,rdf:type,cidoc:E61 Time Primitive
 :TIMEPRIMITIVE5,rdfs:label,"""1470""^^xsd:date"
-:MOVIE1,cidoc:P94 was created by ,:CREATION2
+:WORK4,cidoc:P94 was created by ,:CREATION2
 :CREATION2,rdf:type,cidoc:E65 Creation
 :CREATION2,cidoc: P4 has time-span,:TIMESPAN1
 :TIMESPAN1,rdf:type,cidoc:E52 Time-Span
@@ -501,23 +501,23 @@ Subject,Predicate,Object
 :APPELLATION8,rdf:type,cidoc:E41 Appellation
 :APPELLATION8,rdfs:label,"""Kraken""^^xsd:string"
 :SPECIFICCREATURE2,cidoc:P1 is identified by,:APPELLATION8
-:SCULPTURE,cidoc: P129 is about,:SPECIFICCREATURE2
-:SCULPTURE,rdf:type,schema:Sculpture
-:SCULPTURE,cidoc:P102 has title,:TITLE4
+:SCULPTURE1,cidoc: P129 is about,:SPECIFICCREATURE2
+:SCULPTURE1,rdf:type,schema:Sculpture
+:SCULPTURE1,cidoc:P102 has title,:TITLE4
 :TITLE4,rdf:type,cidoc:E35 Title
 :TITLE4,rdfs:label,"""Kraken-Migof""^^xsd:string"
-:SCULPTURE,rdf:type,cidoc:Human-Made Object
-:SCULPTURE,cidoc:P45 consists of,:MATERIAL1
+:SCULPTURE1,rdf:type,cidoc:Human-Made Object
+:SCULPTURE1,cidoc:P45 consists of,:MATERIAL1
 :MATERIAL1,rdf:type,cidoc:E55 Material
 :MATERIAL1,rdfs:label,"""bronze""^^xsd:string"
-:CREATION3,cidoc:p94 has created,:SCULPTURE
+:CREATION3,cidoc:p94 has created,:SCULPTURE1
 :CREATION3,rdf:type,cidoc:E65 Creation
 :CREATION3,cidoc: P4 has time-span,:TIMESPAN4
 :TIMESPAN4,rdf:type,cidoc:E52 Time-Span
 :TIMESPAN4,cidoc:P81 ongoing throughout,:TIMEPRIMITIVE2
 :TIMEPRIMITIVE2,rdf:type,cidoc:E61 Time Primitive
 :TIMEPRIMITIVE2,rdfs:label,"""1992""^^xsd:date"
-:SCULPTURE,cidoc:P43 has dimension,:DIMENSION5
+:SCULPTURE1,cidoc:P43 has dimension,:DIMENSION5
 :DIMENSION5,rdf:type,cidoc:E54 Dimension
 :DIMENSION5,cidoc:P90 has value,"""166x302x302""^^xsd:string"
 :DIMENSION5,cidoc:P91 has unit,"""cm""^^xsd:string"
@@ -541,7 +541,7 @@ Subject,Predicate,Object
 :OCCUPATION1,schema:name,"""Sculptor""^^xsd:string"
 :PERSON5,schema:image,wkm:Special:FilePath/BernardSchultze1968.jpg
 :PERSON5,owl:sameAs,VIAF:116342077
-:SCULPTURE,cidoc:P50 has current keeper,:ORGANIZATION4
+:SCULPTURE1,cidoc:P50 has current keeper,:ORGANIZATION4
 :ORGANIZATION4,rdf:type,cidoc:E39 Actor
 :ORGANIZATION4,cidoc:P1 is identified by,:APPELLATION9
 :APPELLATION9,rdf:type,cidoc:E41 Appellation

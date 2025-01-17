@@ -1,0 +1,20 @@
+,Subject,Predicate,Object
+265,:WORK38,rdf:type,lrmoo:F1 Work
+266,:WORK38,lrmoo:R3,:EXPRESSION38
+267,:EXPRESSION38,rdf:type,lrmoo:F2 Expression
+268,:MANIFESTATION38,lrmoo:R4,:EXPRESSION38
+269,:MANIFESTATION38,rdf:type,lrmoo:F3 Manifestation
+270,:ITEM38,lrmoo:R7,:MANIFESTATION38
+271,:ITEM38,rdf:type,lrmoo:F5 Item
+272,:WORK38,rdf:type,schema:CreativeWork
+273,:WORK38,schema:genre,"""ballet""^^xsd:string"
+280,:WORK38,lrmoo:R16 was created by,:CREATION38
+296,:MANIFESTATION38,rdf:type,schema:MusicRecording
+297,:MANIFESTATION38,dcterms:issued,"""1969""^^xsd:date"
+298,:MANIFESTATION38,cidoc:P1 is identified by,:ID38
+301,:EXPRESSION38,cidoc:P102 has title,:TITLE38
+304,:MANIFESTATION38,cidoc:P102 has title,:TITLE39
+307,:MANIFESTATION38,cidoc:P43 has dimension,:DIMENSION10
+311,:MANIFESTATION38,dcterms:format,:FORMAT39
+314,:ITEM38,cidoc:P50 has current keeper,:ORGANIZATION38
+344,:WORK38,cidoc:P129 is about,:SPECIFICCREATURE3

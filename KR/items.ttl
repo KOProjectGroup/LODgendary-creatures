@@ -35,7 +35,7 @@
     rdfs1:label "Biblioteca_comunale_di_Castenaso_'Casa_Bondi'"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/appellation/APPELLATION28> a cidoc:E41_Appellation ;
-    rdfs1:label "Umi_bozu"^^xsd:string .
+    rdfs1:label "Umi-bozu"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/appellation/APPELLATION29> a cidoc:E41_Appellation ;
     rdfs1:label "Agostino_Carracci"^^xsd:string .
@@ -209,9 +209,7 @@
 <https://w3id.org/LODgendaryCreatures/id/ID50> a cidoc:E42_Identifier ;
     rdfs1:label "2004.52"^^xsd:string .
 
-<https://w3id.org/LODgendaryCreatures/language/LANGUAGE1> a cidoc:E56_Language,
-        schema:Language ;
-    foaf:name "German"^^xsd:string ;
+<https://w3id.org/LODgendaryCreatures/language/LANGUAGE1> a cidoc:E56_Language ;
     rdfs1:label "Ita"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/language/LANGUAGE18> a cidoc:E56_Language ;
@@ -219,6 +217,9 @@
 
 <https://w3id.org/LODgendaryCreatures/language/LANGUAGE2> a cidoc:E56_Language ;
     rdfs1:label "Ita"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/language/LANGUAGE3> a schema:Language ;
+    foaf:name "German"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> owl:subclassOf cidoc:E28_Conceptual_Object .
 
@@ -323,7 +324,7 @@
     rdfs1:label "1470-01-01"^^xsd:date .
 
 <https://w3id.org/LODgendaryCreatures/timeprimitive/TIMEPRIMITIVE50> a cidoc:E61_Time_Primitive ;
-    rdfs1:label "1843_1845"^^xsd:string .
+    rdfs1:label "1843-1845"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/title/TITLE1> a cidoc:E35_Title ;
     rdfs1:label "Portrait_of_Ulisse_Aldrovandi"^^xsd:string .
@@ -350,7 +351,7 @@
     rdfs1:label "The_Firebird:_Complete_Ballet"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/title/TITLE4> a cidoc:E35_Title ;
-    rdfs1:label "Kraken_Migof"^^xsd:string .
+    rdfs1:label "Kraken-Migof"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/title/TITLE47> a cidoc:E35_Title ;
     rdfs1:label "Gardens_of_Bomarzo"^^xsd:string .
@@ -359,7 +360,7 @@
     rdfs1:label "Monstrorum_Historia"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/title/TITLE50> a cidoc:E35_Title ;
-    rdfs1:label "Kuwana:_The_Story_of_the_Sailor_Tokuzo,_from_the_series_Fifty_three_Parallels_for_the_Tokaido"^^xsd:string .
+    rdfs1:label "Kuwana:_The_Story_of_the_Sailor_Tokuzo,_from_the_series_Fifty-three_Parallels_for_the_Tokaido"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/title/TITLE6> a cidoc:E35_Title ;
     rdfs1:label "The_Witcher_3._Wild_Hunt"^^xsd:string .
@@ -368,7 +369,7 @@
     rdfs1:label "Saint_George_and_the_Dragon"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/acquisition/ACQUISITION1> a cidoc:E8_Acquisition ;
-    cidoc:_P4_has_time_span <https://w3id.org/LODgendaryCreatures/acquisition/ACQUISITION1> .
+    cidoc:_P4_has_time-span <https://w3id.org/LODgendaryCreatures/acquisition/ACQUISITION1> .
 
 <https://w3id.org/LODgendaryCreatures/activity/ACTIVITY1> a cidoc:E7_Activity ;
     cidoc:_P20_had_specific_purpose <https://w3id.org/LODgendaryCreatures/activity/ACTIVITY1> .
@@ -383,17 +384,17 @@
 
 <https://w3id.org/LODgendaryCreatures/country/COUNTRY356> a schema:Country ;
     schema:founder <https://w3id.org/LODgendaryCreatures/country/COUNTRY356> ;
-    schema:foundingDate "2006-01-01"^^xsd:date ;
+    schema:foundingDate "2006-03-31"^^xsd:date ;
     schema:name "Japan"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/creation/CREATION1> a cidoc:E65_Creation ;
-    cidoc:_P4_has_time_span <https://w3id.org/LODgendaryCreatures/creation/CREATION1> .
+    cidoc:_P4_has_time-span <https://w3id.org/LODgendaryCreatures/creation/CREATION1> .
 
 <https://w3id.org/LODgendaryCreatures/creation/CREATION18> a lrmoo:F27_Work_Creation ;
     cidoc:P14_carried_out_by <https://w3id.org/LODgendaryCreatures/creation/CREATION18> .
 
 <https://w3id.org/LODgendaryCreatures/creation/CREATION2> a cidoc:E65_Creation ;
-    cidoc:_P4_has_time_span <https://w3id.org/LODgendaryCreatures/creation/CREATION2> .
+    cidoc:_P4_has_time-span <https://w3id.org/LODgendaryCreatures/creation/CREATION2> .
 
 <https://w3id.org/LODgendaryCreatures/creation/CREATION38> a lrmoo:F27_Work_Creation ;
     cidoc:P14_carried_out_by <https://w3id.org/LODgendaryCreatures/creation/CREATION38> .
@@ -405,7 +406,7 @@
     cidoc:P14_carried_out_by <https://w3id.org/LODgendaryCreatures/creation/CREATION5> .
 
 <https://w3id.org/LODgendaryCreatures/creation/CREATION6> a cidoc:E65_Creation ;
-    cidoc:_P4_has_time_span <https://w3id.org/LODgendaryCreatures/creation/CREATION6> .
+    cidoc:_P4_has_time-span <https://w3id.org/LODgendaryCreatures/creation/CREATION6> .
 
 <https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP1> a cidoc:E28_Conceptual_Object,
         <https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP1> .
@@ -455,7 +456,7 @@
 
 <https://w3id.org/LODgendaryCreatures/organization/ORGANIZATION12> a cidoc:E39_Actor,
         schema:Organization ;
-    schema:foundingDate "2002-01-01"^^xsd:date ;
+    schema:foundingDate "2002-02-01"^^xsd:date ;
     schema:location <https://w3id.org/LODgendaryCreatures/organization/ORGANIZATION12> ;
     schema:name "CD_Projekt_Red"^^xsd:string .
 
@@ -477,8 +478,8 @@
 <https://w3id.org/LODgendaryCreatures/person/PERSON1> a cidoc:E21_Person ;
     cidoc:P1_is_identified_by <https://w3id.org/LODgendaryCreatures/person/PERSON1> ;
     owl:sameAs VIAF:100190422 ;
-    schema:birthDate "1522-01-01"^^xsd:date ;
-    schema:deathDate "1605-01-01"^^xsd:date .
+    schema:birthDate "1522-11-09"^^xsd:date ;
+    schema:deathDate "1605-05-04"^^xsd:date .
 
 <https://w3id.org/LODgendaryCreatures/person/PERSON11> owl:sameAs <https://w3id.org/LODgendaryCreatures/person/PERSON11> ;
     foaf:name "Richard_of_Haldingham_and_Lafford"^^xsd:string ;
@@ -507,31 +508,31 @@
 
 <https://w3id.org/LODgendaryCreatures/person/PERSON8> a cidoc:E21_Person ;
     foaf:name "Friedrich_W._Murnau"^^xsd:string ;
-    schema:birthDate "1888-01-01"^^xsd:date ;
+    schema:birthDate "1888-12-28"^^xsd:date ;
     schema:birthPlace <https://w3id.org/LODgendaryCreatures/person/PERSON8> ;
-    schema:deathDate "1931-01-01"^^xsd:date ;
+    schema:deathDate "1931-11-01"^^xsd:date ;
     dcterms1:identifier VIAF:12312928 .
 
 <https://w3id.org/LODgendaryCreatures/place/PLACE2> a cidoc:E53_Place,
         schema:Country ;
     cidoc:P1_is_identified_by <https://w3id.org/LODgendaryCreatures/place/PLACE2> .
 
-<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN1> a cidoc:E52_Time_Span ;
+<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN1> a cidoc:E52_Time-Span ;
     cidoc:P81_ongoing_throughout <https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN1> .
 
-<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN2> a cidoc:E52_Time_Span ;
+<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN2> a cidoc:E52_Time-Span ;
     cidoc:P81_ongoing_throughout <https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN2> .
 
-<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN3> a cidoc:E52_Time_Span ;
+<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN3> a cidoc:E52_Time-Span ;
     cidoc:P81_ongoing_throughout <https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN3> .
 
-<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN4> a cidoc:E52_Time_Span ;
+<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN4> a cidoc:E52_Time-Span ;
     cidoc:P81_ongoing_throughout <https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN4> .
 
-<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN5> a cidoc:E52_Time_Span ;
+<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN5> a cidoc:E52_Time-Span ;
     cidoc:P81_ongoing_throughout <https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN5> .
 
-<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN50> a cidoc:E52_Time_Span ;
+<https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN50> a cidoc:E52_Time-Span ;
     cidoc:P82_at_some_time_within <https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN50> .
 
 <https://w3id.org/LODgendaryCreatures/title/TITLE8> a lrmoo:F1_Work ;
@@ -629,8 +630,8 @@
 <https://w3id.org/LODgendaryCreatures/person/PERSON5> a cidoc:E21_Person,
         schema:Person ;
     owl:sameAs VIAF:116342077 ;
-    schema:birthDate "1915-01-01"^^xsd:date ;
-    schema:deathDate "2005-01-01"^^xsd:date ;
+    schema:birthDate "1915-05-31"^^xsd:date ;
+    schema:deathDate "2005-04-14"^^xsd:date ;
     schema:hasOccupation <https://w3id.org/LODgendaryCreatures/person/PERSON5> ;
     schema:image wkm:Special ;
     schema:nationality <https://w3id.org/LODgendaryCreatures/person/PERSON5> .
@@ -662,15 +663,15 @@
 
 <https://w3id.org/LODgendaryCreatures/creation/CREATION3> a cidoc:E65_Creation ;
     cidoc:P14_carried_out_by <https://w3id.org/LODgendaryCreatures/creation/CREATION3> ;
-    cidoc:_P4_has_time_span <https://w3id.org/LODgendaryCreatures/creation/CREATION3> ;
+    cidoc:_P4_has_time-span <https://w3id.org/LODgendaryCreatures/creation/CREATION3> ;
     cidoc:p94_has_created <https://w3id.org/LODgendaryCreatures/creation/CREATION3> .
 
 <https://w3id.org/LODgendaryCreatures/creation/CREATION50> a cidoc:E65_Creation ;
     cidoc:P14_carried_out_by <https://w3id.org/LODgendaryCreatures/creation/CREATION50> ;
     cidoc:P49_has_created <https://w3id.org/LODgendaryCreatures/creation/CREATION50> ;
-    cidoc:P4_has_time_span <https://w3id.org/LODgendaryCreatures/creation/CREATION50> .
+    cidoc:P4_has_time-span <https://w3id.org/LODgendaryCreatures/creation/CREATION50> .
 
-<https://w3id.org/LODgendaryCreatures/painting/PAINTING1> a cidoc:E22_Human_Made_Object ;
+<https://w3id.org/LODgendaryCreatures/painting/PAINTING1> a cidoc:E22_Human-Made_Object ;
     cidoc:P102_has_title <https://w3id.org/LODgendaryCreatures/painting/PAINTING1> ;
     cidoc:P65_shows_visual_item <https://w3id.org/LODgendaryCreatures/painting/PAINTING1> ;
     schema:image wkm:Special ;
@@ -690,12 +691,12 @@
     owl:sameAs <https://w3id.org/LODgendaryCreatures/person/PERSON3948> ;
     foaf:name "Paolo_Uccello"^^xsd:string ;
     schema:birthDate "1397/06/15"^^xsd:string ;
-    schema:deathDate "1475-01-01"^^xsd:date ;
+    schema:deathDate "1475-12-10"^^xsd:date ;
     dcterms1:identifier VIAF:_39395712 .
 
 <https://w3id.org/LODgendaryCreatures/place/PLACE1> a wikidata:Q207694_art_museum,
         schema:Place ;
-    wikidata:P1619_date_of_official_opening "2024-01-01"^^xsd:date ;
+    wikidata:P1619_date_of_official_opening "2024-06-23"^^xsd:date ;
     wikidata:_P84_architect <https://w3id.org/LODgendaryCreatures/place/PLACE1> ;
     schema:containedInPlace <https://w3id.org/LODgendaryCreatures/place/PLACE1> ;
     schema:geo <https://w3id.org/LODgendaryCreatures/place/PLACE1> ;
@@ -730,7 +731,7 @@
     cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/work/WORK2> ;
     lrmoo:R16_was_created_by <https://w3id.org/LODgendaryCreatures/work/WORK2> ;
     lrmoo:R3 <https://w3id.org/LODgendaryCreatures/work/WORK2> ;
-    schema:genre "Action_adventure_rpg"^^xsd:string .
+    schema:genre "Action-adventure_rpg"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/work/WORK38> a lrmoo:F1_Work,
         schema:CreativeWork ;
@@ -775,7 +776,7 @@ cidoc:E53_Place skos:narrowMatch schema:City .
     dcterms1:format <https://w3id.org/LODgendaryCreatures/manifestation/MANIFESTATION38> ;
     dcterms1:issued "1969-01-01"^^xsd:date .
 
-<https://w3id.org/LODgendaryCreatures/monument/MONUMENT1> a cidoc:Physical_Human_Made_Thing,
+<https://w3id.org/LODgendaryCreatures/monument/MONUMENT1> a cidoc:Physical_Human-Made_Thing,
         schema:LandmarksOrHistoricalBuildings ;
     cidoc:P102_has_title <https://w3id.org/LODgendaryCreatures/monument/MONUMENT1> ;
     cidoc:P43_has_dimension <https://w3id.org/LODgendaryCreatures/monument/MONUMENT1> ;
@@ -783,7 +784,7 @@ cidoc:E53_Place skos:narrowMatch schema:City .
     cidoc:_P129_is_about <https://w3id.org/LODgendaryCreatures/monument/MONUMENT1> ;
     schema:location <https://w3id.org/LODgendaryCreatures/monument/MONUMENT1> .
 
-<https://w3id.org/LODgendaryCreatures/sculpture/SCULPTURE> a cidoc:Human_Made_Object,
+<https://w3id.org/LODgendaryCreatures/sculpture/SCULPTURE> a cidoc:Human-Made_Object,
         schema:Sculpture ;
     cidoc:P102_has_title <https://w3id.org/LODgendaryCreatures/sculpture/SCULPTURE> ;
     cidoc:P43_has_dimension <https://w3id.org/LODgendaryCreatures/sculpture/SCULPTURE> ;
@@ -820,7 +821,7 @@ cidoc:E53_Place skos:narrowMatch schema:City .
     fo:hasDirector <https://w3id.org/LODgendaryCreatures/movie/MOVIE1> ;
     fo:hasGenre <https://w3id.org/LODgendaryCreatures/movie/MOVIE1> .
 
-<https://w3id.org/LODgendaryCreatures/print/PRINT1> a cidoc:Physical_Human_Made_Object,
+<https://w3id.org/LODgendaryCreatures/print/PRINT1> a cidoc:Physical_Human-Made_Object,
         schema:VisualArtwork ;
     cidoc:P102_has_title <https://w3id.org/LODgendaryCreatures/print/PRINT1> ;
     cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/print/PRINT1> ;

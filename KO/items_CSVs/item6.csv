@@ -1,0 +1,11 @@
+,Subject,Predicate,Object
+353,:PRINT1,cidoc:P129 is about,:SPECIFICCREATURE1
+359,:PRINT1,rdf:type,cidoc:Physical Human-Made Object
+360,:PRINT1,rdf:type,schema:VisualArtwork
+361,:PRINT1,cidoc:P102 has title,:TITLE50
+364,:PRINT1,schema: countryOfOrigin,:COUNTRY50
+367,:PRINT1,cidoc:P43 has dimension,:DIMENSION50
+371,:PRINT1,cidoc:P1 is identified by,:ID50
+374,:PRINT1,dcterms:medium,:MEDIUM50
+377,:PRINT1,cidoc:P50 has current keeper,:ORGANIZATION50
+403,:CREATION50,cidoc:P49 has created,:PRINT1
