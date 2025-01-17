@@ -43,8 +43,12 @@ for edge in edges:
     }) # appending the triple dict to the list
 
 df = pd.DataFrame(triples)
-df.to_csv(path_or_buf="KO/graph_data.csv", index=False)
+df.to_csv(path_or_buf="KO/graph_data.csv", index=False) # dump of all triples
 
+# in this next section, we'll extract the triples involving each of the items we chose to represent, producing a separate CSV file for each of them
+
+# the starting point is to list the names we assigned to each of the nodes representing said items
+# set items in the list contain FRBR level for a single item
 items = [
     set([
         ":WORK1",
@@ -85,7 +89,7 @@ items = [
     ":MONUMENT1"
 ]
 
-counter = 0
+counter = 0 # for file naming purposes
 for item in items:
     item_triples = []
     for _, row in df.iterrows():
