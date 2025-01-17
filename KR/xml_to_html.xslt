@@ -77,17 +77,17 @@
                         <xsl:text> text-transform: uppercase;</xsl:text>
                     </xsl:if>
                 </xsl:variable>
-                <h2>
+                <h5>
                     <xsl:attribute name="style">
                         <xsl:value-of select="$style"/>
                     </xsl:attribute>
                     <xsl:apply-templates/>
-                </h2>
+                </h5>
             </xsl:when>
             <xsl:otherwise>
-                <h2>
+                <h5>
                     <xsl:apply-templates/>
-                </h2>
+                </h5>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

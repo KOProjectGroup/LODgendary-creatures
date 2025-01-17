@@ -3,6 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     background-color: #ffe7b7;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,7 +20,8 @@ main {
     max-width: 1200px;
     text-align: center;
     grid-area: main;
-    width: auto;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
@@ -66,9 +68,23 @@ footer {
 .navbar {
     height: auto;
     position: relative;
-    padding: 0;
     box-shadow: none;
     width: 100%;
+    text-align: left;
+    overflow: auto;
+}
+
+.navbar-nav {
+    padding: 1rem 0;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #ffcc00 !important;
 }
 
 @media (min-width: 991px) {
@@ -79,8 +95,8 @@ footer {
         width: 300px;
         height: 100vh;
         z-index: 1000;
-        padding: 0;
         box-shadow: none;
+        padding: 2rem 0;
     }
 
     .media-flex-column {
@@ -88,7 +104,11 @@ footer {
     }
 
     main {
-        padding-left: 300px !important;
+        width: calc(100vw - 300px) !important;
+        margin-left: 300px !important;
+        margin-right: auto;
+        padding: 0 2rem !important;
+        overflow-x: hidden;
     }
 
     footer {
@@ -103,8 +123,28 @@ footer {
 @media (max-width: 991px) {
     .navbar {
         height: auto;
-        position: relative;
-        padding: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
         box-shadow: none;
+        overflow: auto;
+    }
+
+    .navbar-nav {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    main {
+        padding-top: 20px; /* Adjust this value based on the height of your navbar */
+    }
+
+    footer {
+        padding-left: 0 !important;
+    }
+
+    header {
+        max-width: 100%;
     }
 }

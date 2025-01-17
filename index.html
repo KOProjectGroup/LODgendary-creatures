@@ -8,7 +8,7 @@
     <!-- Google Fonts ("Noto Sans", "Noto Serif", "Noto Serif Display")-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -25,39 +25,60 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav flex-column">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#study-of-domain" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Study of the Domain
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                <li><a class="dropdown-item" href="#idea">Idea</a></li>
-                                <li><a class="dropdown-item" href="#items">Items</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#study-of-domain">Study of the Domain</a>
+                            <ul class="navbar-nav flex-column ms-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#idea">Idea</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#items">Items</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#knowledge-organization" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Knowledge Organization
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <li><a class="dropdown-item" href="#conceptual-map">Conceptual Map</a></li>
-                                <li><a class="dropdown-item" href="#er-model">E/R Model</a></li>
-                                <li><a class="dropdown-item" href="#metadata-analysis">Metadata Analysis</a></li>
-                                <li><a class="dropdown-item" href="#metadata-alignment">Metadata Alignment</a></li>
-                                <li><a class="dropdown-item" href="#theoretical-model">Theoretical Model</a></li>
-                                <li><a class="dropdown-item" href="#conceptual-model">Conceptual Model</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#knowledge-organization">Knowledge Organization</a>
+                            <ul class="navbar-nav flex-column ms-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#conceptual-map">Conceptual Map</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#er-model">E/R Model</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#metadata-analysis">Metadata Analysis</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#metadata-alignment">Metadata Alignment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#theoretical-model">Theoretical Model</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#er-model-enhanced">E/R Model enhanced</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#conceptual-model">Conceptual Model</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#knowledge-representation" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Knowledge Representation
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                                <li><a class="dropdown-item" href="#items-description">Items Description</a></li>
-                                <li><a class="dropdown-item" href="#rdf-production">RDF Production</a></li>
-                                <li><a class="dropdown-item" href="#rdf-visualization">RDF Visualization</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#knowledge-representation">Knowledge Representation</a>
+                            <ul class="navbar-nav flex-column ms-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#items-description">Items Description</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#rdf-production">RDF Production</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#rdf-visualization">RDF Visualization</a>
+                                </li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#text-processing">Text Processing</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#text-processing">Text Processing</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -112,9 +133,63 @@
             <h3 id="metadata-alignment">Metadata Alignment</h3>
             <p>Then, for each concept described in natural language, we identified the most suitable entities or relationships within the metadata standards previously analyzed.</p>
             <h3 id="theoretical-model">Theoretical Model</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>At this stage, we sought additional potential connections to enhance the initial model. This involved researching more information about agents, places, and dates associated with the main items and integrating these new data points into the model. 
+                We used various colors to highlight to which set of concepts each entity belongs to:</p>
+            <ul>
+                <li>what: red</li>
+                <li>who: blue</li>
+                <li>where: green</li>
+                <li>when: yellow</li>
+            </ul>
+                <p>Additionally, we opted to reshape some item entities using the FRBR conceptual model for a more structured representation.</p>
+            <h3 id="er-model-enhanced">E/R Model enhanced</h3>
+            <p>Consequently, we incorporated the new information into the E/R model as well.</p>
             <h3 id="conceptual-model">Conceptual Model</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>
+                  The final step of the knowledge organization phase involved creating a conceptual model using an ontological approach. To achieve this, we refactored the terms from the theoretical model by aligning them with terms from existing schemas, vocabularies, and ontologies. Specifically, we reused the following:
+                </p>
+                <ul>
+                  <li><strong>VIAF</strong>: <a href="http://viaf.org/viaf/">http://viaf.org/viaf/</a></li>
+                  <li><strong>aat</strong>: <a href="http://vocab.getty.edu/aat/">http://vocab.getty.edu/aat/</a></li>
+                  <li><strong>cidoc</strong>: <a href="http://www.cidoc-crm.org/cidoc-crm/">http://www.cidoc-crm.org/cidoc-crm/</a></li>
+                  <li><strong>dbo</strong>: <a href="http://dbpedia.org/ontology/">http://dbpedia.org/ontology/</a></li>
+                  <li><strong>dcterms</strong>: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></li>
+                  <li><strong>edm</strong>: <a href="http://www.europeana.eu/schemas/edm/">http://www.europeana.eu/schemas/edm/</a></li>
+                  <li><strong>fo</strong>: <a href="https://semantics.id/ns/example/film/">https://semantics.id/ns/example/film/</a></li>
+                  <li><strong>foaf</strong>: <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a></li>
+                  <li><strong>geo</strong>: <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a></li>
+                  <li><strong>lrmoo</strong>: <a href="http://www.cidoc-crm.org/lrmoo/">http://www.cidoc-crm.org/lrmoo/</a></li>
+                  <li><strong>owl</strong>: <a href="http://www.w3.org/2002/07/owl#">http://www.w3.org/2002/07/owl#</a></li>
+                  <li><strong>prov</strong>: <a href="http://www.w3.org/ns/prov#">http://www.w3.org/ns/prov#</a></li>
+                  <li><strong>rdfs</strong>: <a href="https://www.w3.org/2000/01/rdf-schema#">https://www.w3.org/2000/01/rdf-schema#</a></li>
+                  <li><strong>schema</strong>: <a href="https://schema.org/">https://schema.org/</a></li>
+                  <li><strong>skos</strong>: <a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a></li>
+                  <li><strong>wikidata</strong>: <a href="http://www.wikidata.org/entity/">http://www.wikidata.org/entity/</a></li>
+                  <li><strong>xsd</strong>: <a href="http://www.w3.org/2001/XMLSchema#">http://www.w3.org/2001/XMLSchema#</a></li>
+                </ul>
+                <p>
+                  Among the various options for formalizing the FRBR conceptual model, we chose <strong>LRMoo</strong> due to its full compatibility with CIDOC CRM. This decision ensured consistency with our overarching ontological framework. Additionally, we used <code>owl:sameAs</code> to link entities to their corresponding VIAF entries and to establish equivalences between classes in different ontologies.
+                </p>
+                <p>
+                  To further enrich our model, we identified semantic associations between entities or classes, employing various SKOS properties. Specifically:
+                </p>
+                <ul>
+                  <li>
+                    <strong>skos:broadMatch</strong>: Used to link a class from a specific ontology to one from another ontology that represents a broader concept 
+                    (e.g., the class <em>Legendary Creatures</em> is broadly matched with the CIDOC class <em>E28 Conceptual Object</em>).
+                  </li>
+                  <li>
+                    <strong>skos:narrowMatch</strong>: Used to link a class from a specific ontology to one from another ontology that represents a narrower concept 
+                    (e.g., the <em>schema</em> class <em>Organization</em> is narrowly matched with the CIDOC class <em>E39 Actor</em>).
+                  </li>
+                  <li>
+                    <strong>skos:related</strong>: Used to link two entities that are connected in some way, without indicating a hierarchical relationship 
+                    (e.g., the occupation <em>Composer</em> is related to the occupation <em>Conductor</em>, which is also related to the occupation <em>Pianist</em>).
+                  </li>
+                </ul>
+                <p>
+                  These steps allowed us to formalize and enrich our conceptual model, ensuring it was both robust and interoperable across various ontological frameworks.
+                </p>
         </section>
 
         <section id="knowledge-representation" class="mb-4">
@@ -137,5 +212,39 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>LODgendary Creatures</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section, section h3');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 60) {
+                        current = section.getAttribute('id') || section.parentElement.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').split('#')[1] === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 991) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
