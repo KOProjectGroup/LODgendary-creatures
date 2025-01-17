@@ -34,30 +34,40 @@
         <profileDesc>
             <particDesc>
                 <listPerson>
-                    <person xml:id="IS" sameAs="https://viaf.org/viaf/803890">
+                    <person xml:id="IS" sameAs="http://viaf.org/viaf/803890">
                     <persName xml:lang="en">Isidore of Seville</persName>
                     <birth when="0560" />
                     <death when="0636" /> 
                     </person>
-                    <person xml:id="MC" sameAs="https://www.wikidata.org/wiki/Q1541">
+                    <person xml:id="MC" sameAs="http://viaf.org/viaf/78769600">
                         <persName xml:lang="en">Marcus Tullius Cicero</persName>
                         <persName xml:lang="it">Marco Tullio Cicerone</persName>
+                        <birth when="-0106" />
+                        <death when="-0043" /> 
                     </person>
-                    <person xml:id="AR" sameAs="https://viaf.org/en/viaf/7524651">
+                    <person xml:id="AR" sameAs="http://viaf.org/viaf/7524651">
                         <persName xml:lang="en">Aristotle</persName>
                         <persName xml:lang="it">Aristotele</persName>
+                        <birth when="-0384" />
+                        <death when="-0322" />
                     </person>
-                    <person xml:id="TG" sameAs="https://viaf.org/en/viaf/100189101">
+                    <person xml:id="TG" sameAs="http://viaf.org/viaf/100189101">
                         <persName xml:lang="en">Theodorus Gaza</persName>
                         <persName xml:lang="it">Teodoro Gaza</persName>
+                        <birth when="1400" />
+                        <death when="1475" />
                     </person>
-                    <person xml:id="AN" sameAs="https://viaf.org/en/viaf/73879631">
+                    <person xml:id="AN" sameAs="http://viaf.org/viaf/73879631">
                         <persName xml:lang="en">Agostino Nifo</persName>
                         <persName xml:lang="it">Agostino Nifo</persName>
+                        <birth when="1473" />
+                        <death when="1538" />
                     </person>
-                    <person xml:id="AP" sameAs="https://viaf.org/en/viaf/262974255">
+                    <person xml:id="AP" sameAs="http://viaf.org/viaf/262974255">
                         <persName xml:lang="en">Apollonius Rhodius</persName>
                         <persName xml:lang="it">Apollonio Rodio</persName>
+                        <birth when="-0295" />
+                        <death when="-0215" />
                     </person>
                 </listPerson>
             </particDesc>
@@ -68,8 +78,8 @@
             <head rend="align(center) italic">Definizioni ed etimologia</head>
             <head rend="align(center) case(allcaps)">SYNONIMA ET ETYMUM - DENOMINATA</head>
             <p>Il mostro, secondo il parere di <persName ref="#IS">Isidoro</persName>, è così chiamato perché, 'mostrando'
-                un evento futuro, avverte gli uomini<note place="foot" n="231"><persName ref="#IS">Isidoro</persName>, 
-                Etymologiae, Xl.3 .3 .</note>: molti dunque, seguendo questa logica,
+                un evento futuro, avverte gli uomini<note place="foot" n="231"><bibl><author><persName ref="#IS">Isidoro</persName></author>, 
+                <title>Etymologiae</title>, Xl.3 .3 .</bibl></note>: molti dunque, seguendo questa logica,
                 lo chiamarono <foreign xml:lang="la">monstrum</foreign> quasi a dire <foreign xml:lang="la">monestrum</foreign><note place="foot" n="232">Ricondotto al verbo latino <foreign xml:lang="la">moneo</foreign>, 'ammonire', 'avvertire'.</note>, 
                 perché come un monito preannuncia qualche arcana vendetta divina; oppure perché viene osservato dalle persone 
                 come qualcosa di singolare, e per lo stupore viene mostrato, cioè indicato con il dito.
@@ -96,11 +106,11 @@
                 a dire <foreign xml:lang="la">porrodigium</foreign>, perché <foreign xml:lang="la">porro dicit</foreign>, 'dice innanzi', cioè preannuncia un accadimento
                 venturo, dedotto attraverso l'interpretazione degli uomini. Tuttavia, i predetti termini
                 vengono assai spesso confusi, e l'uno viene usato liberamente al posto dell'altro dagli
-                autori: così <persName ref="#MC">Cicerone</persName>, nel primo libro del De divinatione, scriveva che <foreign xml:lang="la">monstra</foreign>, <foreign xml:lang="la">ostenta</foreign>, <foreign xml:lang="la">portenta</foreign> e 
-                <foreign xml:lang="la">prodigia</foreign> sono così chiamati in ragione del fatto che mostrano, ostentano, presagiscono e predicono<note place="foot" n="234"><persName ref="#MC">CICERONE</persName>, De divinatione, I.42.93.</note>.</p>
+                autori: così <bibl><author><persName ref="#MC">Cicerone</persName></author>, nel primo libro del <title>De divinatione</title></bibl>, scriveva che <foreign xml:lang="la">monstra</foreign>, <foreign xml:lang="la">ostenta</foreign>, <foreign xml:lang="la">portenta</foreign> e 
+                <foreign xml:lang="la">prodigia</foreign> sono così chiamati in ragione del fatto che mostrano, ostentano, presagiscono e predicono<note place="foot" n="234"><bibl><author><persName ref="#MC">CICERONE</persName></author>, <title>De divinatione</title>, I.42.93.</bibl></note>.</p>
                 <p>Se spostiamo l'attenzione sulla lingua greca, ci imbattiamo nella medesima promiscuità di termini. Infatti <persName ref="#AR">Aristotele</persName>
                     parlò di <foreign xml:lang="grc">ta tèrata amartèmata tes physeos</foreign>, cioè 'i
-                    mostri errori della natura'<note place="foot" n="235"><persName ref="#AR">ARISTOTELE</persName>, De generatione animalium, IV.4 (769b-770b).</note>; 
+                    mostri errori della natura'<note place="foot" n="235"><bibl><author><persName ref="#AR">ARISTOTELE</persName></author>, <title>De generatione animalium</title>, IV.4 (769b-770b)</bibl>.</note>; 
                     dove <persName ref="#TG">Teodoro Gaza</persName><note place="foot" n="236">Umanista bizantino ( 14 15 ca.-1475 ), 
                     traduttore latino di <persName ref="#AR">Aristotele</persName>.</note> ha tradotto con <foreign xml:lang="la">portenta</foreign>, 
                     probabilmente non senza ragione, dal momento che <foreign xml:lang="grc">tèras</foreign>, cioè 'mostro', 
@@ -108,21 +118,21 @@
                     'messaggero', quasi che il mostro sia un segno del quale Dio altissimo si serva per
                     annunciare qualcosa: tuttavia il <persName ref="#AN">Nifo</persName> nei suoi commentari sostiene che i 
                     <foreign xml:lang="la">portenta</foreign> non
-                    rientrano in questo genere. Invece <foreign xml:lang="grc">phàsma</foreign>, a parere dello stesso <persName ref="#AR">Aristotele</persName>, nei 
-                    Meteorologica, è il nome che spetta ai mostri celesti, cioè i portenti e i prodigi; ciò malgrado,
+                    rientrano in questo genere. Invece <foreign xml:lang="grc">phàsma</foreign>, a parere dello stesso <bibl><author><persName ref="#AR">Aristotele</persName></author>, nei 
+                    <title>Meteorologica</title></bibl>, è il nome che spetta ai mostri celesti, cioè i portenti e i prodigi; ciò malgrado,
                     alcuni autori si sono serviti pure di questo vocabolo al posto di <foreign xml:lang="la">monstrum</foreign>. In greco
                     anche <foreign xml:lang="grc">pèlor</foreign> può certo indicare il mostro, ma per lo più quando questo si presenta con
                     dimensioni enormi, eccezionali, perché il nome viene da <foreign xml:lang="grc">pèlas òrous on to megèthei</foreign>,
-                    cioè 'così grande da eguagliare quasi una montagna'. Per tale motivo <persName ref="#AP">Apollonio</persName>, in
-                    un passo degli Argonautica, ha usato questo vocabolo per riferirsi ai Giganti<note place="foot" n="237"><persName ref="#AP">APOLLONIO RODIO</persName>, 
-                    Argonautica, I.996</note>; il medesimo autore, però, in un passo successivo ha impiegato la stessa parola anche
+                    cioè 'così grande da eguagliare quasi una montagna'. Per tale motivo <bibl><author><persName ref="#AP">Apollonio</persName></author>, in
+                    un passo degli <title>Argonautica</title></bibl>, ha usato questo vocabolo per riferirsi ai Giganti<note place="foot" n="237"><bibl><author><persName ref="#AP">APOLLONIO RODIO</persName></author>, 
+                    <title>Argonautica</title>, I.996</bibl></note>; il medesimo autore, però, in un passo successivo ha impiegato la stessa parola anche
                     per descrivere un parto mostruoso<note place="foot" n="238">Ivi, II.39</note>. Altri, fra i Greci, definirono i mostri <foreign xml:lang="grc">apophòlia</foreign>,
                     usando l'aggettivo <foreign xml:lang="grc">apophòlios</foreign> per intendere una cosa mostruosa o prodigiosa, benché,
                     in generale, esso denoti qualcosa di vano o inutile: per esempio, in senso proprio, si
                     dicono <foreign xml:lang="grc">apophòlia</foreign> le uova di uccello che non siano fecondate; tuttavia questo vocabolo
                     comprende anche i parti degeneri.
                     </p>
-                    <p>Il mostro è chiamato in ebraico, come si legge nel Deuteronomio, <foreign xml:lang="he">mopeth</foreign>, dalla voce
+                    <p>Il mostro è chiamato in ebraico, come si legge nel <bibl><title>Deuteronomio</title></bibl>, <foreign xml:lang="he">mopeth</foreign>, dalla voce
                     verbale <foreign xml:lang="he">haphah</foreign>, 'esso si mostrò', oppure da <foreign xml:lang="he">pathah</foreign>, 'esso 
                     persuase', poiché i mostri e i portenti, predicendo mali venturi agli uomini, li riconducono a più 
                     saggi consigli. In tedesco si chiama <foreign xml:lang="de">ein Wunderding</foreign>, oppure <foreign xml:lang="de">ein 
