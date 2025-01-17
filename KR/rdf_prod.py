@@ -64,42 +64,42 @@ for key, value in abbreviations.items():
 
 # Processing data using Pandas
 data = pd.read_csv("KO/graph_data.csv")
-data = data.map(lambda x: x.replace(" ", "_"))
+data = data.map(lambda x: x.replace(" ", "_") if "xsd" not in x else x)
 
 for _, row in data.iterrows():
 
-    s_data = row["Subject"]
-    p_data = row["Predicate"]
-    o_data = row["Object"]
+    subj_field = row["Subject"]
+    prop_field = row["Predicate"]
+    obj_field = row["Object"]
 
-    print(s_data, p_data, o_data)
+    print(subj_field, prop_field, obj_field)
 
     # Subject
-    if s_data.startswith(":"):
-        s_data = s_data.strip(":")
-        prefix = re.sub(r"\d+", "", s_data)
-        s = URIRef(lodc + prefix.lower() + "/" + s_data)
+    if subj_field.startswith(":"):
+        subj_field = subj_field.strip(":")
+        prefix = re.sub(r"\d+", "", subj_field)
+        s = URIRef(lodc + prefix.lower() + "/" + subj_field)
     else:
-        s_components = s_data.split(":")
-        s = URIRef(abbreviations[s_components[0]] + s_components[1])
+        subj_components = subj_field.split(":")
+        s = URIRef(abbreviations[subj_components[0]] + subj_components[1])
 
     # Predicate
-    p_components = p_data.split(":")
-    p = URIRef(abbreviations[p_components[0]] + p_components[1])
+    prop_components = prop_field.split(":")
+    p = URIRef(abbreviations[prop_components[0]] + prop_components[1])
 
     # Object/Literal
-    if "^^" in o_data:
-        lit_components = o_data.split("^^")
+    if "^^" in obj_field:
+        lit_components = obj_field.split("^^")
         value = lit_components[0].strip('"')
         datatype = datatypes_table[lit_components[1]]
         o = Literal(value, datatype=datatype)
-    elif o_data.startswith(":"):
-        o_data = s_data.strip(":")
-        prefix = re.sub(r"\d+", "", o_data)
-        o = URIRef(lodc + prefix.lower() + "/" + o_data)
+    elif obj_field.startswith(":"):
+        obj_field = obj_field.strip(":")
+        prefix = re.sub(r"\d+", "", obj_field)
+        o = URIRef(lodc + prefix.lower() + "/" + obj_field)
     else:
-        o_components = o_data.replace(" ", "_").split(":")
-        o = URIRef(abbreviations[o_components[0]] + o_components[1])
+        obj_components = obj_field.replace(" ", "_").split(":")
+        o = URIRef(abbreviations[obj_components[0]] + obj_components[1])
     
     graph.add((s, p, o))
 
