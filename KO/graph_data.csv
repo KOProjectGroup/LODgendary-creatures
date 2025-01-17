@@ -6,7 +6,7 @@ Subject,Predicate,Object
 :PAINTING11,cidoc:P43 has dimension,:DIMENSION2
 :PAINTING11,cidoc:P16 was used for,:ACTIVITY1
 :PAINTING11,dcterms:identifier,"""NG6294""^^xsd:string"
-:LEGENDARY_CREATURE1,rdf:type,:LEGENDARY_CREATURES
+:LEGENDARY_CREATURE1,rdf:type,LegendaryCreatures
 :PAINTING11,cidoc:P62 depicts,:LEGENDARY_CREATURE1
 :BUILDING1,schema:location,"""Trafalgar Square, London, WC2N 5DN, United Kingdom""^^xsd:string"
 :PAINTING11,dbo:basedOn,:TITLE8
@@ -23,8 +23,8 @@ Subject,Predicate,Object
 :MAP1,edm:isHeldBy,:ORGANIZATION3
 :MAP1,prov:wasAttributedTo,:PERSON11
 :MAP1,schema:alternateName,"""Hereford mappa mundi""^^xsd:string"
-::CREATURESGROUP1,rdf:type,:LEGENDARY_CREATURES
-:MAP1,cidoc:P129 is about,::CREATURESGROUP1
+:CREATURESGROUP1,rdf:type,LegendaryCreatures
+:MAP1,cidoc:P129 is about,:CREATURESGROUP1
 :PERSON3948,rdf:type,cidoc:E21 Person
 :PERSON3948,cidoc:P106 is a type of,:OCCUPATION11
 :ORGANIZATION11,schema:founder,:FOUNDER3
@@ -40,7 +40,7 @@ Subject,Predicate,Object
 :ITEM1,dcterms:issued,"""2010""^^xsd:date"
 :MANIFESTATION2,dcterms:coverage,:COUNTRY11
 :MANIFESTATION2,schema:publisher,:PUBLISHER1
-:LEGENDARY_CREATURE2,rdf:type,:LEGENDARY_CREATURES
+:LEGENDARY_CREATURE2,rdf:type,LegendaryCreatures
 :WORK4,cidoc:P129 is about,:LEGENDARY_CREATURE2
 :MANIFESTATION2,dcterms:format,"""video/dvd""^^xsd:string"
 :MANIFESTATION2,fo:duration,:DURATION1
@@ -348,11 +348,11 @@ Subject,Predicate,Object
 :SPECIFICCREATURE3,cidoc:P1 is identified by,:APPELLATION11
 :APPELLATION11,rdf:type,cidoc:E41 Appellation
 :APPELLATION11,rdfs:label,"""Phoenix""^^xsd:string"
-:SPECIFICCREATURE1,rdf:type,cidoc:E28 Conceptual Object
-:SPECIFICCREATURE1,cidoc:P1 is identified by,:APPELLATION28
+:LEGENDARY_CREATURE3,rdf:type,cidoc:E28 Conceptual Object
+:LEGENDARY_CREATURE3,cidoc:P1 is identified by,:APPELLATION28
 :APPELLATION28,rdf:type,cidoc:E41 Appellation
 :APPELLATION28,rdfs:label,"""Umi-bozu""^^xsd:string"
-:PRINT1,cidoc:P129 is about,:SPECIFICCREATURE1
+:PRINT1,cidoc:P129 is about,:LEGENDARY_CREATURE3
 :CREATION50,cidoc:P4 has time-span,:TIMESPAN50
 :TIMESPAN50,cidoc:P82 at some time within,:TIMEPRIMITIVE50
 :TIMESPAN50,rdf:type,cidoc:E52 Time-Span
@@ -420,8 +420,8 @@ Subject,Predicate,Object
 :OCCUPATION12,rdf:type,schema:Occupation
 :OCCUPATION12,schema:name,"""Painter""^^xsd:string"
 :LEGENDARY_CREATURE1,rdf:type,cidoc:E28 Conceptual Object
-::CREATURESGROUP1,rdf:type,cidoc:E28 Conceptual Object
-:SPECIFICCREATURE1,rdf:type,:LEGENDARY_CREATURES
+:CREATURESGROUP1,rdf:type,cidoc:E28 Conceptual Object
+:LEGENDARY_CREATURE3,rdf:type,LegendaryCreatures
 :WORK1,lrmoo:R3,:EXPRESSION1
 :MANIFESTATION1,lrmoo:R4,:EXPRESSION1
 :ITEM3,lrmoo:R7,:MANIFESTATION1
@@ -623,13 +623,13 @@ Subject,Predicate,Object
 :COUNTRY356,schema:foundingDate,"""2006-03-31""^^xsd:date"
 :ITEM2,dcterms:format,"""1 Blue Ray disc: color, audio""^^xsd:string"
 :ORGANIZATION403,owl:sameAs,VIAF:146997314
-:SPECIFICCREATURE3,rdf:type,:LEGENDARY_CREATURES
-:CREATURESGROUP1,rdf:type,:LEGENDARY_CREATURES
-:CREATURESGROUP2,rdf:type,:LEGENDARY_CREATURES
-:SPECIFICCREATURE2,rdf:type,:LEGENDARY_CREATURES
-:CREATURESGROUP3,rdf:type,:LEGENDARY_CREATURES
-:CREATURESGROUP4,rdf:type,:LEGENDARY_CREATURES
-:LEGENDARY_CREATURES,owl:subclassOf,cidoc:E28 Conceptual Object
+:SPECIFICCREATURE3,rdf:type,LegendaryCreatures
+:CREATURESGROUP1,rdf:type,LegendaryCreatures
+:CREATURESGROUP2,rdf:type,LegendaryCreatures
+:SPECIFICCREATURE2,rdf:type,LegendaryCreatures
+:CREATURESGROUP3,rdf:type,LegendaryCreatures
+:CREATURESGROUP4,rdf:type,LegendaryCreatures
+LegendaryCreatures,owl:subclassOf,cidoc:E28 Conceptual Object
 :LEGENDARY_CREATURE2,foaf:member,:CREATURESGROUP2
 cidoc:E39 Actor,skos:narrowMatch,schema:Organization
 cidoc:E39 Actor,skos:narrowMatch,schema:Organization

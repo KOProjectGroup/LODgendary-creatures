@@ -5,7 +5,7 @@
 21,:MAP1,edm:isHeldBy,:ORGANIZATION3
 22,:MAP1,prov:wasAttributedTo,:PERSON11
 23,:MAP1,schema:alternateName,"""Hereford mappa mundi""^^xsd:string"
-25,:MAP1,cidoc:P129 is about,::CREATURESGROUP1
+25,:MAP1,cidoc:P129 is about,:CREATURESGROUP1
 166,:MAP1,cidoc:P94 was created by ,:CREATION1
 175,:MAP1,dcterms:PyhsicalMedium,:MEDIUM1
 185,:MAP1,cidoc:P165 incorporates,:INFORMATION_OBJECT1

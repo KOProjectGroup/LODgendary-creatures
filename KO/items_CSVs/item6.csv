@@ -1,5 +1,5 @@
 ,Subject,Predicate,Object
-353,:PRINT1,cidoc:P129 is about,:SPECIFICCREATURE1
+353,:PRINT1,cidoc:P129 is about,:LEGENDARY_CREATURE3
 359,:PRINT1,rdf:type,cidoc:Physical Human-Made Object
 360,:PRINT1,rdf:type,schema:VisualArtwork
 361,:PRINT1,cidoc:P102 has title,:TITLE50

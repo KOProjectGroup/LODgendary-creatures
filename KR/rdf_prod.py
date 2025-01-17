@@ -75,10 +75,13 @@ for _, row in data.iterrows():
     print(subj_field, prop_field, obj_field)
 
     # Subject
-    if subj_field.startswith(":"):
+    if ":" not in subj_field:
         subj_field = subj_field.strip(":")
-        prefix = re.sub(r"\d+", "", subj_field)
-        s = URIRef(lodc + prefix.lower() + "/" + subj_field)
+        s = URIRef(lodc + subj_field)
+    elif subj_field.startswith(":"):
+        subj_field = subj_field.strip(":")
+        prefix = re.sub(r"\d+", "", subj_field).lower() if "CREATURE" not in subj_field else "LegendaryCreatures"
+        s = URIRef(lodc + prefix + "/" + subj_field)
     else:
         subj_components = subj_field.split(":")
         s = URIRef(abbreviations[subj_components[0]] + subj_components[1])
@@ -93,14 +96,17 @@ for _, row in data.iterrows():
         value = lit_components[0].strip('"')
         datatype = datatypes_table[lit_components[1]]
         o = Literal(value, datatype=datatype)
+    elif ":" not in obj_field:
+        obj_field = obj_field.strip(":")
+        o = URIRef(lodc + "/" + obj_field)
     elif obj_field.startswith(":"):
         obj_field = obj_field.strip(":")
-        prefix = re.sub(r"\d+", "", obj_field)
-        o = URIRef(lodc + prefix.lower() + "/" + obj_field)
+        prefix = re.sub(r"\d+", "", obj_field).lower() if "CREATURE" not in obj_field else "LegendaryCreatures"
+        o = URIRef(lodc + prefix + "/" + obj_field)
     else:
         obj_components = obj_field.replace(" ", "_").split(":")
         o = URIRef(abbreviations[obj_components[0]] + obj_components[1])
     
     graph.add((s, p, o))
 
-graph.serialize(destination="KR/items.ttl", format="turtle")
+graph.serialize(destination="KR/graph.ttl", format="turtle")

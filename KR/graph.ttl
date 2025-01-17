@@ -7,6 +7,7 @@
 @prefix fo: <https://semantics.id/ns/example/film/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix lodc: <https://w3id.org/LODgendaryCreatures/> .
 @prefix lrmoo: <http://www.cidoc-crm.org/lrmoo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -16,6 +17,8 @@
 @prefix wikidata: <http://www.wikidata.org/entity/> .
 @prefix wkm: <https://commons.wikimedia.org/wiki/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lodc:LegendaryCreatures owl:subclassOf cidoc:E28_Conceptual_Object .
 
 <https://w3id.org/LODgendaryCreatures/creation/CREATION19> a cidoc:E65_Creation ;
     cidoc:P14_carried_out_by <https://w3id.org/LODgendaryCreatures/person/PERSON33> ;
@@ -56,7 +59,7 @@
 
 <https://w3id.org/LODgendaryCreatures/map/MAP1> a aat:300028702_\(Manuscript_Map\) ;
     cidoc:P102_has_title <https://w3id.org/LODgendaryCreatures/title/TITLE10> ;
-    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP1> ;
+    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/CREATURESGROUP1> ;
     cidoc:P165_incorporates <https://w3id.org/LODgendaryCreatures/information_object/INFORMATION_OBJECT1> ;
     cidoc:P94_was_created_by_ <https://w3id.org/LODgendaryCreatures/creation/CREATION1> ;
     edm:isHeldBy <https://w3id.org/LODgendaryCreatures/organization/ORGANIZATION3> ;
@@ -80,7 +83,7 @@
     cidoc:P102_has_title <https://w3id.org/LODgendaryCreatures/title/TITLE7> ;
     cidoc:P16_was_used_for <https://w3id.org/LODgendaryCreatures/activity/ACTIVITY1> ;
     cidoc:P43_has_dimension <https://w3id.org/LODgendaryCreatures/dimension/DIMENSION2> ;
-    cidoc:P62_depicts <https://w3id.org/LODgendaryCreatures/legendary_creature/LEGENDARY_CREATURE1> ;
+    cidoc:P62_depicts <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/LEGENDARY_CREATURE1> ;
     cidoc:P94_was_created_by_ <https://w3id.org/LODgendaryCreatures/creation/CREATION6> ;
     edm:isHeldBy <https://w3id.org/LODgendaryCreatures/organization/ORGANIZATION11> ;
     dcterms1:PhysicalMedium <https://w3id.org/LODgendaryCreatures/medium/MEDIUM2> ;
@@ -97,34 +100,34 @@
     foaf:name "Gustav von Wangenheim"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/work/WORK1> a lrmoo:F1_Work ;
-    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP1> ;
+    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/CREATURESGROUP1> ;
     lrmoo:R16_was_created_by <https://w3id.org/LODgendaryCreatures/creation/CREATION4> ;
     lrmoo:R3 <https://w3id.org/LODgendaryCreatures/expression/EXPRESSION1>,
         <https://w3id.org/LODgendaryCreatures/expression/EXPRESSION2> .
 
 <https://w3id.org/LODgendaryCreatures/work/WORK18> a lrmoo:F1_Work,
         schema:Game ;
-    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP4> ;
+    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/CREATURESGROUP4> ;
     lrmoo:R16_was_created_by <https://w3id.org/LODgendaryCreatures/creation/CREATION18> ;
     lrmoo:R3 <https://w3id.org/LODgendaryCreatures/expression/EXPRESSION18> .
 
 <https://w3id.org/LODgendaryCreatures/work/WORK2> a lrmoo:F1_Work,
         schema:VideoGame ;
-    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP2> ;
+    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/CREATURESGROUP2> ;
     lrmoo:R16_was_created_by <https://w3id.org/LODgendaryCreatures/creation/CREATION5> ;
     lrmoo:R3 <https://w3id.org/LODgendaryCreatures/expression/EXPRESSION4> ;
     schema:genre "Action-adventure rpg"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/work/WORK38> a lrmoo:F1_Work,
         schema:CreativeWork ;
-    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/specificcreature/SPECIFICCREATURE3> ;
+    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/SPECIFICCREATURE3> ;
     lrmoo:R16_was_created_by <https://w3id.org/LODgendaryCreatures/creation/CREATION38> ;
     lrmoo:R3 <https://w3id.org/LODgendaryCreatures/expression/EXPRESSION38> ;
     schema:genre "ballet"^^xsd:string .
 
 <https://w3id.org/LODgendaryCreatures/work/WORK4> a lrmoo:F1_Work,
         schema:Movie ;
-    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/legendary_creature/LEGENDARY_CREATURE2> ;
+    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/LEGENDARY_CREATURE2> ;
     cidoc:P94_was_created_by_ <https://w3id.org/LODgendaryCreatures/creation/CREATION2> ;
     lrmoo:R3 <https://w3id.org/LODgendaryCreatures/expression/EXPRESSION3>,
         <https://w3id.org/LODgendaryCreatures/expression/EXPRESSION44> ;
@@ -132,6 +135,32 @@
     fo:hasCast <https://w3id.org/LODgendaryCreatures/group/GROUP1> ;
     fo:hasDirector <https://w3id.org/LODgendaryCreatures/person/PERSON8> ;
     fo:hasGenre <https://w3id.org/LODgendaryCreatures/genre/GENRE1> .
+
+<https://w3id.org/LODgendaryCreatures/LegendaryCreatures/CREATURESGROUP3> a cidoc:E28_Conceptual_Object,
+        <https://w3id.org/LODgendaryCreatures//LegendaryCreatures> .
+
+<https://w3id.org/LODgendaryCreatures/LegendaryCreatures/CREATURESGROUP4> a cidoc:E28_Conceptual_Object,
+        <https://w3id.org/LODgendaryCreatures//LegendaryCreatures> .
+
+<https://w3id.org/LODgendaryCreatures/LegendaryCreatures/LEGENDARY_CREATURE1> a cidoc:E28_Conceptual_Object,
+        <https://w3id.org/LODgendaryCreatures//LegendaryCreatures> ;
+    rdfs1:label "Dragon"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/LegendaryCreatures/LEGENDARY_CREATURE2> a cidoc:E28_Conceptual_Object,
+        <https://w3id.org/LODgendaryCreatures//LegendaryCreatures> ;
+    foaf:member <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/CREATURESGROUP2> .
+
+<https://w3id.org/LODgendaryCreatures/LegendaryCreatures/LEGENDARY_CREATURE3> a cidoc:E28_Conceptual_Object,
+        <https://w3id.org/LODgendaryCreatures//LegendaryCreatures> ;
+    cidoc:P1_is_identified_by <https://w3id.org/LODgendaryCreatures/appellation/APPELLATION28> .
+
+<https://w3id.org/LODgendaryCreatures/LegendaryCreatures/SPECIFICCREATURE2> a cidoc:E28_Conceptual_Object,
+        <https://w3id.org/LODgendaryCreatures//LegendaryCreatures> ;
+    cidoc:P1_is_identified_by <https://w3id.org/LODgendaryCreatures/appellation/APPELLATION8> .
+
+<https://w3id.org/LODgendaryCreatures/LegendaryCreatures/SPECIFICCREATURE3> a cidoc:E28_Conceptual_Object,
+        <https://w3id.org/LODgendaryCreatures//LegendaryCreatures> ;
+    cidoc:P1_is_identified_by <https://w3id.org/LODgendaryCreatures/appellation/APPELLATION11> .
 
 <https://w3id.org/LODgendaryCreatures/acquisition/ACQUISITION1> a cidoc:E8_Acquisition ;
     cidoc:_P4_has_time-span <https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN2> .
@@ -298,12 +327,6 @@
 <https://w3id.org/LODgendaryCreatures/creation/CREATION6> a cidoc:E65_Creation ;
     cidoc:_P4_has_time-span <https://w3id.org/LODgendaryCreatures/timespan/TIMESPAN5> .
 
-<https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP3> a cidoc:E28_Conceptual_Object,
-        <https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> .
-
-<https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP4> a cidoc:E28_Conceptual_Object,
-        <https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> .
-
 <https://w3id.org/LODgendaryCreatures/designer/DESIGNER1> a edm:Agent ;
     foaf:name "William Wilkins"^^xsd:string .
 
@@ -397,14 +420,6 @@
 <https://w3id.org/LODgendaryCreatures/language/LANGUAGE3> a schema:Language ;
     foaf:name "German"^^xsd:string .
 
-<https://w3id.org/LODgendaryCreatures/legendary_creature/LEGENDARY_CREATURE1> a cidoc:E28_Conceptual_Object,
-        <https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> ;
-    rdfs1:label "Dragon"^^xsd:string .
-
-<https://w3id.org/LODgendaryCreatures/legendary_creature/LEGENDARY_CREATURE2> a cidoc:E28_Conceptual_Object,
-        <https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> ;
-    foaf:member <https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP2> .
-
 <https://w3id.org/LODgendaryCreatures/manifestation/MANIFESTATION1> a lrmoo:F3_Manifestation ;
     cidoc:P102_has_title <https://w3id.org/LODgendaryCreatures/title/TITLE3> ;
     cidoc:P1_is_identified_by <https://w3id.org/LODgendaryCreatures/id/ID1> ;
@@ -469,7 +484,7 @@
     cidoc:P102_has_title <https://w3id.org/LODgendaryCreatures/title/TITLE47> ;
     cidoc:P43_has_dimension <https://w3id.org/LODgendaryCreatures/dimension/DIMENSION14> ;
     cidoc:P51_has_former_or_current_owner <https://w3id.org/LODgendaryCreatures/person/PERSON34> ;
-    cidoc:_P129_is_about <https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP3> ;
+    cidoc:_P129_is_about <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/CREATURESGROUP3> ;
     schema:location <https://w3id.org/LODgendaryCreatures/place/PLACE14> .
 
 <https://w3id.org/LODgendaryCreatures/occupation/OCCUPATION1> a schema:Occupation ;
@@ -681,7 +696,7 @@
 <https://w3id.org/LODgendaryCreatures/print/PRINT1> a cidoc:Physical_Human-Made_Object,
         schema:VisualArtwork ;
     cidoc:P102_has_title <https://w3id.org/LODgendaryCreatures/title/TITLE50> ;
-    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/specificcreature/SPECIFICCREATURE1> ;
+    cidoc:P129_is_about <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/LEGENDARY_CREATURE3> ;
     cidoc:P1_is_identified_by <https://w3id.org/LODgendaryCreatures/id/ID50> ;
     cidoc:P43_has_dimension <https://w3id.org/LODgendaryCreatures/dimension/DIMENSION50> ;
     cidoc:P50_has_current_keeper <https://w3id.org/LODgendaryCreatures/organization/ORGANIZATION50> ;
@@ -710,19 +725,7 @@
     cidoc:P43_has_dimension <https://w3id.org/LODgendaryCreatures/dimension/DIMENSION5> ;
     cidoc:P45_consists_of <https://w3id.org/LODgendaryCreatures/material/MATERIAL1> ;
     cidoc:P50_has_current_keeper <https://w3id.org/LODgendaryCreatures/organization/ORGANIZATION4> ;
-    cidoc:_P129_is_about <https://w3id.org/LODgendaryCreatures/specificcreature/SPECIFICCREATURE2> .
-
-<https://w3id.org/LODgendaryCreatures/specificcreature/SPECIFICCREATURE1> a cidoc:E28_Conceptual_Object,
-        <https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> ;
-    cidoc:P1_is_identified_by <https://w3id.org/LODgendaryCreatures/appellation/APPELLATION28> .
-
-<https://w3id.org/LODgendaryCreatures/specificcreature/SPECIFICCREATURE2> a cidoc:E28_Conceptual_Object,
-        <https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> ;
-    cidoc:P1_is_identified_by <https://w3id.org/LODgendaryCreatures/appellation/APPELLATION8> .
-
-<https://w3id.org/LODgendaryCreatures/specificcreature/SPECIFICCREATURE3> a cidoc:E28_Conceptual_Object,
-        <https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> ;
-    cidoc:P1_is_identified_by <https://w3id.org/LODgendaryCreatures/appellation/APPELLATION11> .
+    cidoc:_P129_is_about <https://w3id.org/LODgendaryCreatures/LegendaryCreatures/SPECIFICCREATURE2> .
 
 <https://w3id.org/LODgendaryCreatures/timeprimitive/TIMEPRIMITIVE1> a cidoc:E61_Time_Primitive ;
     rdfs1:label "1959-01-01"^^xsd:date .
@@ -809,11 +812,11 @@
     cidoc:P138_represents <https://w3id.org/LODgendaryCreatures/person/PERSON1> ;
     cidoc:P2_has_type <https://w3id.org/LODgendaryCreatures/paintingtype/PAINTINGTYPE1> .
 
-<https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP1> a cidoc:E28_Conceptual_Object,
-        <https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> .
+<https://w3id.org/LODgendaryCreatures/LegendaryCreatures/CREATURESGROUP1> a cidoc:E28_Conceptual_Object,
+        <https://w3id.org/LODgendaryCreatures//LegendaryCreatures> .
 
-<https://w3id.org/LODgendaryCreatures/creaturesgroup/CREATURESGROUP2> a cidoc:E28_Conceptual_Object,
-        <https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> .
+<https://w3id.org/LODgendaryCreatures/LegendaryCreatures/CREATURESGROUP2> a cidoc:E28_Conceptual_Object,
+        <https://w3id.org/LODgendaryCreatures//LegendaryCreatures> .
 
 <https://w3id.org/LODgendaryCreatures/expression/EXPRESSION1> a cidoc:E33_Linguistic_Object,
         lrmoo:F2_Expression ;
@@ -863,8 +866,6 @@
 cidoc:E53_Place skos:narrowMatch schema:City .
 
 cidoc:E39_Actor skos:narrowMatch schema:Organization .
-
-<https://w3id.org/LODgendaryCreatures/legendary_creatures/LEGENDARY_CREATURES> owl:subclassOf cidoc:E28_Conceptual_Object .
 
 schema:Organization skos:broadMatch cidoc:E39_Actor .
 
