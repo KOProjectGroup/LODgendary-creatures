@@ -1,0 +1,23 @@
+,Subject,Predicate,Object
+423,:WORK1,lrmoo:R3,:EXPRESSION1
+424,:MANIFESTATION1,lrmoo:R4,:EXPRESSION1
+425,:ITEM3,lrmoo:R7,:MANIFESTATION1
+426,:MANIFESTATION1,rdf:type,lrmoo:F3 Manifestation
+427,:EXPRESSION1,rdf:type,lrmoo:F2 Expression
+428,:WORK1,rdf:type,lrmoo:F1 Work
+429,:ITEM3,rdf:type,lrmoo:F5 Item
+430,:WORK1,lrmoo:R3,:EXPRESSION2
+431,:WORK1,lrmoo:R16 was created by,:CREATION4
+435,:EXPRESSION2,rdf:type,lrmoo:F2 Expression
+459,:EXPRESSION1,cidoc:P102 has title,:TITLE5
+462,:MANIFESTATION1,cidoc:P102 has title,:TITLE3
+465,:MANIFESTATION1,cidoc:P43 has dimension,:DIMENSION1
+469,:MANIFESTATION1,cidoc:P1 is identified by,:ID1
+472,:MANIFESTATION1,schema:publisher,:PUBLISHER2
+484,:ITEM3,cidoc:P50 has current keeper,:ORGANIZATION1
+496,:WORK1,cidoc:P129 is about,:CREATURESGROUP1
+527,:MANIFESTATION1,dcterms:contributor,:PERSON12
+529,:MANIFESTATION1,dcterms:extent,:DIMENSION56
+533,:MANIFESTATION1,dcterms:issued,"""2022""^^xsd:date"
+593,:EXPRESSION1,rdf:type,cidoc:E33 Linguistic Object
+594,:EXPRESSION1,cidoc:P72 has language,:LANGUAGE1

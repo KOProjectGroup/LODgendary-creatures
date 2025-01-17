@@ -1,0 +1,9 @@
+,Subject,Predicate,Object
+191,:MONUMENT1,cidoc: P129 is about,:CREATURESGROUP3
+192,:MONUMENT1,rdf:type,cidoc:Physical Human-Made Thing
+193,:MONUMENT1,rdf:type,schema:LandmarksOrHistoricalBuildings
+194,:MONUMENT1,cidoc:P102 has title,:TITLE47
+197,:CREATION19,cidoc:p94 has created,:MONUMENT1
+212,:MONUMENT1,cidoc:P51 has former or current owner,:PERSON34
+213,:MONUMENT1,cidoc:P43 has dimension,:DIMENSION14
+217,:MONUMENT1,schema:location,:PLACE14

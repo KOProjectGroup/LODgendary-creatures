@@ -1,0 +1,12 @@
+,Subject,Predicate,Object
+0,:PAINTING11,rdf:type,dbo:Painting
+1,:PAINTING11,dcterms:creator,:PERSON3948
+2,:PAINTING11,edm:isHeldBy,:ORGANIZATION11
+3,:PAINTING11,dcterms:PhysicalMedium,:MEDIUM2
+4,:PAINTING11,cidoc:P43 has dimension,:DIMENSION2
+5,:PAINTING11,cidoc:P16 was used for,:ACTIVITY1
+6,:PAINTING11,dcterms:identifier,"""NG6294""^^xsd:string"
+8,:PAINTING11,cidoc:P62 depicts,:LEGENDARY_CREATURE1
+10,:PAINTING11,dbo:basedOn,:TITLE8
+72,:PAINTING11,cidoc:P102 has title,:TITLE7
+140,:PAINTING11,cidoc:P94 was created by ,:CREATION6

@@ -40,7 +40,63 @@ for edge in edges:
         "Subject":s,
         "Predicate":p,
         "Object":o
-    }) # appending the a triple dict to the list
+    }) # appending the triple dict to the list
 
 df = pd.DataFrame(triples)
 df.to_csv(path_or_buf="KO/graph_data.csv", index=False)
+
+items = [
+    set([
+        ":WORK1",
+        ":EXPRESSION2",
+        ":EXPRESSION1",
+        ":MANIFESTATION1",
+        ":ITEM3",         
+    ]),
+    set([
+        ":WORK18",
+        ":EXPRESSION18",
+        ":MANIFESTATION18",
+        ":ITEM18",
+    ]),
+    set([
+        ":WORK2",
+        ":EXPRESSION4",    
+        ":MANIFESTATION3",
+        ":ITEM2"
+    ]),
+    set([
+        ":WORK38",
+        ":EXPRESSION38",
+        ":MANIFESTATION38",
+        ":ITEM38"
+    ]),
+    set([
+        ":WORK4",
+        ":EXPRESSION3",
+        ":EXPRESSION44",
+        ":MANIFESTATION2",
+        ":ITEM1"
+    ]),
+    ":MAP1",
+    ":PRINT1",
+    ":PAINTING11",
+    ":SCULPTURE1",
+    ":MONUMENT1"
+]
+
+counter = 0
+for item in items:
+    item_triples = []
+    for _, row in df.iterrows():
+        if isinstance(item, set):
+            if row.iloc[0] in item or row.iloc[2] in item:
+                item_triples.append(row)
+        else:
+            if row.iloc[0] == item or row.iloc[2] == item:
+                item_triples.append(row)
+    item_df = pd.DataFrame(item_triples)
+    path = f"KO/items_CSVs/item{counter}.csv"
+    item_df.to_csv(path)
+    counter += 1
+
