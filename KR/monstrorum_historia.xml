@@ -106,8 +106,8 @@
                 a dire <foreign xml:lang="la">porrodigium</foreign>, perché <foreign xml:lang="la">porro dicit</foreign>, 'dice innanzi', cioè preannuncia un accadimento
                 venturo, dedotto attraverso l'interpretazione degli uomini. Tuttavia, i predetti termini
                 vengono assai spesso confusi, e l'uno viene usato liberamente al posto dell'altro dagli
-                autori: così <bibl><author><persName ref="#MC">Cicerone</persName></author>, nel primo libro del <title>De divinatione</title></bibl>, scriveva che <foreign xml:lang="la">monstra</foreign>, <foreign xml:lang="la">ostenta</foreign>, <foreign xml:lang="la">portenta</foreign> e 
-                <foreign xml:lang="la">prodigia</foreign> sono così chiamati in ragione del fatto che mostrano, ostentano, presagiscono e predicono<note place="foot" n="234"><bibl><author><persName ref="#MC">CICERONE</persName></author>, <title>De divinatione</title>, I.42.93.</bibl></note>.</p>
+                autori: così <persName ref="#MC">Cicerone</persName>, nel primo libro del <bibl><ref target="#divinatione"><title>De divinatione</title></ref></bibl>, scriveva che <foreign xml:lang="la">monstra</foreign>, <foreign xml:lang="la">ostenta</foreign>, <foreign xml:lang="la">portenta</foreign> e 
+                <foreign xml:lang="la">prodigia</foreign> sono così chiamati in ragione del fatto che mostrano, ostentano, presagiscono e predicono<note place="foot" n="234"><bibl  xml:id="divinatione"><author><persName ref="#MC">CICERONE</persName></author>, <title>De divinatione</title>, I.42.93.</bibl></note>.</p>
                 <p>Se spostiamo l'attenzione sulla lingua greca, ci imbattiamo nella medesima promiscuità di termini. Infatti <persName ref="#AR">Aristotele</persName>
                     parlò di <foreign xml:lang="grc">ta tèrata amartèmata tes physeos</foreign>, cioè 'i
                     mostri errori della natura'<note place="foot" n="235"><bibl><author><persName ref="#AR">ARISTOTELE</persName></author>, <title>De generatione animalium</title>, IV.4 (769b-770b)</bibl>.</note>; 
@@ -123,10 +123,10 @@
                     alcuni autori si sono serviti pure di questo vocabolo al posto di <foreign xml:lang="la">monstrum</foreign>. In greco
                     anche <foreign xml:lang="grc">pèlor</foreign> può certo indicare il mostro, ma per lo più quando questo si presenta con
                     dimensioni enormi, eccezionali, perché il nome viene da <foreign xml:lang="grc">pèlas òrous on to megèthei</foreign>,
-                    cioè 'così grande da eguagliare quasi una montagna'. Per tale motivo <bibl><author><persName ref="#AP">Apollonio</persName></author>, in
-                    un passo degli <title>Argonautica</title></bibl>, ha usato questo vocabolo per riferirsi ai Giganti<note place="foot" n="237"><bibl><author><persName ref="#AP">APOLLONIO RODIO</persName></author>, 
+                    cioè 'così grande da eguagliare quasi una montagna'. Per tale motivo <persName ref="#AP">Apollonio</persName>, in
+                    un passo degli <bibl><ref target="#argonautica"><title>Argonautica</title></ref></bibl>, ha usato questo vocabolo per riferirsi ai Giganti<note place="foot" n="237"><bibl xml:id="argonautica"><author><persName ref="#AP">APOLLONIO RODIO</persName></author>, 
                     <title>Argonautica</title>, I.996</bibl></note>; il medesimo autore, però, in un passo successivo ha impiegato la stessa parola anche
-                    per descrivere un parto mostruoso<note place="foot" n="238">Ivi, II.39</note>. Altri, fra i Greci, definirono i mostri <foreign xml:lang="grc">apophòlia</foreign>,
+                    per descrivere un parto mostruoso<note place="foot" n="238"><bibl><ref target="argonautica">Ivi, II.39</ref></bibl></note>. Altri, fra i Greci, definirono i mostri <foreign xml:lang="grc">apophòlia</foreign>,
                     usando l'aggettivo <foreign xml:lang="grc">apophòlios</foreign> per intendere una cosa mostruosa o prodigiosa, benché,
                     in generale, esso denoti qualcosa di vano o inutile: per esempio, in senso proprio, si
                     dicono <foreign xml:lang="grc">apophòlia</foreign> le uova di uccello che non siano fecondate; tuttavia questo vocabolo
