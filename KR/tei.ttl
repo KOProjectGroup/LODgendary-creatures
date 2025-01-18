@@ -1,0 +1,103 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/LODgendaryCreatures/person/PERSON3> a ns1:E21_Person ;
+    owl:sameAs <http://viaf.org/viaf/100189101> ;
+    foaf:name <https://w3id.org/LODgendaryCreatures/name/NAME3> ;
+    schema:birthDate "1400"^^xsd:string ;
+    schema:deathDate "1475"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/person/PERSON4> a ns1:E21_Person ;
+    owl:sameAs <http://viaf.org/viaf/73879631> ;
+    foaf:name <https://w3id.org/LODgendaryCreatures/name/NAME4> ;
+    schema:birthDate "1473"^^xsd:string ;
+    schema:deathDate "1538"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/place/PLACE0> a schema:Place ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q15> ;
+    foaf:name "Africa" .
+
+<https://w3id.org/LODgendaryCreatures/source> a <http://www.cidoc-crm.org/lrmoo/F1_Work> ;
+    dcterms:coverage "Pescia, Italy" ;
+    dcterms:creator "Aldrovandi, Ulisse" ;
+    dcterms:identifier "978-88-319-8229-0" ;
+    dcterms:issued "2021" ;
+    ns1:P102_has_title "Monstrorum Historia" ;
+    schema:publisher "Lorenzo Peka" ;
+    schema:title "Moscabianca Edizioni" .
+
+<https://w3id.org/LODgendaryCreatures/work/WORK0> a <http://www.cidoc-crm.org/lrmoo/F1_Work> ;
+    dcterms:creator <https://w3id.org/LODgendaryCreatures/person/PERSON0> ;
+    dcterms:title "Etymologiae"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/work/WORK1> a <http://www.cidoc-crm.org/lrmoo/F1_Work> ;
+    dcterms:creator <https://w3id.org/LODgendaryCreatures/person/PERSON1> ;
+    dcterms:title "De divinatione"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/work/WORK2> a <http://www.cidoc-crm.org/lrmoo/F1_Work> ;
+    dcterms:creator <https://w3id.org/LODgendaryCreatures/person/PERSON2> ;
+    dcterms:title "De generatione animalium"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/work/WORK3> a <http://www.cidoc-crm.org/lrmoo/F1_Work> ;
+    dcterms:creator <https://w3id.org/LODgendaryCreatures/person/PERSON2> ;
+    dcterms:title "Meteorologica"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/work/WORK4> a <http://www.cidoc-crm.org/lrmoo/F1_Work> ;
+    dcterms:creator <https://w3id.org/LODgendaryCreatures/person/PERSON5> ;
+    dcterms:title "Argonautica"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/work/WORK5> a <http://www.cidoc-crm.org/lrmoo/F1_Work> ;
+    dcterms:title "Deuteronomio"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/name/NAME0> a ns1:E41_Appellation ;
+    rdfs:label "Isidore of Seville"@en .
+
+<https://w3id.org/LODgendaryCreatures/name/NAME1> a ns1:E41_Appellation ;
+    rdfs:label "Marcus Tullius Cicero"@en,
+        "Marco Tullio Cicerone"@it .
+
+<https://w3id.org/LODgendaryCreatures/name/NAME2> a ns1:E41_Appellation ;
+    rdfs:label "Aristotle"@en,
+        "Aristotele"@it .
+
+<https://w3id.org/LODgendaryCreatures/name/NAME3> a ns1:E41_Appellation ;
+    rdfs:label "Theodorus Gaza"@en,
+        "Teodoro Gaza"@it .
+
+<https://w3id.org/LODgendaryCreatures/name/NAME4> a ns1:E41_Appellation ;
+    rdfs:label "Agostino Nifo"@en,
+        "Agostino Nifo"@it .
+
+<https://w3id.org/LODgendaryCreatures/name/NAME5> a ns1:E41_Appellation ;
+    rdfs:label "Apollonius Rhodius"@en,
+        "Apollonio Rodio"@it .
+
+<https://w3id.org/LODgendaryCreatures/person/PERSON0> a ns1:E21_Person ;
+    owl:sameAs <http://viaf.org/viaf/803890> ;
+    foaf:name <https://w3id.org/LODgendaryCreatures/name/NAME0> ;
+    schema:birthDate "0560"^^xsd:string ;
+    schema:deathDate "0636"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/person/PERSON1> a ns1:E21_Person ;
+    owl:sameAs <http://viaf.org/viaf/78769600> ;
+    foaf:name <https://w3id.org/LODgendaryCreatures/name/NAME1> ;
+    schema:birthDate "-0106"^^xsd:string ;
+    schema:deathDate "-0043"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/person/PERSON5> a ns1:E21_Person ;
+    owl:sameAs <http://viaf.org/viaf/262974255> ;
+    foaf:name <https://w3id.org/LODgendaryCreatures/name/NAME5> ;
+    schema:birthDate "-0295"^^xsd:string ;
+    schema:deathDate "-0215"^^xsd:string .
+
+<https://w3id.org/LODgendaryCreatures/person/PERSON2> a ns1:E21_Person ;
+    owl:sameAs <http://viaf.org/viaf/7524651> ;
+    foaf:name <https://w3id.org/LODgendaryCreatures/name/NAME2> ;
+    schema:birthDate "-0384"^^xsd:string ;
+    schema:deathDate "-0322"^^xsd:string .
+
