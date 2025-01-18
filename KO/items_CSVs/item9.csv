@@ -1,9 +1,15 @@
-,Subject,Predicate,Object
-191,:MONUMENT1,cidoc: P129 is about,:CREATURESGROUP3
-192,:MONUMENT1,rdf:type,cidoc:Physical Human-Made Thing
-193,:MONUMENT1,rdf:type,schema:LandmarksOrHistoricalBuildings
-194,:MONUMENT1,cidoc:P102 has title,:TITLE47
-197,:CREATION19,cidoc:p94 has created,:MONUMENT1
-212,:MONUMENT1,cidoc:P51 has former or current owner,:PERSON34
-213,:MONUMENT1,cidoc:P43 has dimension,:DIMENSION14
-217,:MONUMENT1,schema:location,:PLACE14
+Subject,Predicate,Object
+:MONUMENT1,cidoc: P129 is about,:CREATURESGROUP3
+:MONUMENT1,rdf:type,cidoc:Physical Human-Made Thing
+:MONUMENT1,rdf:type,schema:LandmarksOrHistoricalBuildings
+:MONUMENT1,cidoc:P102 has title,:TITLE47
+:CREATION19,cidoc:p94 has created,:MONUMENT1
+:MONUMENT1,cidoc:P51 has former or current owner,:PERSON34
+:MONUMENT1,cidoc:P43 has dimension,:DIMENSION14
+:MONUMENT1,schema:location,:PLACE14
+:TITLE47,rdfs:label,"""Gardens of Bomarzo""^^xsd:string"
+:PERSON34,schema:birthDate,"""1523-7-4""^^xsd:date"
+:PERSON34,schema:deathDate,"""1583-1-28""^^xsd:date"
+:DIMENSION14,cidoc:P91 has unit,"""square metres""^^xsd:string"
+:DIMENSION14,cidoc:P90 has value,"""50000""^^xsd:integer"
+:PLACE14,schema:name,"""Bomarzo""^^xsd:string"

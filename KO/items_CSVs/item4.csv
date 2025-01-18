@@ -1,29 +1,43 @@
-,Subject,Predicate,Object
-35,:WORK4,rdf:type,schema:Movie
-36,:EXPRESSION44,cidoc:P102 has title,:TITLE11
-37,:WORK4,fo:hasDirector,:PERSON8
-38,:ITEM1,dcterms:issued,"""2010""^^xsd:date"
-39,:MANIFESTATION2,dcterms:coverage,:COUNTRY11
-40,:MANIFESTATION2,schema:publisher,:PUBLISHER1
-42,:WORK4,cidoc:P129 is about,:LEGENDARY_CREATURE2
-43,:MANIFESTATION2,dcterms:format,"""video/dvd""^^xsd:string"
-44,:MANIFESTATION2,fo:duration,:DURATION1
-45,:ITEM1,cidoc:P43 has dimension,:DIMENSION3
-46,:MANIFESTATION2,dcterms:issued,"""2003""^^xsd:date"
-47,:EXPRESSION44,lrmoo:R4,:MANIFESTATION2
-48,:MANIFESTATION2,lrmoo:R7,:ITEM1
-49,:WORK4,lrmoo:R3,:EXPRESSION3
-50,:WORK4,fo:hasCast,:GROUP1
-51,:EXPRESSION3,schema:inLanguage,:LANGUAGE3
-52,:ITEM1,edm:isHeldBy,:ORGANIZATION32
-53,:MANIFESTATION2,schema:productID,"""8019824918844""^^xsd:string"
-54,:WORK4,fo:hasGenre,:GENRE1
-58,:WORK4,wikidata:P495 (Country of Origin),:COUNTRY2
-67,:WORK4,rdf:type,lrmoo:F1 Work
-68,:WORK4,lrmoo:R3,:EXPRESSION44
-69,:EXPRESSION3,cidoc:P102 has title,:TITLE2
-120,:EXPRESSION44,rdf:type,lrmoo:F2 Expression
-121,:MANIFESTATION2,rdf:type,lrmoo:F3 Manifestation
-122,:ITEM1,rdf:type,lrmoo:F5 Item
-123,:EXPRESSION3,rdf:type,lrmoo:F2 Expression
-147,:WORK4,cidoc:P94 was created by ,:CREATION2
+Subject,Predicate,Object
+:WORK4,rdf:type,schema:Movie
+:EXPRESSION44,cidoc:P102 has title,:TITLE11
+:WORK4,fo:hasDirector,:PERSON8
+:ITEM1,dcterms:issued,"""2010""^^xsd:date"
+:MANIFESTATION2,dcterms:coverage,:COUNTRY11
+:MANIFESTATION2,schema:publisher,:PUBLISHER1
+:WORK4,cidoc:P129 is about,:LEGENDARY_CREATURE2
+:MANIFESTATION2,dcterms:format,"""video/dvd""^^xsd:string"
+:MANIFESTATION2,fo:duration,:DURATION1
+:ITEM1,cidoc:P43 has dimension,:DIMENSION3
+:MANIFESTATION2,dcterms:issued,"""2003""^^xsd:date"
+:EXPRESSION44,lrmoo:R4,:MANIFESTATION2
+:MANIFESTATION2,lrmoo:R7,:ITEM1
+:WORK4,lrmoo:R3,:EXPRESSION3
+:WORK4,fo:hasCast,:GROUP1
+:EXPRESSION3,schema:inLanguage,:LANGUAGE3
+:ITEM1,edm:isHeldBy,:ORGANIZATION32
+:MANIFESTATION2,schema:productID,"""8019824918844""^^xsd:string"
+:WORK4,fo:hasGenre,:GENRE1
+:WORK4,wikidata:P495 (Country of Origin),:COUNTRY2
+:WORK4,rdf:type,lrmoo:F1 Work
+:WORK4,lrmoo:R3,:EXPRESSION44
+:EXPRESSION3,cidoc:P102 has title,:TITLE2
+:EXPRESSION44,rdf:type,lrmoo:F2 Expression
+:MANIFESTATION2,rdf:type,lrmoo:F3 Manifestation
+:ITEM1,rdf:type,lrmoo:F5 Item
+:EXPRESSION3,rdf:type,lrmoo:F2 Expression
+:WORK4,cidoc:P94 was created by ,:CREATION2
+:PERSON8,schema:birthDate,"""1888-12-28""^^xsd:date"
+:PERSON8,schema:deathDate,"""1931-11-3""^^xsd:date"
+:TITLE2,rdfs:label,"""Nosferatu: eine Symphonie des Grauens""^^xsd:string"
+:LANGUAGE3,foaf:name,"""German""^^xsd:string"
+:COUNTRY2,foaf:name,"""Germany""^^xsd:string"
+:DIMENSION3,cidoc:P90 has value,"""19""^^xsd:integer"
+:DIMENSION3,cidoc:P91 has unit,"""cm""^^xsd:string"
+:TITLE11,rdfs:label,"""Nosferatu: il vampiro""^^xsd:string"
+:PUBLISHER1,schema:foundingDate,"""1988""^^xsd:date"
+:COUNTRY11,foaf:name,"""Italia""^^xsd:string"
+:DURATION1,rdfs:label,"""61min""^^xsd:string"
+:PUBLISHER1,foaf:name,"""Ermitage""^^xsd:string"
+:GENRE1,rdfs:label,"""Horror""^^xsd:string"
+:PERSON8,foaf:name,"""Friedrich W. Murnau""^^xsd:string"

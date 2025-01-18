@@ -1,20 +1,22 @@
-,Subject,Predicate,Object
-566,:WORK2,lrmoo:R3,:EXPRESSION4
-567,:MANIFESTATION3,lrmoo:R4,:EXPRESSION4
-568,:ITEM2,lrmoo:R7,:MANIFESTATION3
-569,:MANIFESTATION3,rdf:type,lrmoo:F3 Manifestation
-570,:EXPRESSION4,rdf:type,lrmoo:F2 Expression
-571,:WORK2,rdf:type,lrmoo:F1 Work
-572,:ITEM2,rdf:type,lrmoo:F5 Item
-574,:WORK2,cidoc:P129 is about,:CREATURESGROUP2
-575,:EXPRESSION4,cidoc:P102 has title,:TITLE6
-578,:WORK2,rdf:type,schema:VideoGame
-579,:WORK2,schema:genre,"""Action-adventure rpg""^^xsd:string"
-580,:WORK2,lrmoo:R16 was created by,:CREATION5
-597,:EXPRESSION4,cidoc:P72 has language,:LANGUAGE2
-600,:MANIFESTATION3,rdf:type,schema:VideoGame
-601,:EXPRESSION4,schema:gameEdition,"""Game of the Year edition""^^xsd:string"
-602,:MANIFESTATION3,schema:gamePlatform,"""Playstation 4""^^xsd:string"
-603,:MANIFESTATION3,schema:datePublished,"""2016""^^xsd:date"
-604,:MANIFESTATION3,schema:releasedEvent,:RELEASE1
-622,:ITEM2,dcterms:format,"""1 Blue Ray disc: color, audio""^^xsd:string"
+Subject,Predicate,Object
+:WORK2,lrmoo:R3,:EXPRESSION4
+:MANIFESTATION3,lrmoo:R4,:EXPRESSION4
+:ITEM2,lrmoo:R7,:MANIFESTATION3
+:MANIFESTATION3,rdf:type,lrmoo:F3 Manifestation
+:EXPRESSION4,rdf:type,lrmoo:F2 Expression
+:WORK2,rdf:type,lrmoo:F1 Work
+:ITEM2,rdf:type,lrmoo:F5 Item
+:WORK2,cidoc:P129 is about,:CREATURESGROUP2
+:EXPRESSION4,cidoc:P102 has title,:TITLE6
+:WORK2,rdf:type,schema:VideoGame
+:WORK2,schema:genre,"""Action-adventure rpg""^^xsd:string"
+:WORK2,lrmoo:R16 was created by,:CREATION5
+:EXPRESSION4,cidoc:P72 has language,:LANGUAGE2
+:MANIFESTATION3,rdf:type,schema:VideoGame
+:EXPRESSION4,schema:gameEdition,"""Game of the Year edition""^^xsd:string"
+:MANIFESTATION3,schema:gamePlatform,"""Playstation 4""^^xsd:string"
+:MANIFESTATION3,schema:datePublished,"""2016""^^xsd:date"
+:MANIFESTATION3,schema:releasedEvent,:RELEASE1
+:ITEM2,dcterms:format,"""1 Blue Ray disc: color, audio""^^xsd:string"
+:TITLE6,rdfs:label,"""The Witcher 3. Wild Hunt""^^xsd:string"
+:LANGUAGE2,rdfs:label,"""Ita""^^xsd:string"

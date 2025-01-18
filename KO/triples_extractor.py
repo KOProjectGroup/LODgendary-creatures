@@ -91,16 +91,18 @@ items = [
 
 counter = 0 # for file naming purposes
 for item in items:
-    item_triples = []
-    for _, row in df.iterrows():
-        if isinstance(item, set):
-            if row.iloc[0] in item or row.iloc[2] in item:
-                item_triples.append(row)
-        else:
-            if row.iloc[0] == item or row.iloc[2] == item:
-                item_triples.append(row)
-    item_df = pd.DataFrame(item_triples)
+    if isinstance(item, set):
+        item_df = df[(df["Subject"].isin(item)) | (df["Object"].isin(item))]
+        mask = ~(item_df["Object"].isin(item))
+    else:
+        item_df = df[(df["Subject"].str.contains(item)) | (df["Object"].str.contains(item))]
+        mask = ~(item_df["Object"].str.contains(item))
+    raw_objs = item_df["Object"][mask]
+    objs = raw_objs[raw_objs.str.startswith(":")]
+    final_mask = (df["Subject"].isin(objs)) & (df["Object"].str.startswith('"'))
+    obj_literals = df[final_mask]
+    final_df = pd.concat([item_df, obj_literals])
     path = f"KO/items_CSVs/item{counter}.csv"
-    item_df.to_csv(path)
+    final_df.to_csv(path, index=False)
     counter += 1
 

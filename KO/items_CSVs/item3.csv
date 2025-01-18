@@ -1,20 +1,27 @@
-,Subject,Predicate,Object
-265,:WORK38,rdf:type,lrmoo:F1 Work
-266,:WORK38,lrmoo:R3,:EXPRESSION38
-267,:EXPRESSION38,rdf:type,lrmoo:F2 Expression
-268,:MANIFESTATION38,lrmoo:R4,:EXPRESSION38
-269,:MANIFESTATION38,rdf:type,lrmoo:F3 Manifestation
-270,:ITEM38,lrmoo:R7,:MANIFESTATION38
-271,:ITEM38,rdf:type,lrmoo:F5 Item
-272,:WORK38,rdf:type,schema:CreativeWork
-273,:WORK38,schema:genre,"""ballet""^^xsd:string"
-280,:WORK38,lrmoo:R16 was created by,:CREATION38
-296,:MANIFESTATION38,rdf:type,schema:MusicRecording
-297,:MANIFESTATION38,dcterms:issued,"""1969""^^xsd:date"
-298,:MANIFESTATION38,cidoc:P1 is identified by,:ID38
-301,:EXPRESSION38,cidoc:P102 has title,:TITLE38
-304,:MANIFESTATION38,cidoc:P102 has title,:TITLE39
-307,:MANIFESTATION38,cidoc:P43 has dimension,:DIMENSION10
-311,:MANIFESTATION38,dcterms:format,:FORMAT39
-314,:ITEM38,cidoc:P50 has current keeper,:ORGANIZATION38
-344,:WORK38,cidoc:P129 is about,:SPECIFICCREATURE3
+Subject,Predicate,Object
+:WORK38,rdf:type,lrmoo:F1 Work
+:WORK38,lrmoo:R3,:EXPRESSION38
+:EXPRESSION38,rdf:type,lrmoo:F2 Expression
+:MANIFESTATION38,lrmoo:R4,:EXPRESSION38
+:MANIFESTATION38,rdf:type,lrmoo:F3 Manifestation
+:ITEM38,lrmoo:R7,:MANIFESTATION38
+:ITEM38,rdf:type,lrmoo:F5 Item
+:WORK38,rdf:type,schema:CreativeWork
+:WORK38,schema:genre,"""ballet""^^xsd:string"
+:WORK38,lrmoo:R16 was created by,:CREATION38
+:MANIFESTATION38,rdf:type,schema:MusicRecording
+:MANIFESTATION38,dcterms:issued,"""1969""^^xsd:date"
+:MANIFESTATION38,cidoc:P1 is identified by,:ID38
+:EXPRESSION38,cidoc:P102 has title,:TITLE38
+:MANIFESTATION38,cidoc:P102 has title,:TITLE39
+:MANIFESTATION38,cidoc:P43 has dimension,:DIMENSION10
+:MANIFESTATION38,dcterms:format,:FORMAT39
+:ITEM38,cidoc:P50 has current keeper,:ORGANIZATION38
+:WORK38,cidoc:P129 is about,:SPECIFICCREATURE3
+:ID38,rdfs:label,"""oai:bncrm.librari.beniculturali.it:disco/BVE0235778/1""^^xsd:string"
+:TITLE38,rdfs:label,"""The Firebird""^^xsd:string"
+:TITLE39,rdfs:label,"""The Firebird: Complete Ballet""^^xsd:string"
+:DIMENSION10,cidoc:P91 has unit,"""cm""^^xsd:string"
+:DIMENSION10,cidoc:P90 has value,"""30""^^xsd:integer"
+:FORMAT39,rdfs:label,"""1 audio disc: 33 1/3 rpm, stereo""^^xsd:string"
+:ORGANIZATION38,schema:foundingDate,"""1876""^^xsd:date"

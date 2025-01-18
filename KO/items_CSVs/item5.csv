@@ -1,11 +1,19 @@
-,Subject,Predicate,Object
-18,:MAP1,rdf:type,aat:300028702 (Manuscript Map)
-19,:MAP1,cidoc:P102 has title,:TITLE10
-20,:MAP1,dcterms:provenance,:CITY1
-21,:MAP1,edm:isHeldBy,:ORGANIZATION3
-22,:MAP1,prov:wasAttributedTo,:PERSON11
-23,:MAP1,schema:alternateName,"""Hereford mappa mundi""^^xsd:string"
-25,:MAP1,cidoc:P129 is about,:CREATURESGROUP1
-166,:MAP1,cidoc:P94 was created by ,:CREATION1
-175,:MAP1,dcterms:PyhsicalMedium,:MEDIUM1
-185,:MAP1,cidoc:P165 incorporates,:INFORMATION_OBJECT1
+Subject,Predicate,Object
+:MAP1,rdf:type,aat:300028702 (Manuscript Map)
+:MAP1,cidoc:P102 has title,:TITLE10
+:MAP1,dcterms:provenance,:CITY1
+:MAP1,edm:isHeldBy,:ORGANIZATION3
+:MAP1,prov:wasAttributedTo,:PERSON11
+:MAP1,schema:alternateName,"""Hereford mappa mundi""^^xsd:string"
+:MAP1,cidoc:P129 is about,:CREATURESGROUP1
+:MAP1,cidoc:P94 was created by ,:CREATION1
+:MAP1,dcterms:PyhsicalMedium,:MEDIUM1
+:MAP1,cidoc:P165 incorporates,:INFORMATION_OBJECT1
+:PERSON11,schema:birthDate,"""1276""^^xsd:date"
+:PERSON11,schema:deathDate,"""1312""^^xsd:date"
+:TITLE10,rdfs:label,"""Descriptio Orosii de ornesta mundi sicut interius Ostenditur""^^xsd:string"
+:ORGANIZATION3,schema:foundingDate,"""696""^^xsd:date"
+:CITY1,rdfs:label,"""Hereford (Wales, United Kingdom)""^^xsd:string"
+:MEDIUM1,rdfs:label,"""pen and ink on parchment""^^xsd:string"
+:PERSON11,foaf:name,"""Richard of Haldingham and Lafford""^^xsd:string"
+:INFORMATION_OBJECT1,dcterms:description,"""East Orientation""^^xsd:string"

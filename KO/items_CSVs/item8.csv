@@ -1,9 +1,13 @@
-,Subject,Predicate,Object
-502,:SCULPTURE1,cidoc: P129 is about,:SPECIFICCREATURE2
-503,:SCULPTURE1,rdf:type,schema:Sculpture
-504,:SCULPTURE1,cidoc:P102 has title,:TITLE4
-507,:SCULPTURE1,rdf:type,cidoc:Human-Made Object
-508,:SCULPTURE1,cidoc:P45 consists of,:MATERIAL1
-511,:CREATION3,cidoc:p94 has created,:SCULPTURE1
-518,:SCULPTURE1,cidoc:P43 has dimension,:DIMENSION5
-542,:SCULPTURE1,cidoc:P50 has current keeper,:ORGANIZATION4
+Subject,Predicate,Object
+:SCULPTURE1,cidoc: P129 is about,:SPECIFICCREATURE2
+:SCULPTURE1,rdf:type,schema:Sculpture
+:SCULPTURE1,cidoc:P102 has title,:TITLE4
+:SCULPTURE1,rdf:type,cidoc:Human-Made Object
+:SCULPTURE1,cidoc:P45 consists of,:MATERIAL1
+:CREATION3,cidoc:p94 has created,:SCULPTURE1
+:SCULPTURE1,cidoc:P43 has dimension,:DIMENSION5
+:SCULPTURE1,cidoc:P50 has current keeper,:ORGANIZATION4
+:TITLE4,rdfs:label,"""Kraken-Migof""^^xsd:string"
+:MATERIAL1,rdfs:label,"""bronze""^^xsd:string"
+:DIMENSION5,cidoc:P90 has value,"""166x302x302""^^xsd:string"
+:DIMENSION5,cidoc:P91 has unit,"""cm""^^xsd:string"

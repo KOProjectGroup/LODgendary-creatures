@@ -1,19 +1,27 @@
-,Subject,Predicate,Object
-221,:WORK18,cidoc:P129 is about,:CREATURESGROUP4
-222,:WORK18,rdf:type,lrmoo:F1 Work
-223,:WORK18,rdf:type,schema:Game
-224,:EXPRESSION18,cidoc:P102 has title,:TITLE18
-227,:WORK18,lrmoo:R16 was created by,:CREATION18
-239,:WORK18,lrmoo:R3,:EXPRESSION18
-240,:EXPRESSION18,rdf:type,lrmoo:F2 Expression
-241,:MANIFESTATION18,lrmoo:R4,:EXPRESSION18
-242,:MANIFESTATION18,rdf:type,lrmoo:F3 Manifestation
-243,:ITEM18,lrmoo:R7,:MANIFESTATION18
-244,:ITEM18,rdf:type,lrmoo:F5 Item
-245,:MANIFESTATION18,cidoc:P43 has dimension,:DIMENSION4
-249,:MANIFESTATION18,schema:publisher,:PUBLISHER18
-252,:MANIFESTATION18,dcterms:medium,:MEDIUM3
-255,:MANIFESTATION18,cidoc:P1 is identified by,:ID18
-258,:MANIFESTATION18,dcterms:issued,"""2018""^^xsd:date"
-259,:EXPRESSION18,cidoc:P72 has language,:LANGUAGE18
-262,:MANIFESTATION18,dcterms:coverage,:COUNTRY18
+Subject,Predicate,Object
+:WORK18,cidoc:P129 is about,:CREATURESGROUP4
+:WORK18,rdf:type,lrmoo:F1 Work
+:WORK18,rdf:type,schema:Game
+:EXPRESSION18,cidoc:P102 has title,:TITLE18
+:WORK18,lrmoo:R16 was created by,:CREATION18
+:WORK18,lrmoo:R3,:EXPRESSION18
+:EXPRESSION18,rdf:type,lrmoo:F2 Expression
+:MANIFESTATION18,lrmoo:R4,:EXPRESSION18
+:MANIFESTATION18,rdf:type,lrmoo:F3 Manifestation
+:ITEM18,lrmoo:R7,:MANIFESTATION18
+:ITEM18,rdf:type,lrmoo:F5 Item
+:MANIFESTATION18,cidoc:P43 has dimension,:DIMENSION4
+:MANIFESTATION18,schema:publisher,:PUBLISHER18
+:MANIFESTATION18,dcterms:medium,:MEDIUM3
+:MANIFESTATION18,cidoc:P1 is identified by,:ID18
+:MANIFESTATION18,dcterms:issued,"""2018""^^xsd:date"
+:EXPRESSION18,cidoc:P72 has language,:LANGUAGE18
+:MANIFESTATION18,dcterms:coverage,:COUNTRY18
+:TITLE18,rdfs:label,"""Cryptid""^^xsd:string"
+:DIMENSION4,cidoc:P91 has unit,"""cm""^^xsd:string"
+:DIMENSION4,cidoc:P90 has value,"""27x19x7""^^xsd:string"
+:PUBLISHER18,rdfs:label,"""playagame""^^xsd:string"
+:MEDIUM3,rdfs:label,"""Cardboard and wood""^^xsd:string"
+:ID18,rdfs:label,"""EAN 6379137151508""^^xsd:string"
+:LANGUAGE18,rdfs:label,"""Ita""^^xsd:string"
+:COUNTRY18,schema:name,"""Italy""^^xsd:string"

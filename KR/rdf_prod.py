@@ -1,11 +1,13 @@
 from rdflib import Graph, Namespace, URIRef, Literal, XSD
 import pandas as pd
 import re
+from pathlib import Path
 
 
 # Custom uri for our project
-project_root = "https://w3id.org/LODgendaryCreatures/"
-
+PROJECT_ROOT = "https://w3id.org/LODgendaryCreatures/"
+DESTINATION_PATH = "KR/graph.ttl"
+FILE_PATH = "KO/graph_data.csv"
 # Creating namespace objects for the standards employed in the KO phase
 aat = Namespace("http://vocab.getty.edu/aat/")
 fo = Namespace("https://semantics.id/ns/example/film/")
@@ -25,8 +27,7 @@ wikidata = Namespace("http://www.wikidata.org/entity/")
 foaf = Namespace("http://xmlns.com/foaf/0.1/")
 viaf = Namespace("http://viaf.org/viaf/")
 wkm = Namespace("https://commons.wikimedia.org/wiki/")
-
-lodc = Namespace(project_root) # defining our own Namespace
+lodc = Namespace(PROJECT_ROOT) # defining our own Namespace
 
 # Conversion dict, mapping abbreviations in the CSV to respective namespaces
 abbreviations = {
@@ -57,56 +58,83 @@ datatypes_table = {
     "xsd:integer":XSD.integer
     }
 
-# Graph we will populate with the data in the CSV
-graph = Graph()
-for key, value in abbreviations.items():
-    graph.bind(key, value) # binding abbreviations to respective namespace within the graph
-
-# Processing data using Pandas
-data = pd.read_csv("KO/graph_data.csv")
-data = data.map(lambda x: x.replace(" ", "_") if "xsd" not in x else x)
-
-for _, row in data.iterrows():
-
-    subj_field = row["Subject"]
-    prop_field = row["Predicate"]
-    obj_field = row["Object"]
-
-    print(subj_field, prop_field, obj_field)
-
-    # Subject
-    if ":" not in subj_field:
-        subj_field = subj_field.strip(":")
-        s = URIRef(lodc + subj_field)
-    elif subj_field.startswith(":"):
-        subj_field = subj_field.strip(":")
-        prefix = re.sub(r"\d+", "", subj_field).lower() if "CREATURE" not in subj_field else "LegendaryCreatures"
-        s = URIRef(lodc + prefix + "/" + subj_field)
-    else:
-        subj_components = subj_field.split(":")
-        s = URIRef(abbreviations[subj_components[0]] + subj_components[1])
-
-    # Predicate
-    prop_components = prop_field.split(":")
-    p = URIRef(abbreviations[prop_components[0]] + prop_components[1])
-
-    # Object/Literal
-    if "^^" in obj_field:
-        lit_components = obj_field.split("^^")
-        value = lit_components[0].strip('"')
-        datatype = datatypes_table[lit_components[1]]
-        o = Literal(value, datatype=datatype)
-    elif ":" not in obj_field:
-        obj_field = obj_field.strip(":")
-        o = URIRef(lodc + "/" + obj_field)
-    elif obj_field.startswith(":"):
-        obj_field = obj_field.strip(":")
-        prefix = re.sub(r"\d+", "", obj_field).lower() if "CREATURE" not in obj_field else "LegendaryCreatures"
-        o = URIRef(lodc + prefix + "/" + obj_field)
-    else:
-        obj_components = obj_field.replace(" ", "_").split(":")
-        o = URIRef(abbreviations[obj_components[0]] + obj_components[1])
+def csv_to_rdf(
+        data: str,
+        output_path: str,
+        abbr:dict,
+        dtypes:dict,
+        ser_format:str = "turtle"):
     
-    graph.add((s, p, o))
+    # Graph we will populate with the data in the CSV
+    graph = Graph()
+    for key, value in abbr.items():
+        graph.bind(key, value) # binding abbreviations to respective namespace within the graph
 
-graph.serialize(destination="KR/graph.ttl", format="turtle")
+    # Processing data using Pandas
+    data = pd.read_csv(data)
+    data = data.map(lambda x: x.replace(" ", "_") if "xsd" not in x else x)
+
+    for _, row in data.iterrows():
+
+        subj_field = row["Subject"]
+        prop_field = row["Predicate"]
+        obj_field = row["Object"]
+
+        print(subj_field, prop_field, obj_field)
+
+        # Subject
+        if ":" not in subj_field:
+            subj_field = subj_field.strip(":")
+            s = URIRef(lodc + subj_field)
+        elif subj_field.startswith(":"):
+            subj_field = subj_field.strip(":")
+            prefix = re.sub(r"\d+", "", subj_field).lower() if "CREATURE" not in subj_field else "LegendaryCreatures"
+            s = URIRef(lodc + prefix + "/" + subj_field)
+        else:
+            subj_components = subj_field.split(":")
+            s = URIRef(abbreviations[subj_components[0]] + subj_components[1])
+
+        # Predicate
+        prop_components = prop_field.split(":")
+        p = URIRef(abbreviations[prop_components[0]] + prop_components[1])
+
+        # Object/Literal
+        if "^^" in obj_field:
+            lit_components = obj_field.split("^^")
+            value = lit_components[0].strip('"')
+            datatype = dtypes[lit_components[1]]
+            o = Literal(value, datatype=datatype)
+        elif ":" not in obj_field:
+            obj_field = obj_field.strip(":")
+            o = URIRef(lodc + "/" + obj_field)
+        elif obj_field.startswith(":"):
+            obj_field = obj_field.strip(":")
+            prefix = re.sub(r"\d+", "", obj_field).lower() if "CREATURE" not in obj_field else "LegendaryCreatures"
+            o = URIRef(lodc + prefix + "/" + obj_field)
+        else:
+            obj_components = obj_field.replace(" ", "_").split(":")
+            o = URIRef(abbreviations[obj_components[0]] + obj_components[1])
+        
+        graph.add((s, p, o))
+
+    graph.serialize(destination=output_path, format=ser_format)
+
+if __name__ == "__main__":
+
+    if Path(DESTINATION_PATH).is_file():
+        csv_to_rdf(
+            data=FILE_PATH,
+            output_path=DESTINATION_PATH,
+            abbr=abbreviations,
+            dtypes=datatypes_table
+        )
+    else:
+        path = Path(DESTINATION_PATH)
+        file_paths = [f for f in path.iterdir() if f.is_file()]
+        for file in file_paths:
+            csv_to_rdf(
+                data=file,
+                path=DESTINATION_PATH,
+                abbr=abbreviations,
+                dtypes=datatypes_table
+            )
