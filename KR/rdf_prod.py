@@ -6,8 +6,8 @@ from pathlib import Path
 
 # Custom uri for our project
 PROJECT_ROOT = "https://w3id.org/LODgendaryCreatures/"
-DESTINATION_PATH = "KR/graph.ttl"
-FILE_PATH = "KO/graph_data.csv"
+DESTINATION_PATH = "KR/items.ttl"
+FILE_PATH = "KO/items_CSVs"
 # Creating namespace objects for the standards employed in the KO phase
 aat = Namespace("http://vocab.getty.edu/aat/")
 fo = Namespace("https://semantics.id/ns/example/film/")
@@ -58,15 +58,15 @@ datatypes_table = {
     "xsd:integer":XSD.integer
     }
 
+# Graph we will populate with the data in the CSV
+graph = Graph()
+
 def csv_to_rdf(
         data: str,
-        output_path: str,
+        graph: Graph,
         abbr:dict,
-        dtypes:dict,
-        ser_format:str = "turtle"):
+        dtypes:dict):
     
-    # Graph we will populate with the data in the CSV
-    graph = Graph()
     for key, value in abbr.items():
         graph.bind(key, value) # binding abbreviations to respective namespace within the graph
 
@@ -116,25 +116,27 @@ def csv_to_rdf(
             o = URIRef(abbreviations[obj_components[0]] + obj_components[1])
         
         graph.add((s, p, o))
-
-    graph.serialize(destination=output_path, format=ser_format)
+    return graph
 
 if __name__ == "__main__":
-
-    if Path(DESTINATION_PATH).is_file():
-        csv_to_rdf(
+    if Path(FILE_PATH).is_file():
+        graph = csv_to_rdf(
             data=FILE_PATH,
-            output_path=DESTINATION_PATH,
+            graph=graph,
             abbr=abbreviations,
             dtypes=datatypes_table
         )
+        graph.serialize(destination=DESTINATION_PATH, format="turtle")
     else:
-        path = Path(DESTINATION_PATH)
+        path = Path(FILE_PATH)
         file_paths = [f for f in path.iterdir() if f.is_file()]
+        print(file_paths)
         for file in file_paths:
-            csv_to_rdf(
+            print(file)
+            graph = csv_to_rdf(
                 data=file,
-                path=DESTINATION_PATH,
+                graph=graph,
                 abbr=abbreviations,
                 dtypes=datatypes_table
             )
+        graph.serialize(destination=DESTINATION_PATH, format="turtle")
