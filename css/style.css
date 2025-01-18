@@ -86,6 +86,55 @@ footer {
     color: #ffcc00 !important;
 }
 
+#conceptual-map .zoomable-graph {
+    width: 100%;
+    aspect-ratio: 11/6;
+}
+
+#er-model .zoomable-graph {
+    width: 100%;
+    aspect-ratio: 11/6;
+}
+
+#theoretical-model .zoomable-graph {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+#er-model-enhanced .zoomable-graph {
+    width: 100%;
+    aspect-ratio: 2/3;
+}
+
+#conceptual-model .zoomable-graph {
+    width: 100%;
+    aspect-ratio: 2/3;
+}
+
+.iframe-container {
+    border: solid 1px grey;
+    border-radius: 5px;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide scrollbars */
+    position: relative;
+}
+.iframe-wrapper {
+    width: 100%;
+    height: 100%;
+    transform-origin: top left; /* Set the origin for scaling */
+    position: absolute;
+    cursor: grab; /* Show a grabbing cursor for panning */
+}
+iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Disable direct interaction with the iframe */
+}
+
 @media (min-width: 991px) {
     .navbar {
         position: fixed;
