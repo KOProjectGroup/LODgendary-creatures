@@ -122,7 +122,7 @@
 
     <xsl:template match="tei:figure">
         <figure>
-            <img src="{tei:graphic/@url}" alt="{tei:head[1]}" />
+            <img src="{tei:graphic/@url}" alt="{tei:head[1]}" title="{tei:head[1]}" />
             <figcaption>
                 <p>
                     <xsl:value-of select="tei:head[1]" />
