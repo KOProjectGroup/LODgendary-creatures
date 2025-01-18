@@ -129,7 +129,7 @@
             <h2>Knowledge Organization</h2>
             <div id="conceptual-map">
                 <h3>Conceptual Map</h3>
-                <p>Firstly, we modeled the scenario by creating a conceptual map. This involved selecting the data associated with the various items we identified and defining the relationships between them. To ensure clarity, we expressed these relationships using natural language.</p>
+                <p>Firstly, we modeled the scenario by creating a <strong>conceptual map</strong>. This involved selecting the data associated with the various items we identified and defining the relationships between them. To ensure clarity, we expressed these relationships using natural language.</p>
                 <div class="zoomable-graph">
                     <div class="iframe-container">
                         <div class="iframe-wrapper">
@@ -140,7 +140,7 @@
             </div>
             <div id="er-model">
                 <h3>E/R Model</h3>
-                <p>Next, we developed a more abstract model, focusing on the entities that form the foundation of the scenario. This step allowed us to highlight the core components and their roles within the conceptual framework.</p>
+                <p>Next, we developed a <strong>more abstract model</strong>, focusing on the entities that form the foundation of the scenario. This step allowed us to highlight the core components and their roles within the conceptual framework.</p>
                 <div class="zoomable-graph">
                     <div class="iframe-container">
                         <div class="iframe-wrapper">
@@ -151,7 +151,7 @@
             </div>
             <div id="metadata-analysis">
                 <h3>Metadata Analysis</h3>
-                <p>The next step involved identifying the metadata standards used by institutions to describe the chosen items. When it was unclear which metadata standard had been applied to a specific item, we selected the one that best fit its description.</p>
+                <p>The next step involved <strong>identifying the metadata standards</strong> used by institutions to describe the chosen items. When it was unclear which metadata standard had been applied to a specific item, we selected the one that best fit its description.</p>
                 <table border="1">
                     <thead>
                       <tr>
@@ -232,7 +232,7 @@
             </div>
             <div id="metadata-alignment">
                 <h3>Metadata Alignment</h3>
-                <p>Then, for each concept described in natural language, we identified the most suitable entities or relationships within the metadata standards previously analyzed.</p>
+                <p>Then, for each concept described in natural language, we identified the <strong>most suitable entities or relationships</strong> within the metadata standards previously analyzed.</p>
             
                 <table border="1">
                     <thead>
@@ -507,7 +507,7 @@
             </div>
             <div id="theoretical-model">
                 <h3>Theoretical Model</h3>
-                <p>At this stage, we sought additional potential connections to enhance the initial model. This involved researching more information about agents, places, and dates associated with the main items and integrating these new data points into the model. 
+                <p>At this stage, we sought <strong>additional potential connections</strong> to enhance the initial model. This involved <strong>researching more information</strong> about agents, places, and dates associated with the main items and integrating these new data points into the model. 
                     We used various colors to highlight to which set of concepts each entity belongs to:</p>
                 <ul>
                     <li>what: red</li>
@@ -515,7 +515,7 @@
                     <li>where: green</li>
                     <li>when: yellow</li>
                 </ul>
-                <p>Additionally, we opted to reshape some item entities using the FRBR conceptual model for a more structured representation.</p>
+                <p>Additionally, we opted to <strong>reshape some item entities using the FRBR conceptual model</strong> for a more structured representation.</p>
                 <div class="zoomable-graph">
                     <div class="iframe-container">
                         <div class="iframe-wrapper">
@@ -538,7 +538,7 @@
             <div id="conceptual-model">
                 <h3>Conceptual Model</h3>
                 <p>
-                    The final step of the knowledge organization phase involved creating a conceptual model using an ontological approach. To achieve this, we refactored the terms from the theoretical model by aligning them with terms from existing schemas, vocabularies, and ontologies. Specifically, we reused the following:
+                    The final step of the knowledge organization phase involved <strong>creating a conceptual model using an ontological approach</strong>. To achieve this, we refactored the terms from the theoretical model by aligning them with terms from existing schemas, vocabularies, and ontologies. Specifically, we reused the following:
                 </p>
                 <ul>
                     <li><strong>VIAF</strong>: <a href="http://viaf.org/viaf/">http://viaf.org/viaf/</a></li>
@@ -563,7 +563,7 @@
                     Among the various options for formalizing the FRBR conceptual model, we chose <strong>LRMoo</strong> due to its full compatibility with CIDOC CRM. This decision ensured consistency with our overarching ontological framework. Additionally, we used <code>owl:sameAs</code> to link entities to their corresponding VIAF entries and to establish equivalences between classes in different ontologies.
                 </p>
                 <p>
-                    To further enrich our model, we identified semantic associations between entities or classes, employing various SKOS properties. Specifically:
+                    To further enrich our model, <strong>we identified semantic associations between entities or classes</strong>, employing various SKOS properties. Specifically:
                 </p>
                 <ul>
                     <li>
@@ -589,7 +589,7 @@
             <h2>Knowledge Representation</h2>
             <div id="items-description">
                 <h3>Items Description</h3>
-                <p>Once the modeling activity was completed, we revisited the items to describe them based on the conceptual model we designed. 
+                <p>Once the modeling activity was completed, <strong>we revisited the items to describe them based on the conceptual model we designed</strong>. 
                     To achieve this, we wrote a python script that automatically extracted all the triples from the yED diagram and stored them 
                     in a CSV file. The script then filtered the triples, retaining only those where our items appeared as the subject or object. 
                     Next, it grouped the triples by the specific item they referred to and generated a separate CSV file for each group. In these 
@@ -604,7 +604,7 @@
             </div>
             <div id="rdf-visualization">
                 <h3>RDF Visualization</h3>
-                <p>The visualization was generated using RDF Grapher (http://www.ldf.fi/service/rdf-grapher).</p>
+                <p>The visualization was generated using <a href="http://www.ldf.fi/service/rdf-grapher">RDF Grapher</a>.</p>
             </div>
         </section>
 
@@ -616,11 +616,16 @@
                 sample provided an excellent opportunity to test a variety of encoding practices, including the identification of people 
                 and places, the representation of different languages (such as Ancient Greek, Latin, and Hebrew), and the inclusion of 
                 bibliographic references.</p>
+            <p><a href="KR\monstrorum_historia.xml">Link to the XML file</a></p>
             <h3>XML to HTML transformation</h3>
             <p>The next step in this section involved transforming the XML file into HTML and producing an HTML file to enhance the readability of the content for web presentation. 
                 To achieve this, we used XSLT and leveraged the online tool <a href="https://www.freeformatter.com/xsl-transformer.html">Free Formatter</a>.</p>
+                <p><a href="KR\xml_to_html.xslt">Link to the XSLT file</a></p>
+                <p><a href="KR\MHxml_converted.html">Link to the HTML file</a></p>
             <h3>XML/TEI to RDF transformation</h3>
             <p>Lastly, we used Python libraries such as lxml and rdflib to generate an RDF dataset containing all the essential information extracted from the XML file.</p>
+            <p><a href="KR\xml_rdf_production.py">Link to the python script</a></p>
+            <p><a href="#">Link to the RDF dataset</a></p>
         </section>
     </main>
 
