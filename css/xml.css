@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -20,6 +20,7 @@ body {
     margin: 0;
     padding: 10px 0;
 }
+
 
 .header h1 {
     font-size: 2rem;
@@ -56,8 +57,8 @@ body {
 
 .content {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.1rem;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.2rem;
 }
 
 .content h2 {
@@ -68,13 +69,13 @@ body {
 .content h5 {
     margin: 20px 0;
     color: #333;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
 }
 
 .content h4 {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .content h4, .source h4, .people h4 {
@@ -92,9 +93,11 @@ body {
 
 .content figure {
     float: left;
-    width: 40%;
-    margin: 20px 20px 20px 0;
+    margin: 20px auto;
     box-sizing: border-box;
+    border-radius: 20px;
+    border: solid 1px #ccc;
+    overflow: hidden;
 }
 
 .content figure img {
@@ -106,7 +109,12 @@ body {
     margin-top: 5px;
     font-style: italic;
     color: #666;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+
+.content figure figcaption p {
+    margin: 0;
+    text-align: center;
 }
 
 .person {
@@ -122,8 +130,23 @@ a:hover {
     text-decoration: underline;
 }
 
-section {
+.divide {
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
     margin-bottom: 20px;
+}
+
+sup {
+    text-decoration: underline dotted black;
+    text-underline-offset: 3px;
+    margin: auto 0.2em;
+}
+
+sup:hover {
+    cursor: help;
+}
+
+span {
+    margin: 0;
+    padding: 0;
 }

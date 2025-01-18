@@ -13,7 +13,7 @@
                         <h1><xsl:value-of select="//tei:title" /></h1>
                         <h2>By <xsl:value-of select="//tei:author" /></h2>
                         <h3>Published by <xsl:value-of select="//tei:publisher" />, <xsl:value-of select="//tei:pubPlace" /> in <xsl:value-of select="//tei:date" /></h3>
-                        <div class="source">
+                        <div class="source divide">
                             <h4>Source Details</h4>
                             <ul>
                                 <li><strong>Title</strong>: <xsl:value-of select="//tei:sourceDesc/tei:bibl/tei:title" /></li>
@@ -25,9 +25,7 @@
                                 <li><strong>ISBN</strong>: <xsl:value-of select="//tei:sourceDesc/tei:bibl/tei:idno[@type='ISBN']" /></li>
                             </ul>
                         </div>
-                    </section>
-                    <section class="people">
-                        <div>
+                        <div class="people divide">
                             <h4>People Mentioned</h4>
                             <ul>
                                 <xsl:for-each select="//tei:listPerson/tei:person">
@@ -44,7 +42,7 @@
                             </ul>
                         </div>
                     </section>
-                    <section class="content">
+                    <section class="content divide">
                         <div>
                             <h4>Content</h4>
                             <xsl:apply-templates select="//tei:body" />
@@ -103,16 +101,19 @@
 
     <xsl:template match="tei:foreign">
         <i>
-            <xsl:attribute name="title">
-                lang: <xsl:value-of select="@xml:lang" />
-            </xsl:attribute>
+            <xsl:attribute name="title">lang: <xsl:value-of select="@xml:lang" /></xsl:attribute>
             <xsl:value-of select="." />
         </i>
     </xsl:template>
 
 
     <xsl:template match="tei:note">
-        <sup><xsl:value-of select="@n" /></sup>
+        <sup>
+            <xsl:attribute name="title">
+                <xsl:value-of select="normalize-space(.)" />
+            </xsl:attribute>
+            <xsl:value-of select="@n" />
+        </sup>
     </xsl:template>
 
     <xsl:template match="tei:placeName">
@@ -121,14 +122,14 @@
 
     <xsl:template match="tei:figure">
         <figure>
-            <img src="{tei:graphic/@url}" alt="{tei:head[1]}" />
+            <img src="{tei:graphic/@url}" alt="{tei:head[1]}" title="{tei:head[1]}" />
             <figcaption>
-                <span>
+                <p>
                     <xsl:value-of select="tei:head[1]" />
-                </span>
-                <span>
+                </p>
+                <p>
                     (<xsl:value-of select="tei:head[2]" />)
-                </span>
+                </p>
             </figcaption>
         </figure>
     </xsl:template>
