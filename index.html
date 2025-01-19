@@ -694,6 +694,1302 @@
                     in a CSV file. The script then filtered the triples, retaining only those where our items appeared as the subject or object. 
                     Next, it grouped the triples by the specific item they referred to and generated a separate CSV file for each group. In these 
                     files, columns correspond to the triples' subject, predicate, and object, while rows represent the individual statements.</p>
+                <div class="d-flex justify-content-center mb-3">
+                    <div class="btn-group" role="group" aria-label="Metadata Alignment Buttons">
+                        <button type="button" class="btn btn-secondary active" onclick="showTable('videogame-table', this)">Video Game</button>
+                        <button type="button" class="btn btn-secondary" onclick="showTable('monument-table', this)">Monument</button>
+                        <button type="button" class="btn btn-secondary" onclick="showTable('sculpture-table', this)">Sculpture</button>
+                        <button type="button" class="btn btn-secondary" onclick="showTable('book-table', this)">Book</button>
+                        <button type="button" class="btn btn-secondary" onclick="showTable('painting-table', this)">Painting</button>
+                        <button type="button" class="btn btn-secondary" onclick="showTable('map-table', this)">Map</button>
+                        <button type="button" class="btn btn-secondary" onclick="showTable('boardgame-table', this)">Board Game</button>
+                        <button type="button" class="btn btn-secondary" onclick="showTable('recording-table', this)">Sound Recording</button>
+                        <button type="button" class="btn btn-secondary" onclick="showTable('print-table', this)">Print</button>
+                        <button type="button" class="btn btn-secondary" onclick="showTable('movie-table', this)">Movie</button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table id="videogame-table" class="table-rdf">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Predicate</th>
+                            <th>Object</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>:WORK2</td>
+                            <td>lrmoo:R3</td>
+                            <td>:EXPRESSION4</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION3</td>
+                            <td>lrmoo:R4</td>
+                            <td>:EXPRESSION4</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM2</td>
+                            <td>lrmoo:R7</td>
+                            <td>:MANIFESTATION3</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION3</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F3 Manifestation</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION4</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F2 Expression</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK2</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F1 Work</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM2</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F5 Item</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK2</td>
+                            <td>cidoc:P129 is about</td>
+                            <td>:CREATURESGROUP2</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION4</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE6</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK2</td>
+                            <td>rdf:type</td>
+                            <td>schema:VideoGame</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK2</td>
+                            <td>schema:genre</td>
+                            <td>"Action-adventure rpg"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK2</td>
+                            <td>lrmoo:R16 was created by</td>
+                            <td>:CREATION5</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION4</td>
+                            <td>cidoc:P72 has language</td>
+                            <td>:LANGUAGE2</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION3</td>
+                            <td>rdf:type</td>
+                            <td>schema:VideoGame</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION4</td>
+                            <td>schema:gameEdition</td>
+                            <td>"Game of the Year edition"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION3</td>
+                            <td>schema:gamePlatform</td>
+                            <td>"Playstation 4"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION3</td>
+                            <td>schema:datePublished</td>
+                            <td>"2016"^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION3</td>
+                            <td>schema:releasedEvent</td>
+                            <td>:RELEASE1</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM2</td>
+                            <td>dcterms:format</td>
+                            <td>"1 Blue Ray disc: color, audio"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE6</td>
+                            <td>rdfs:label</td>
+                            <td>"The Witcher 3. Wild Hunt"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:LANGUAGE2</td>
+                            <td>rdfs:label</td>
+                            <td>"Ita"^^xsd:string</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="table-container">
+                    <table id="monument-table" class="table-rdf" style="display: none;">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Predicate</th>
+                            <th>Object</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>:MONUMENT1</td>
+                            <td>cidoc: P129 is about</td>
+                            <td>:CREATURESGROUP3</td>
+                          </tr>
+                          <tr>
+                            <td>:MONUMENT1</td>
+                            <td>rdf:type</td>
+                            <td>cidoc:Physical Human-Made Thing</td>
+                          </tr>
+                          <tr>
+                            <td>:MONUMENT1</td>
+                            <td>rdf:type</td>
+                            <td>schema:LandmarksOrHistoricalBuildings</td>
+                          </tr>
+                          <tr>
+                            <td>:MONUMENT1</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE47</td>
+                          </tr>
+                          <tr>
+                            <td>:CREATION19</td>
+                            <td>cidoc:p94 has created</td>
+                            <td>:MONUMENT1</td>
+                          </tr>
+                          <tr>
+                            <td>:MONUMENT1</td>
+                            <td>cidoc:P51 has former or current owner</td>
+                            <td>:PERSON34</td>
+                          </tr>
+                          <tr>
+                            <td>:MONUMENT1</td>
+                            <td>cidoc:P43 has dimension</td>
+                            <td>:DIMENSION14</td>
+                          </tr>
+                          <tr>
+                            <td>:MONUMENT1</td>
+                            <td>schema:location</td>
+                            <td>:PLACE14</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE47</td>
+                            <td>rdfs:label</td>
+                            <td>"Gardens of Bomarzo"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON34</td>
+                            <td>schema:birthDate</td>
+                            <td>"1523-7-4"^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON34</td>
+                            <td>schema:deathDate</td>
+                            <td>"1583-1-28"^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION14</td>
+                            <td>cidoc:P91 has unit</td>
+                            <td>"square metres"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION14</td>
+                            <td>cidoc:P90 has value</td>
+                            <td>"50000"^^xsd:integer</td>
+                          </tr>
+                          <tr>
+                            <td>:PLACE14</td>
+                            <td>schema:name</td>
+                            <td>"Bomarzo"^^xsd:string</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="table-container">
+                    <table id="sculpture-table" class="table-rdf" style="display: none;">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Predicate</th>
+                            <th>Object</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>:SCULPTURE1</td>
+                            <td>cidoc: P129 is about</td>
+                            <td>:SPECIFICCREATURE2</td>
+                          </tr>
+                          <tr>
+                            <td>:SCULPTURE1</td>
+                            <td>rdf:type</td>
+                            <td>schema:Sculpture</td>
+                          </tr>
+                          <tr>
+                            <td>:SCULPTURE1</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE4</td>
+                          </tr>
+                          <tr>
+                            <td>:SCULPTURE1</td>
+                            <td>rdf:type</td>
+                            <td>cidoc:Human-Made Object</td>
+                          </tr>
+                          <tr>
+                            <td>:SCULPTURE1</td>
+                            <td>cidoc:P45 consists of</td>
+                            <td>:MATERIAL1</td>
+                          </tr>
+                          <tr>
+                            <td>:CREATION3</td>
+                            <td>cidoc:p94 has created</td>
+                            <td>:SCULPTURE1</td>
+                          </tr>
+                          <tr>
+                            <td>:SCULPTURE1</td>
+                            <td>cidoc:P43 has dimension</td>
+                            <td>:DIMENSION5</td>
+                          </tr>
+                          <tr>
+                            <td>:SCULPTURE1</td>
+                            <td>cidoc:P50 has current keeper</td>
+                            <td>:ORGANIZATION4</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE4</td>
+                            <td>rdfs:label</td>
+                            <td>"Kraken-Migof"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:MATERIAL1</td>
+                            <td>rdfs:label</td>
+                            <td>"bronze"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION5</td>
+                            <td>cidoc:P90 has value</td>
+                            <td>"166x302x302"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION5</td>
+                            <td>cidoc:P91 has unit</td>
+                            <td>"cm"^^xsd:string</td>
+                          </tr>
+                        </tbody>
+                      </table>                         
+                </div>
+
+                <div class="table-container">
+                    <table id="book-table" class="table-rdf" style="display: none;">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Predicate</th>
+                            <th>Object</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>:WORK1</td>
+                            <td>lrmoo:R3</td>
+                            <td>:EXPRESSION1</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION1</td>
+                            <td>lrmoo:R4</td>
+                            <td>:EXPRESSION1</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM3</td>
+                            <td>lrmoo:R7</td>
+                            <td>:MANIFESTATION1</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION1</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F3 Manifestation</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION1</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F2 Expression</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK1</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F1 Work</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM3</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F5 Item</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK1</td>
+                            <td>lrmoo:R3</td>
+                            <td>:EXPRESSION2</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK1</td>
+                            <td>lrmoo:R16 was created by</td>
+                            <td>:CREATION4</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION2</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F2 Expression</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION1</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE5</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION1</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE3</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION1</td>
+                            <td>cidoc:P43 has dimension</td>
+                            <td>:DIMENSION1</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION1</td>
+                            <td>cidoc:P1 is identified by</td>
+                            <td>:ID1</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION1</td>
+                            <td>schema:publisher</td>
+                            <td>:PUBLISHER2</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM3</td>
+                            <td>cidoc:P50 has current keeper</td>
+                            <td>:ORGANIZATION1</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK1</td>
+                            <td>cidoc:P129 is about</td>
+                            <td>:CREATURESGROUP1</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION1</td>
+                            <td>dcterms:contributor</td>
+                            <td>:PERSON12</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION1</td>
+                            <td>dcterms:extent</td>
+                            <td>:DIMENSION56</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION1</td>
+                            <td>dcterms:issued</td>
+                            <td>"2022"^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION1</td>
+                            <td>rdf:type</td>
+                            <td>cidoc:E33 Linguistic Object</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION1</td>
+                            <td>cidoc:P72 has language</td>
+                            <td>:LANGUAGE1</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE5</td>
+                            <td>rdfs:label</td>
+                            <td>"Monstrorum Historia"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE3</td>
+                            <td>rdfs:label</td>
+                            <td>"Monstrorum Historia"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION1</td>
+                            <td>cidoc:P90 has value</td>
+                            <td>"28"^^xsd:integer</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION1</td>
+                            <td>cidoc:P91 has unit</td>
+                            <td>"cm"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:ID1</td>
+                            <td>rdfs:label</td>
+                            <td>"ISBN 9788831982290"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:PUBLISHER2</td>
+                            <td>rdfs:label</td>
+                            <td>"Moscabianca Edizioni"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:ORGANIZATION1</td>
+                            <td>schema:foundingDate</td>
+                            <td>"2001-01-01"^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION56</td>
+                            <td>rdfs:label</td>
+                            <td>"319 pages"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON12</td>
+                            <td>foaf:name</td>
+                            <td>"Lorenzo Peka"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:LANGUAGE1</td>
+                            <td>rdfs:label</td>
+                            <td>"Ita"^^xsd:string</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+                </div>
+                <div class="table-container">
+                    <table id="painting-table" class="table-rdf" style="display: none;">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Predicate</th>
+                            <th>Object</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>rdf:type</td>
+                            <td>dbo:Painting</td>
+                          </tr>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>dcterms:creator</td>
+                            <td>:PERSON3948</td>
+                          </tr>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>edm:isHeldBy</td>
+                            <td>:ORGANIZATION11</td>
+                          </tr>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>dcterms:PhysicalMedium</td>
+                            <td>:MEDIUM2</td>
+                          </tr>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>cidoc:P43 has dimension</td>
+                            <td>:DIMENSION2</td>
+                          </tr>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>cidoc:P16 was used for</td>
+                            <td>:ACTIVITY1</td>
+                          </tr>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>dcterms:identifier</td>
+                            <td>"NG6294"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>cidoc:P62 depicts</td>
+                            <td>:LEGENDARY_CREATURE1</td>
+                          </tr>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>dbo:basedOn</td>
+                            <td>:TITLE8</td>
+                          </tr>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE7</td>
+                          </tr>
+                          <tr>
+                            <td>:PAINTING11</td>
+                            <td>cidoc:P94 was created by</td>
+                            <td>:CREATION6</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON3948</td>
+                            <td>schema:birthDate</td>
+                            <td>"1397/06/15"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON3948</td>
+                            <td>schema:deathDate</td>
+                            <td>"1475-12-10"^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:ORGANIZATION11</td>
+                            <td>schema:foundingDate</td>
+                            <td>"1824"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE7</td>
+                            <td>rdfs:label</td>
+                            <td>"Saint George and the Dragon"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:LEGENDARY_CREATURE1</td>
+                            <td>rdfs:label</td>
+                            <td>"Dragon"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:ORGANIZATION11</td>
+                            <td>foaf:name</td>
+                            <td>"The National Gallery"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:MEDIUM2</td>
+                            <td>rdfs:label</td>
+                            <td>"Oil on Canvas"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION2</td>
+                            <td>cidoc:P90 has value</td>
+                            <td>"55.6×74.2"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION2</td>
+                            <td>cidoc:P91 has unit</td>
+                            <td>"cm"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON3948</td>
+                            <td>foaf:name</td>
+                            <td>"Paolo Uccello"^^xsd:string</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="table-container">
+                    <table id="map-table" class="table-rdf" style="display: none;">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Predicate</th>
+                            <th>Object</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>:MAP1</td>
+                            <td>rdf:type</td>
+                            <td>aat:300028702 (Manuscript Map)</td>
+                          </tr>
+                          <tr>
+                            <td>:MAP1</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE10</td>
+                          </tr>
+                          <tr>
+                            <td>:MAP1</td>
+                            <td>dcterms:provenance</td>
+                            <td>:CITY1</td>
+                          </tr>
+                          <tr>
+                            <td>:MAP1</td>
+                            <td>edm:isHeldBy</td>
+                            <td>:ORGANIZATION3</td>
+                          </tr>
+                          <tr>
+                            <td>:MAP1</td>
+                            <td>prov:wasAttributedTo</td>
+                            <td>:PERSON11</td>
+                          </tr>
+                          <tr>
+                            <td>:MAP1</td>
+                            <td>schema:alternateName</td>
+                            <td>"Hereford mappa mundi"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:MAP1</td>
+                            <td>cidoc:P129 is about</td>
+                            <td>:CREATURESGROUP1</td>
+                          </tr>
+                          <tr>
+                            <td>:MAP1</td>
+                            <td>cidoc:P94 was created by</td>
+                            <td>:CREATION1</td>
+                          </tr>
+                          <tr>
+                            <td>:MAP1</td>
+                            <td>dcterms:PyhsicalMedium</td>
+                            <td>:MEDIUM1</td>
+                          </tr>
+                          <tr>
+                            <td>:MAP1</td>
+                            <td>cidoc:P165 incorporates</td>
+                            <td>:INFORMATION_OBJECT1</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON11</td>
+                            <td>schema:birthDate</td>
+                            <td>"1276"^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON11</td>
+                            <td>schema:deathDate</td>
+                            <td>"1312"^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE10</td>
+                            <td>rdfs:label</td>
+                            <td>"Descriptio Orosii de ornesta mundi sicut interius Ostenditur"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:ORGANIZATION3</td>
+                            <td>schema:foundingDate</td>
+                            <td>"696"^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:CITY1</td>
+                            <td>rdfs:label</td>
+                            <td>"Hereford (Wales, United Kingdom)"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:MEDIUM1</td>
+                            <td>rdfs:label</td>
+                            <td>"pen and ink on parchment"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON11</td>
+                            <td>foaf:name</td>
+                            <td>"Richard of Haldingham and Lafford"^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:INFORMATION_OBJECT1</td>
+                            <td>dcterms:description</td>
+                            <td>"East Orientation"^^xsd:string</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="table-container">
+                    <table id="boardgame-table" class="table-rdf" style="display: none;">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Predicate</th>
+                            <th>Object</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>:WORK18</td>
+                            <td>cidoc:P129 is about</td>
+                            <td>:CREATURESGROUP4</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK18</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F1 Work</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK18</td>
+                            <td>rdf:type</td>
+                            <td>schema:Game</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION18</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE18</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK18</td>
+                            <td>lrmoo:R16 was created by</td>
+                            <td>:CREATION18</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK18</td>
+                            <td>lrmoo:R3</td>
+                            <td>:EXPRESSION18</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION18</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F2 Expression</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION18</td>
+                            <td>lrmoo:R4</td>
+                            <td>:EXPRESSION18</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION18</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F3 Manifestation</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM18</td>
+                            <td>lrmoo:R7</td>
+                            <td>:MANIFESTATION18</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM18</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F5 Item</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION18</td>
+                            <td>cidoc:P43 has dimension</td>
+                            <td>:DIMENSION4</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION18</td>
+                            <td>schema:publisher</td>
+                            <td>:PUBLISHER18</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION18</td>
+                            <td>dcterms:medium</td>
+                            <td>:MEDIUM3</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION18</td>
+                            <td>cidoc:P1 is identified by</td>
+                            <td>:ID18</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION18</td>
+                            <td>dcterms:issued</td>
+                            <td>"""2018""^^xsd:date"</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION18</td>
+                            <td>cidoc:P72 has language</td>
+                            <td>:LANGUAGE18</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION18</td>
+                            <td>dcterms:coverage</td>
+                            <td>:COUNTRY18</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE18</td>
+                            <td>rdfs:label</td>
+                            <td>"""Cryptid""^^xsd:string"</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION4</td>
+                            <td>cidoc:P91 has unit</td>
+                            <td>"""cm""^^xsd:string"</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION4</td>
+                            <td>cidoc:P90 has value</td>
+                            <td>"""27x19x7""^^xsd:string"</td>
+                          </tr>
+                          <tr>
+                            <td>:PUBLISHER18</td>
+                            <td>rdfs:label</td>
+                            <td>"""playagame""^^xsd:string"</td>
+                          </tr>
+                          <tr>
+                            <td>:MEDIUM3</td>
+                            <td>rdfs:label</td>
+                            <td>"""Cardboard and wood""^^xsd:string"</td>
+                          </tr>
+                          <tr>
+                            <td>:ID18</td>
+                            <td>rdfs:label</td>
+                            <td>"""EAN 6379137151508""^^xsd:string"</td>
+                          </tr>
+                          <tr>
+                            <td>:LANGUAGE18</td>
+                            <td>rdfs:label</td>
+                            <td>"""Ita""^^xsd:string"</td>
+                          </tr>
+                          <tr>
+                            <td>:COUNTRY18</td>
+                            <td>schema:name</td>
+                            <td>"""Italy""^^xsd:string"</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="table-container">
+                    <table id="recording-table" class="table-rdf" style="display: none;">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Predicate</th>
+                            <th>Object</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>:WORK38</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F1 Work</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK38</td>
+                            <td>lrmoo:R3</td>
+                            <td>:EXPRESSION38</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION38</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F2 Expression</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION38</td>
+                            <td>lrmoo:R4</td>
+                            <td>:EXPRESSION38</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION38</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F3 Manifestation</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM38</td>
+                            <td>lrmoo:R7</td>
+                            <td>:MANIFESTATION38</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM38</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F5 Item</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK38</td>
+                            <td>rdf:type</td>
+                            <td>schema:CreativeWork</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK38</td>
+                            <td>schema:genre</td>
+                            <td>"""ballet""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK38</td>
+                            <td>lrmoo:R16 was created by</td>
+                            <td>:CREATION38</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION38</td>
+                            <td>rdf:type</td>
+                            <td>schema:MusicRecording</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION38</td>
+                            <td>dcterms:issued</td>
+                            <td>"""1969""^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION38</td>
+                            <td>cidoc:P1 is identified by</td>
+                            <td>:ID38</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION38</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE38</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION38</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE39</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION38</td>
+                            <td>cidoc:P43 has dimension</td>
+                            <td>:DIMENSION10</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION38</td>
+                            <td>dcterms:format</td>
+                            <td>:FORMAT39</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM38</td>
+                            <td>cidoc:P50 has current keeper</td>
+                            <td>:ORGANIZATION38</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK38</td>
+                            <td>cidoc:P129 is about</td>
+                            <td>:SPECIFICCREATURE3</td>
+                          </tr>
+                          <tr>
+                            <td>:ID38</td>
+                            <td>rdfs:label</td>
+                            <td>"""oai:bncrm.librari.beniculturali.it:disco/BVE0235778/1""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE38</td>
+                            <td>rdfs:label</td>
+                            <td>"""The Firebird""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE39</td>
+                            <td>rdfs:label</td>
+                            <td>"""The Firebird: Complete Ballet""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION10</td>
+                            <td>cidoc:P91 has unit</td>
+                            <td>"""cm""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION10</td>
+                            <td>cidoc:P90 has value</td>
+                            <td>"""30""^^xsd:integer</td>
+                          </tr>
+                          <tr>
+                            <td>:FORMAT39</td>
+                            <td>rdfs:label</td>
+                            <td>"""1 audio disc: 33 1/3 rpm, stereo""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:ORGANIZATION38</td>
+                            <td>schema:foundingDate</td>
+                            <td>"""1876""^^xsd:date</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="table-container">
+                    <table id="print-table" class="table-rdf" style="display: none;">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Predicate</th>
+                            <th>Object</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>:PRINT1</td>
+                            <td>cidoc:P129 is about</td>
+                            <td>:LEGENDARY_CREATURE3</td>
+                          </tr>
+                          <tr>
+                            <td>:PRINT1</td>
+                            <td>rdf:type</td>
+                            <td>cidoc:Physical Human-Made Object</td>
+                          </tr>
+                          <tr>
+                            <td>:PRINT1</td>
+                            <td>rdf:type</td>
+                            <td>schema:VisualArtwork</td>
+                          </tr>
+                          <tr>
+                            <td>:PRINT1</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE50</td>
+                          </tr>
+                          <tr>
+                            <td>:PRINT1</td>
+                            <td>schema:countryOfOrigin</td>
+                            <td>:COUNTRY50</td>
+                          </tr>
+                          <tr>
+                            <td>:PRINT1</td>
+                            <td>cidoc:P43 has dimension</td>
+                            <td>:DIMENSION50</td>
+                          </tr>
+                          <tr>
+                            <td>:PRINT1</td>
+                            <td>cidoc:P1 is identified by</td>
+                            <td>:ID50</td>
+                          </tr>
+                          <tr>
+                            <td>:PRINT1</td>
+                            <td>dcterms:medium</td>
+                            <td>:MEDIUM50</td>
+                          </tr>
+                          <tr>
+                            <td>:PRINT1</td>
+                            <td>cidoc:P50 has current keeper</td>
+                            <td>:ORGANIZATION50</td>
+                          </tr>
+                          <tr>
+                            <td>:CREATION50</td>
+                            <td>cidoc:P49 has created</td>
+                            <td>:PRINT1</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE50</td>
+                            <td>rdfs:label</td>
+                            <td>"""Kuwana: The Story of the Sailor Tokuzo, from the series Fifty-three Parallels for the Tokaido""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:COUNTRY50</td>
+                            <td>rdfs:label</td>
+                            <td>"""Japan""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION50</td>
+                            <td>cidoc:P91 has unit</td>
+                            <td>"""mm""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION50</td>
+                            <td>cidoc:P90 has value</td>
+                            <td>"""353x236""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:ID50</td>
+                            <td>rdfs:label</td>
+                            <td>"""2004.52""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:MEDIUM50</td>
+                            <td>rdfs:label</td>
+                            <td>"""Color woodcut""^^xsd:string</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="table-container">
+                    <table id="movie-table" class="table-rdf" style="display: none;">
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Predicate</th>
+                            <th>Object</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>:WORK4</td>
+                            <td>rdf:type</td>
+                            <td>schema:Movie</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION44</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE11</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK4</td>
+                            <td>fo:hasDirector</td>
+                            <td>:PERSON8</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM1</td>
+                            <td>dcterms:issued</td>
+                            <td>"""2010""^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION2</td>
+                            <td>dcterms:coverage</td>
+                            <td>:COUNTRY11</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION2</td>
+                            <td>schema:publisher</td>
+                            <td>:PUBLISHER1</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK4</td>
+                            <td>cidoc:P129 is about</td>
+                            <td>:LEGENDARY_CREATURE2</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION2</td>
+                            <td>dcterms:format</td>
+                            <td>"""video/dvd""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION2</td>
+                            <td>fo:duration</td>
+                            <td>:DURATION1</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM1</td>
+                            <td>cidoc:P43 has dimension</td>
+                            <td>:DIMENSION3</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION2</td>
+                            <td>dcterms:issued</td>
+                            <td>"""2003""^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION44</td>
+                            <td>lrmoo:R4</td>
+                            <td>:MANIFESTATION2</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION2</td>
+                            <td>lrmoo:R7</td>
+                            <td>:ITEM1</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK4</td>
+                            <td>lrmoo:R3</td>
+                            <td>:EXPRESSION3</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK4</td>
+                            <td>fo:hasCast</td>
+                            <td>:GROUP1</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION3</td>
+                            <td>schema:inLanguage</td>
+                            <td>:LANGUAGE3</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM1</td>
+                            <td>edm:isHeldBy</td>
+                            <td>:ORGANIZATION32</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION2</td>
+                            <td>schema:productID</td>
+                            <td>"""8019824918844""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK4</td>
+                            <td>fo:hasGenre</td>
+                            <td>:GENRE1</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK4</td>
+                            <td>wikidata:P495 (Country of Origin)</td>
+                            <td>:COUNTRY2</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK4</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F1 Work</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK4</td>
+                            <td>lrmoo:R3</td>
+                            <td>:EXPRESSION44</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION3</td>
+                            <td>cidoc:P102 has title</td>
+                            <td>:TITLE2</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION44</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F2 Expression</td>
+                          </tr>
+                          <tr>
+                            <td>:MANIFESTATION2</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F3 Manifestation</td>
+                          </tr>
+                          <tr>
+                            <td>:ITEM1</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F5 Item</td>
+                          </tr>
+                          <tr>
+                            <td>:EXPRESSION3</td>
+                            <td>rdf:type</td>
+                            <td>lrmoo:F2 Expression</td>
+                          </tr>
+                          <tr>
+                            <td>:WORK4</td>
+                            <td>cidoc:P94 was created by</td>
+                            <td>:CREATION2</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON8</td>
+                            <td>schema:birthDate</td>
+                            <td>"""1888-12-28""^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON8</td>
+                            <td>schema:deathDate</td>
+                            <td>"""1931-11-3""^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE2</td>
+                            <td>rdfs:label</td>
+                            <td>"""Nosferatu: eine Symphonie des Grauens""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:LANGUAGE3</td>
+                            <td>foaf:name</td>
+                            <td>"""German""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:COUNTRY2</td>
+                            <td>foaf:name</td>
+                            <td>"""Germany""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION3</td>
+                            <td>cidoc:P90 has value</td>
+                            <td>"""19""^^xsd:integer</td>
+                          </tr>
+                          <tr>
+                            <td>:DIMENSION3</td>
+                            <td>cidoc:P91 has unit</td>
+                            <td>"""cm""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:TITLE11</td>
+                            <td>rdfs:label</td>
+                            <td>"""Nosferatu: il vampiro""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:PUBLISHER1</td>
+                            <td>schema:foundingDate</td>
+                            <td>"""1988""^^xsd:date</td>
+                          </tr>
+                          <tr>
+                            <td>:COUNTRY11</td>
+                            <td>foaf:name</td>
+                            <td>"""Italia""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:DURATION1</td>
+                            <td>rdfs:label</td>
+                            <td>"""61min""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:PUBLISHER1</td>
+                            <td>foaf:name</td>
+                            <td>"""Ermitage""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:GENRE1</td>
+                            <td>rdfs:label</td>
+                            <td>"""Horror""^^xsd:string</td>
+                          </tr>
+                          <tr>
+                            <td>:PERSON8</td>
+                            <td>foaf:name</td>
+                            <td>"""Friedrich W. Murnau""^^xsd:string</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+
+                
             </div>
             <div id="rdf-production">
                 <h3>RDF Production</h3>
