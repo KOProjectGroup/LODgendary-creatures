@@ -1,0 +1,26 @@
+/* Assuming the navbar color is defined as follows */
+
+.btn-secondary.active {
+    background-color: #35424a; /* Change to your desired color */
+    color: white; /* Change to your desired text color */
+  }
+
+thead {
+    background-color: rgb(223, 219, 219);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(223, 219, 219);
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
