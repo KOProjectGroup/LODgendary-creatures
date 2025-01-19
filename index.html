@@ -596,7 +596,7 @@
             <div id="items-description">
                 <h3>Items Description</h3>
                 <p>Once the modeling activity was completed, <strong>we revisited the items to describe them based on the conceptual model we designed</strong>. 
-                    To achieve this, we wrote a python script that automatically extracted all the triples from the yED diagram and stored them 
+                    To achieve this, we wrote a <a href="KO\triples_extractor.py">python script</a> that automatically extracted all the triples from the yED diagram and stored them 
                     in a CSV file. The script then filtered the triples, retaining only those where our items appeared as the subject or object. 
                     Next, it grouped the triples by the specific item they referred to and generated a separate CSV file for each group. In these 
                     files, columns correspond to the triples' subject, predicate, and object, while rows represent the individual statements.</p>
@@ -737,5 +737,6 @@
       button.classList.add('active');
     }
     </script>
+    <script src="https://gist.github.com/username/gist-id.js"></script>
 </body>
 </html>
