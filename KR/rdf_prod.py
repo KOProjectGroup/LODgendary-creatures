@@ -52,6 +52,7 @@ abbreviations = {
     "wkm":wkm
     }
 
+# datatype mapping for literals
 datatypes_table = {
     "xsd:string":XSD.string,
     "xsd:date":XSD.date,
@@ -72,7 +73,7 @@ def csv_to_rdf(
 
     # Processing data using Pandas
     data = pd.read_csv(data)
-    data = data.map(lambda x: x.replace(" ", "_") if "xsd" not in x else x)
+    data = data.map(lambda x: x.replace(" ", "_") if "xsd" not in x else x) # removing whitespaces which are not in a literal
 
     for _, row in data.iterrows():
 
@@ -80,18 +81,20 @@ def csv_to_rdf(
         prop_field = row["Predicate"]
         obj_field = row["Object"]
 
-        print(subj_field, prop_field, obj_field)
+        ### string processing for data cleaning and URI minting ### 
 
         # Subject
-        if ":" not in subj_field:
+        if ":" not in subj_field: # condition to catch the main class (LegendaryCreatures) to create custom URI
             subj_field = subj_field.strip(":")
             s = URIRef(lodc + subj_field)
-        elif subj_field.startswith(":"):
+        elif subj_field.startswith(":"): # handling class instances
             subj_field = subj_field.strip(":")
+            # prefix for all the individuals in input, automatically created based on their name
+            # custom prefix for the instances of our main class (LegendaryCreatures)
             prefix = re.sub(r"\d+", "", subj_field).lower() if "CREATURE" not in subj_field else "LegendaryCreatures"
             s = URIRef(lodc + prefix + "/" + subj_field)
         else:
-            subj_components = subj_field.split(":")
+            subj_components = subj_field.split(":") # splitting prefixed entities (ex. schema:Place)
             s = URIRef(abbreviations[subj_components[0]] + subj_components[1])
 
         # Predicate
@@ -99,12 +102,12 @@ def csv_to_rdf(
         p = URIRef(abbreviations[prop_components[0]] + prop_components[1])
 
         # Object/Literal
-        if "^^" in obj_field:
+        if "^^" in obj_field: # handling literals separately
             lit_components = obj_field.split("^^")
             value = lit_components[0].strip('"')
             datatype = dtypes[lit_components[1]]
             o = Literal(value, datatype=datatype)
-        elif ":" not in obj_field:
+        elif ":" not in obj_field: # again, handling our main class
             obj_field = obj_field.strip(":")
             o = URIRef(lodc + "/" + obj_field)
         elif obj_field.startswith(":"):
@@ -112,15 +115,15 @@ def csv_to_rdf(
             prefix = re.sub(r"\d+", "", obj_field).lower() if "CREATURE" not in obj_field else "LegendaryCreatures"
             o = URIRef(lodc + prefix + "/" + obj_field)
         else:
-            obj_components = obj_field.replace(" ", "_").split(":")
+            obj_components = obj_field.split(":")
             o = URIRef(abbreviations[obj_components[0]] + obj_components[1])
         
-        graph.add((s, p, o))
+        graph.add((s, p, o)) # populating graph with each processed components of the dataframe
     return graph
 
 if __name__ == "__main__":
     path = Path(FILE_PATH)
-    if path .is_file():
+    if path .is_file(): # conversion of a single file
         graph = csv_to_rdf(
             data=FILE_PATH,
             graph=graph,
@@ -129,7 +132,7 @@ if __name__ == "__main__":
         )
         graph.serialize(destination=DESTINATION_PATH, format="turtle")
     else:
-        file_paths = [f for f in path.iterdir() if f.is_file()]
+        file_paths = [f for f in path.iterdir() if f.is_file()] # conversion of a directory of csv files
         print(file_paths)
         for file in file_paths:
             print(file)
