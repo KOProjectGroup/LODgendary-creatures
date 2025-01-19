@@ -200,3 +200,14 @@ iframe {
         max-width: 100%;
     }
 }
+
+@media (max-height: 870px) {
+
+    .navbar-nav {
+        padding: 0;
+    }
+
+    .nav-link {
+        padding: 0.5rem;
+    }
+}
