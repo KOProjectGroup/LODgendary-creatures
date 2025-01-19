@@ -25,13 +25,6 @@ td {
   overflow-x: auto;
 }
 
-.table-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-
 .table-rdf {
 width: 100%;
 margin: auto;
