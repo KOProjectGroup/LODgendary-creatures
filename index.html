@@ -1997,6 +1997,15 @@
                     from the main CSV file generated from the yED diagram. For demonstration purposes, we also created a smaller 
                     dataset using the CSV files specifically related to the items. This approach improved the readability of the 
                     knowledge graph visualization.</p>
+                <p>
+                    <details>
+                        <summary class="text-decoration-underline text-primary">View code</summary>
+                        <script src="https://gist.github.com/valetedd/4ec56c8d688a7ff13979655c13f6ddef.js"></script>
+                    </details>
+                </p>
+                <p><a href="KR/rdf_prod.py">Download script</a></p>
+                <p><a href="KR/items.ttl">RDF dataset sample (.ttl)</a></p>
+                <p><a href="KR/graph.ttl">Full RDF dataset(.ttl)</a></p>
             </div>
             <div id="rdf-visualization">
                 <h3>RDF Visualization</h3>
@@ -2020,8 +2029,16 @@
                 <p><a href="KR\MHxml_converted.html">Link to the HTML file</a></p>
             <h3>XML/TEI to RDF transformation</h3>
             <p>Lastly, we used Python libraries such as lxml and rdflib to generate an RDF dataset containing all the essential information extracted from the XML file.</p>
-            <p><a href="KR\xml_rdf_production.py">Link to the python script</a></p>
-            <p><a href="#">Link to the RDF dataset</a></p>
+
+            <p>
+                <details>
+                    <summary class="text-decoration-underline text-primary">View code</summary>
+                    <script src="https://gist.github.com/valetedd/88db526deca1ac610abaef914e7d9d22.js"></script>
+                </details>
+            </p>
+
+            <p><a href="KR\xml_rdf_production.py">Download script</a></p>
+            <p><a href="#">RDF dataset (.ttl)</a></p>
         </section>
     </main>
 
@@ -2067,9 +2084,17 @@
                 let scale = 1; // Initial zoom level
                 let isPanning = false;
                 let startX = 0, startY = 0, originX = 0, originY = 0;
+                let isZoomActive = false;
+
+                // Activate zoom on click
+                iframeWrapper.addEventListener('click', () => {
+                    isZoomActive = true;
+                    iframeWrapper.style.cursor = 'grab';
+                });
 
                 // Prevent page scroll when cursor is on iframe
                 iframeWrapper.addEventListener('wheel', (event) => {
+                    if (!isZoomActive) return;
                     event.preventDefault();
                     event.stopPropagation(); // Add this line to stop event propagation
                     const zoomSpeed = 0.1;
@@ -2084,6 +2109,7 @@
 
                 // Pan functionality
                 iframeWrapper.addEventListener('mousedown', (event) => {
+                    if (!isZoomActive) return;
                     isPanning = true;
                     iframeWrapper.style.cursor = 'grabbing';
                     startX = event.clientX;
@@ -2103,7 +2129,9 @@
 
                 window.addEventListener('mouseup', () => {
                     isPanning = false;
-                    iframeWrapper.style.cursor = 'grab';
+                    if (isZoomActive) {
+                        iframeWrapper.style.cursor = 'grab';
+                    }
                 });
             });
 
@@ -2127,6 +2155,5 @@
       button.classList.add('active');
     }
     </script>
-    <script src="https://gist.github.com/username/gist-id.js"></script>
 </body>
 </html>
