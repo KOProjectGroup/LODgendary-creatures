@@ -108,7 +108,7 @@ footer {
 
 #conceptual-model .zoomable-graph {
     width: 100%;
-    aspect-ratio: 2/3;
+    aspect-ratio: 1/1;
 }
 
 .iframe-container {
