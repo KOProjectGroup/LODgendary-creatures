@@ -656,6 +656,13 @@
                 <p>
                     These steps allowed us to formalize and enrich our conceptual model, ensuring it was both robust and interoperable across various ontological frameworks.
                 </p>
+                <div class="zoomable-graph">
+                    <div class="iframe-container">
+                        <div class="iframe-wrapper">
+                            <iframe src="graphs/05-conceptual_model.html" title="Zoomable and Pannable Page"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -752,7 +759,7 @@
                     event.stopPropagation(); // Add this line to stop event propagation
                     const zoomSpeed = 0.1;
                     const delta = event.deltaY > 0 ? -zoomSpeed : zoomSpeed;
-                    scale = Math.min(Math.max(1, scale + delta), 7); // Limit zoom level between 1 and 5
+                    scale = Math.min(Math.max(1, scale + delta), 10); // Limit zoom level between 1 and 8
                     const rect = iframeWrapper.getBoundingClientRect();
                     const offsetX = (event.clientX - rect.left) / rect.width;
                     const offsetY = (event.clientY - rect.top) / rect.height;
