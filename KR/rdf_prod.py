@@ -119,7 +119,8 @@ def csv_to_rdf(
     return graph
 
 if __name__ == "__main__":
-    if Path(FILE_PATH).is_file():
+    path = Path(FILE_PATH)
+    if path .is_file():
         graph = csv_to_rdf(
             data=FILE_PATH,
             graph=graph,
@@ -128,7 +129,6 @@ if __name__ == "__main__":
         )
         graph.serialize(destination=DESTINATION_PATH, format="turtle")
     else:
-        path = Path(FILE_PATH)
         file_paths = [f for f in path.iterdir() if f.is_file()]
         print(file_paths)
         for file in file_paths:
