@@ -94,10 +94,15 @@ for item in items:
     if isinstance(item, set):
         item_df = df[(df["Subject"].isin(item)) | (df["Object"].isin(item))]
         mask = ~(item_df["Object"].isin(item))
+        mask2 = ~(item_df["Subject"].isin(item))
     else:
         item_df = df[(df["Subject"].str.contains(item)) | (df["Object"].str.contains(item))]
         mask = ~(item_df["Object"].str.contains(item))
+        mask2 = ~(item_df["Subject"].str.contains(item))
     raw_objs = item_df["Object"][mask]
+    raw_objs2 = item_df["Subject"][mask2]
+    raw_objs = pd.concat([raw_objs, raw_objs2])
+    print(raw_objs)
     objs = raw_objs[raw_objs.str.startswith(":")]
     final_mask = (df["Subject"].isin(objs)) & (df["Object"].str.startswith('"'))
     obj_literals = df[final_mask]
