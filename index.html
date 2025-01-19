@@ -464,10 +464,7 @@
                       <td>P170 (creator)</td>
                       <td>E39 Actor</td>
                       <td>Statement of responsibility</td>
-                      <td>
-                        &lt;edm:ProvidedCHO&gt;&lt;dcterms:creator
-                        rdf:resource=#""/&gt;&lt;/edm:ProvidedCHO&gt;
-                      </td>
+                      <td>edm:ProvidedCHO.creator</td>
                       <td>200 $f (Statement of responsibility)</td>
                     </tr>
                     <tr>
@@ -476,9 +473,7 @@
                       <td>P123 (publisher)</td>
                       <td>&nbsp;</td>
                       <td>Publisher</td>
-                      <td>
-                        &lt;edm:ProvidedCHO&gt;&lt;dcterms:publisher&gt;#&lt;/dcterms:publisher&gt;&lt;/edm:ProvidedCHO&gt;
-                      </td>
+                      <td>edm:ProvidedCHO.publisher</td>
                       <td>210 $b (Name of publisher)</td>
                     </tr>
                     <tr>
@@ -487,10 +482,8 @@
                       <td>P98 (editor)</td>
                       <td>E29 Actor</td>
                       <td>Statement of responsibility</td>
-                      <td>&lt;edm:Agent rdf:about=""#""&gt;&lt;/edm:Agent&gt;</td>
-                      <td>
-                        205 $f (statement of responsability relative to the edition)
-                      </td>
+                      <td>edm:Agent</td>
+                      <td>205 $f (statement of responsability relative to the edition)</td>
                     </tr>
                     <tr>
                       <td>Commissioner</td>
@@ -498,8 +491,17 @@
                       <td>P6241 (patron)</td>
                       <td>E39 Actor</td>
                       <td>&nbsp;</td>
-                      <td>&lt;edm:Agent rdf:about="#"&gt;&lt;/edm:Agent&gt;</td>
+                      <td>edm:Agent</td>
                       <td>702 $a (role)</td>
+                    </tr>
+                    <tr>
+                      <td>Organization</td>
+                      <td>dcterms:provenance</td>
+                      <td>Q43229 (organization)</td>
+                      <td>E39 Actor</td>
+                      <td>&nbsp;</td>
+                      <td>edm:provider</td>
+                      <td>850 $a (Holding institution)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -524,9 +526,7 @@
                       <td>P571 (inception)</td>
                       <td>E65 Creation</td>
                       <td>&nbsp;</td>
-                      <td>
-                        &lt;edm:ProvidedCHO&gt;&lt;dcterms:created&gt;#&lt;/dcterms:created&gt;&lt;/edm:ProvidedCHO&gt;
-                      </td>
+                      <td>edm:ProvidedCHO.created</td>
                       <td>100 $a</td>
                     </tr>
                     <tr>
@@ -544,9 +544,7 @@
                       <td>P580 (start time)</td>
                       <td>E8 Acquisition</td>
                       <td>&nbsp;</td>
-                      <td>
-                        &lt;edm:Event&gt;&lt;dcterms:date&gt;2024-01-15&lt;/dcterms:date&gt;&lt;edm:label&gt;Acquisition&lt;/edm:label&gt;&lt;/edm:Event&gt;
-                      </td>
+                      <td>edm:Event.date.edm:label</td>
                       <td>&nbsp;</td>
                     </tr>
                     <tr>
@@ -555,9 +553,7 @@
                       <td>P580 (start time)</td>
                       <td>P82a begin of the begin</td>
                       <td>&nbsp;</td>
-                      <td>
-                        &lt;edm:Event&gt;&lt;dcterms:valid&gt;&lt;rdf:Description&gt;&lt;dcterms:startDate&gt;#&lt;/dcterms:startDate&gt;&lt;/rdf:Description&gt;&lt;/dcterms:valid&gt;&lt;/edm:Event&gt;
-                      </td>
+                      <td>edm:Event.valid.description.startDate</td>
                       <td>&nbsp;</td>
                     </tr>
                     <tr>
@@ -566,9 +562,7 @@
                       <td>P582 (end time)</td>
                       <td>P82b end of the end</td>
                       <td>&nbsp;</td>
-                      <td>
-                        &lt;edm:Event&gt;&lt;dcterms:valid&gt;&lt;rdf:Description&gt;&lt;dcterms:endDate&gt;#&lt;/dcterms:endDate&gt;&lt;/rdf:Description&gt;&lt;/dcterms:valid&gt;&lt;/edm:Event&gt;
-                      </td>
+                      <td>edm:Event.valid.description.startDate</td>
                       <td>&nbsp;</td>
                     </tr>
                   </tbody>
