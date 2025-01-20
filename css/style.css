@@ -65,13 +65,13 @@ p {
     width: auto;
 }
 
-section a {
+section a, summary {
     color: #d1a700;
     text-decoration: none;
     font-weight: bold;
 }
 
-section a:hover {
+section a:hover, summary:hover {
     color: #d1a700;
     text-decoration: underline;
 }
