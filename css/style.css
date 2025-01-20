@@ -103,6 +103,10 @@ footer {
     display: none;
 }
 
+.nav-item .nav-item .nav-link {
+    font-size: 0.9rem;
+}
+
 .nav-link.active {
     font-weight: bold;
     color: #ffcc00 !important;
@@ -299,6 +303,6 @@ iframe {
     }
 
     .nav-link {
-        padding: 0.5rem;
+        padding: 0.4rem;
     }
 }
