@@ -411,29 +411,29 @@
                 >
                   <button
                     type="button"
-                    class="btn btn-secondary active"
-                    onclick="showTable('who-table', this)"
+                    class="btn btn-secondary btn-metadata active"
+                    onclick="showTableMetadata('who-table', this)"
                   >
                     Who
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('when-table', this)"
+                    class="btn btn-secondary btn-metadata"
+                    onclick="showTableMetadata('when-table', this)"
                   >
                     When
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('what-table', this)"
+                    class="btn btn-secondary btn-metadata"
+                    onclick="showTableMetadata('what-table', this)"
                   >
                     What
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('where-table', this)"
+                    class="btn btn-secondary btn-metadata"
+                    onclick="showTableMetadata('where-table', this)"
                   >
                     Where
                   </button>
@@ -442,7 +442,7 @@
     
               <!-- Add tables with IDs -->
                  <div class="table-container">
-                <table id="who-table">
+                <table id="who-table" class="table-metadata">
                   <thead>
                     <tr>
                       <th>Property/Element</th>
@@ -504,7 +504,7 @@
                 </table>
               </div>
               <div class="table-container">
-                <table id="when-table" style="display: none">
+                <table id="when-table" class="table-metadata" style="display: none">
                   <thead>
                     <tr>
                       <th>Property/Element</th>
@@ -566,7 +566,7 @@
                 </table>
               </div>
               <div class="table-container">
-                <table id="what-table" style="display: none">
+                <table id="what-table" class="table-metadata" style="display: none">
                   <thead>
                     <tr>
                       <th>Property/Element</th>
@@ -686,7 +686,7 @@
                 </table>
               </div>
               <div class="table-container">
-                <table id="where-table" style="display: none">
+                <table id="where-table" class="table-metadata" style="display: none">
                   <thead>
                     <tr>
                       <th>Property/Element</th>
@@ -975,71 +975,71 @@
                 >
                   <button
                     type="button"
-                    class="btn btn-secondary active"
-                    onclick="showTable('videogame-table', this)"
+                    class="btn btn-secondary btn-rdf active"
+                    onclick="showTableRdf('videogame-table', this)"
                   >
                     Video Game
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('monument-table', this)"
+                    class="btn btn-secondary btn-rdf"
+                    onclick="showTableRdf('monument-table', this)"
                   >
                     Monument
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('sculpture-table', this)"
+                    class="btn btn-secondary btn-rdf"
+                    onclick="showTableRdf('sculpture-table', this)"
                   >
                     Sculpture
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('book-table', this)"
+                    class="btn btn-secondary btn-rdf"
+                    onclick="showTableRdf('book-table', this)"
                   >
                     Book
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('painting-table', this)"
+                    class="btn btn-secondary btn-rdf"
+                    onclick="showTableRdf('painting-table', this)"
                   >
                     Painting
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('map-table', this)"
+                    class="btn btn-secondary btn-rdf"
+                    onclick="showTableRdf('map-table', this)"
                   >
                     Map
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('boardgame-table', this)"
+                    class="btn btn-secondary btn-rdf"
+                    onclick="showTableRdf('boardgame-table', this)"
                   >
                     Board Game
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('recording-table', this)"
+                    class="btn btn-secondary btn-rdf"
+                    onclick="showTableRdf('recording-table', this)"
                   >
                     Sound Recording
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('print-table', this)"
+                    class="btn btn-secondary btn-rdf"
+                    onclick="showTableRdf('print-table', this)"
                   >
                     Print
                   </button>
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    onclick="showTable('movie-table', this)"
+                    class="btn btn-secondary btn-rdf"
+                    onclick="showTableRdf('movie-table', this)"
                   >
                     Movie
                   </button>
@@ -2410,8 +2410,8 @@
             </details>
           </p>
           <p>The resulting graph looks like this:</p>
-          <img class="img-fluid" src="KR\tei_rdf.png" alt="TEI extracted triples graph visualization"
-          />
+          <a href="KR\tei_rdf.png"><img class="img-fluid" src="KR\tei_rdf.png" alt="TEI extracted triples graph visualization"
+          /></a>
           <p><a href="KR\xml_rdf_production.py">Download script</a></p>
           <p><a href="KR/tei.ttl">TEI/RDF dataset (.ttl)</a></p>
         </div>
@@ -2519,9 +2519,9 @@
         });
       });
 
-      function showTable(tableId, button) {
+      function showTableRdf(tableId, button) {
         // Hide all tables
-        document.querySelectorAll("table").forEach((table) => {
+        document.querySelectorAll(".table-rdf").forEach((table) => {
           table.style.display = "none";
         });
 
@@ -2529,7 +2529,25 @@
         document.getElementById(tableId).style.display = "table";
 
         // Remove active class from all buttons
-        document.querySelectorAll(".btn-secondary").forEach((btn) => {
+        document.querySelectorAll(".btn-rdf").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        // Add active class to the clicked button
+        button.classList.add("active");
+      }
+
+      function showTableMetadata(tableId, button) {
+        // Hide all tables
+        document.querySelectorAll(".table-metadata").forEach((table) => {
+          table.style.display = "none";
+        });
+
+        // Show the selected table
+        document.getElementById(tableId).style.display = "table";
+
+        // Remove active class from all buttons
+        document.querySelectorAll(".btn-metadata").forEach((btn) => {
           btn.classList.remove("active");
         });
 
