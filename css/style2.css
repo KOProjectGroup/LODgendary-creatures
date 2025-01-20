@@ -17,6 +17,10 @@ th {
   padding: 10px;
 }
 
+tr {
+  text-align: left;
+}
+
 td {
     padding: 10px;
 }
