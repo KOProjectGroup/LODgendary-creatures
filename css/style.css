@@ -65,6 +65,17 @@ p {
     width: auto;
 }
 
+section a {
+    color: #d1a700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    color: #d1a700;
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
