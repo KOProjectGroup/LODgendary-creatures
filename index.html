@@ -2369,50 +2369,52 @@
 
       <section id="text-processing">
         <h2>Text Processing</h2>
-        <h3>XML/TEI encoding</h3>
-        <p>
-          To meet the requirements for encoding a text in XML/TEI, we selected
-          the Italian translation of Monstrorum Historia, focusing specifically
-          on the first section, "Definizione ed etimologia," from Chapter 3, "Il
-          mostro in generale." This sample provided an excellent opportunity to
-          test a variety of encoding practices, including the identification of
-          people and places, the representation of different languages (such as
-          Ancient Greek, Latin, and Hebrew), and the inclusion of bibliographic
-          references.
-        </p>
-        <p><a href="KR\monstrorum_historia.xml">Link to the XML file</a></p>
-        <h3>XML to HTML transformation</h3>
-        <p>
-          The next step in this section involved transforming the XML file into
-          HTML and producing an HTML file to enhance the readability of the
-          content for web presentation. To achieve this, we used XSLT and
-          leveraged the online tool
-          <a href="https://www.freeformatter.com/xsl-transformer.html"
-            >Free Formatter</a
-          >.
-        </p>
-        <p><a href="KR\xml_to_html.xslt">Link to the XSLT file</a></p>
-        <p><a href="KR\MHxml_converted.html">Link to the HTML file</a></p>
-        <h3>XML/TEI to RDF transformation</h3>
-        <p>
-          Lastly, we used Python libraries such as lxml and rdflib to generate
-          an RDF dataset containing all the essential information extracted from
-          the XML file.
-        </p>
+        <div>
+          <h3>XML/TEI encoding</h3>
+          <p>
+            To meet the requirements for encoding a text in XML/TEI, we selected
+            the Italian translation of Monstrorum Historia, focusing specifically
+            on the first section, "Definizione ed etimologia," from Chapter 3, "Il
+            mostro in generale." This sample provided an excellent opportunity to
+            test a variety of encoding practices, including the identification of
+            people and places, the representation of different languages (such as
+            Ancient Greek, Latin, and Hebrew), and the inclusion of bibliographic
+            references.
+          </p>
+          <p><a href="KR\monstrorum_historia.xml">Link to the XML file</a></p>
+          <h3>XML to HTML transformation</h3>
+          <p>
+            The next step in this section involved transforming the XML file into
+            HTML and producing an HTML file to enhance the readability of the
+            content for web presentation. To achieve this, we used XSLT and
+            leveraged the online tool
+            <a href="https://www.freeformatter.com/xsl-transformer.html"
+              >Free Formatter</a
+            >.
+          </p>
+          <p><a href="KR\xml_to_html.xslt">Link to the XSLT file</a></p>
+          <p><a href="KR\MHxml_converted.html">Link to the HTML file</a></p>
+          <h3>XML/TEI to RDF transformation</h3>
+          <p>
+            Lastly, we used Python libraries such as lxml and rdflib to generate
+            an RDF dataset containing all the essential information extracted from
+            the XML file.
+          </p>
 
-        <p>
-          <details>
-            <summary class="text-decoration-underline text-primary">
-              View code
-            </summary>
-            <script src="https://gist.github.com/valetedd/88db526deca1ac610abaef914e7d9d22.js"></script>
-          </details>
-        </p>
-        <p>The resulting graph looks like this:</p>
-        <img class="img-fluid" src="KR\tei_rdf.png" alt="TEI extracted triples graph visualization"
-        />
-        <p><a href="KR\xml_rdf_production.py">Download script</a></p>
-        <p><a href="KR/tei.ttl">TEI/RDF dataset (.ttl)</a></p>
+          <p>
+            <details>
+              <summary class="text-decoration-underline text-primary">
+                View code
+              </summary>
+              <script src="https://gist.github.com/valetedd/88db526deca1ac610abaef914e7d9d22.js"></script>
+            </details>
+          </p>
+          <p>The resulting graph looks like this:</p>
+          <img class="img-fluid" src="KR\tei_rdf.png" alt="TEI extracted triples graph visualization"
+          />
+          <p><a href="KR\xml_rdf_production.py">Download script</a></p>
+          <p><a href="KR/tei.ttl">TEI/RDF dataset (.ttl)</a></p>
+        </div>
       </section>
     </main>
 
