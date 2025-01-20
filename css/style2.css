@@ -35,3 +35,7 @@ margin: auto;
 border-collapse: collapse;
 table-layout: fixed;
 }
+
+footer a {
+  color: white;
+}
